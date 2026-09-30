@@ -64,6 +64,30 @@ nav_order: 4
         <p class="card-text text-muted">基于 NVIDIA NIM 微服务架构的电路设计智能体 PCBTool AI 入选英伟达官方展台优秀案例，并正式签署官方第三方资产展示授权书。</p>
       </div>
     </div>
+  <div class="col-md-6 mb-4">
+    <div class="card h-100 shadow-sm border-danger">
+      <div class="card-body">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <span class="badge badge-danger">硬件赛道三等奖</span>
+          <small class="text-muted">2026.04</small>
+        </div>
+        <h5 class="card-title font-weight-bold">小红书首届“黑客松巅峰赛” 硬件赛道三等奖</h5>
+        <p class="card-text text-muted">在上海张江 200 人同场竞技中，48 小时极限开发完成<strong>“吹了么” (TRI.ME)</strong> 模块化具身理容机械臂（七轴机械臂 + 视觉大模型），获人民网、China Daily、雷科技专题报道。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 mb-4">
+    <div class="card h-100 shadow-sm border-info">
+      <div class="card-body">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <span class="badge badge-info">WAIC 官方展出</span>
+          <small class="text-muted">2026.07</small>
+        </div>
+        <h5 class="card-title font-weight-bold">2026 世界人工智能大会 (WAIC) 青年创新展出</h5>
+        <p class="card-text text-muted">作为青年 AI 原生开发者与“一人公司 / 超级个体（OPC）”代表，项目受邀亮相 2026 WAIC 小红书展台公开展出，获解放日报·上观新闻深度报道。</p>
+      </div>
+    </div>
   </div>
 </div>
 

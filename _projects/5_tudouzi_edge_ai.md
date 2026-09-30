@@ -2,7 +2,7 @@
 layout: page
 title: “土豆子”边缘 AI 伴侣与量产硬件
 description: 基于 xiaozhi-esp32-server 的低延迟端侧语音与 LLM 边缘交互硬件方案，实现 500+ 台整机硬件量产与结构/固件全流程交付。
-img: assets/img/projects/maker.jpg
+img: assets/img/projects/placeholder.png
 importance: 5
 category: 边缘智能与嵌入式
 related_publications: false
