@@ -38,13 +38,10 @@ nav_order: 3
 
 ---
 
-#### 4. 具身智能从零到一：平台与技术发布
-* **主题**：**《代号“启迪”桌面级具身智能开发平台 & 从零到一开发指南》**
-* **摘要**：向开发者社区发布低成本桌面级具身软硬件参考设计与开源学习路线图。
-* **资料下载**：
-  * [📄 “启迪”平台架构方案 PDF](/assets/pdf/talks/代号%20“启迪”%20桌面级具身智能开发平台.pdf)
-  * [📄 《启迪：具身智能从零到一的开发指南》教程 PDF](/assets/pdf/talks/《启迪：具身智能从零到一的开发指南》.pdf)
-  * [📄 Single GPU Full Stack Embodied AI 演示文稿 PDF](/assets/pdf/talks/Single_GPU_Full_Stack_Embodied_AI.pdf)
+#### 4. 单卡消费级具身智能全栈技术分享
+* **主题**：**《Single GPU Full Stack Embodied AI》**
+* **摘要**：向开发者社区分享低门槛软硬件开发路线与消费级单卡极致工程优化实践。
+* **资料下载**：[📄 Single GPU Full Stack Embodied AI 演示文稿 PDF](/assets/pdf/talks/Single_GPU_Full_Stack_Embodied_AI.pdf)
 
 ---
 
