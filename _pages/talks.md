@@ -7,7 +7,7 @@ nav: true
 nav_order: 3
 ---
 
-### 🎙️ 精选公开演讲与研讨
+### 🎙️ 精选公开技术演讲与工作坊
 
 ---
 
@@ -59,3 +59,39 @@ nav_order: 3
 * **主题**：**《从校园创客到技术创业者》**
 * **主办**：北京化工大学
 * **摘要**：受邀为巴黎居里工程师学院、机工系学弟学妹开展创新创业与科技竞赛主题讲座。
+
+---
+
+### 📸 开发者大会现场与演讲掠影
+
+<div class="row my-4">
+  <div class="col-md-4 mb-4">
+    <div class="card h-100 shadow-sm">
+      <img src="/legacy/img/portfolio/191207-DevFEST.jpg" class="card-img-top img-fluid" alt="Google DevFest 现场">
+      <div class="card-body p-3">
+        <h6 class="font-weight-bold mb-1">Google DevFest 开发者大会</h6>
+        <small class="text-muted">参与 Google 开发者社区技术交流与工作坊</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 mb-4">
+    <div class="card h-100 shadow-sm">
+      <img src="/legacy/img/portfolio/gdg2020.jpg" class="card-img-top img-fluid" alt="2020 谷歌开发者大会">
+      <div class="card-body p-3">
+        <h6 class="font-weight-bold mb-1">谷歌开发者大会 (GDG) PRE</h6>
+        <small class="text-muted">前沿技术分享与极客开发实践</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 mb-4">
+    <div class="card h-100 shadow-sm">
+      <img src="/legacy/img/portfolio/cxsqyj.jpg" class="card-img-top img-fluid" alt="创享商圈年会演讲">
+      <div class="card-body p-3">
+        <h6 class="font-weight-bold mb-1">创享商圈年会特邀演讲</h6>
+        <small class="text-muted">校园创新创业与技术服务模式汇报</small>
+      </div>
+    </div>
+  </div>
+</div>
