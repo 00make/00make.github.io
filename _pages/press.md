@@ -50,11 +50,11 @@ nav_order: 5
 
 ---
 
-#### 6. 北京化工大学官方宣传 / 青年榜样专稿
-* **报道主题**：**《校园青春榜样：张振尧与零零后科技的极客创业之路》**
+#### 6. 北京化工大学官方宣传 / 创业者长篇专稿
+* **报道主题**：**《在程序和建模中精进，在求真与务实中探索——北京化工大学创业者张振尧的奋斗记》**
 * **发布时间**：2020.10
-* **核心内容**：专稿报道张振尧作为北化巴黎居里工程师学院与机械工程专业优秀学子，创立“零零后（北京）科技有限公司”并入选中关村高新技术企业与雏鹰人才，研发《农村房屋安全管理系统》助力精准扶贫与乡村振兴的创客历程。
-* **报道出处**：<a href="https://news.buct.edu.cn/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary mt-1"><i class="fa-solid fa-arrow-up-right-from-square"></i> 查看北化官方榜样专访</a>
+* **核心内容**：北化新闻网与国家大学科技园深度长篇特写，系统回顾张振尧从大一创立“新干线”解决师生电子设备痛点、成立零零后科技入选中关村高新技术企业，到带着科研扎根安徽乡村为 4733 户贫困户危房建档助力精准脱贫的求真务实创业奋斗历程。
+* **报道出处**：<a href="https://news.buct.edu.cn/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary mt-1"><i class="fa-solid fa-arrow-up-right-from-square"></i> 查看北化官方奋斗记专访</a>
 
 ---
 
@@ -165,6 +165,14 @@ nav_order: 5
 * **专访主题**：**《大理 Hacker House 走出的物理 AI 极客：打造具身智能操作系统》**
 * **分享重点**：在大理出海 Hacker House 期间专注于具身智能中间件与 Agent 操作系统（AgentOS）的研发历程，致力于让全球开发者像调用 Python 软件库一样轻松驱动底层四足狗与机械臂。
 * **人物专栏**：<a href="https://waytoagi.vip/people/person-045" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary mt-1"><i class="fa-solid fa-arrow-up-right-from-square"></i> 查看 WaytoAGI 人物专栏</a>
+
+---
+
+#### 3. 清华科技园 · 线下具身智能开发者闭门沙龙 (Luma)
+* **活动主办**：科技播客《脑放电波》× 面壁智能 / OpenBMB 社区 × RTE 开发者社区
+* **演讲主题**：**《从玩家到开发者，我为什么要给机器狗写 SDK？》**
+* **对谈嘉宾**：张振尧（五只机器狗主人 / 零零后CEO）× 哲伦班长（维他动力联合创始人 / 前理想汽车智驾产品总监）× Nixon（脑放电波主播）
+* **活动主页**：<a href="https://luma.com/ysalyuu1" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary mt-1"><i class="fa-solid fa-calendar-check"></i> 查看 Luma 活动官方页面</a>
 
 ---
 
