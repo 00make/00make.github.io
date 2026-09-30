@@ -2,7 +2,7 @@
 layout: page
 title: 单卡极限部署：80层 VLA 模型真机闭环
 description: 在单张 32GB RTX 5090 消费级显卡上跑通 80 层 Decoder 架构 VLA 模型（WALL-OSS）全链路微调 + LeRobot SO-101 机械臂真机闭环，端到端延迟低至 33–100ms。
-img: assets/img/projects/vslam1.jpg
+img: assets/img/projects/placeholder.png
 importance: 1
 category: 具身智能
 related_publications: false

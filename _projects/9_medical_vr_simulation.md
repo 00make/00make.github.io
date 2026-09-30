@@ -2,7 +2,7 @@
 layout: page
 title: 医疗虚拟现实手术模拟训练系统研发
 description: 在北京众绘担任创新研发总监期间，主导 5 款医疗模拟软硬件产品研发，年营收突破 2000 万元，申请 5 项发明专利。
-img: assets/img/projects/00-high.jpg
+img: assets/img/projects/placeholder.png
 importance: 9
 category: 开源生态与创业
 related_publications: false
