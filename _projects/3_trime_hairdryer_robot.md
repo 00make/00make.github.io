@@ -34,7 +34,9 @@ related_publications: false
 * 🥉 **小红书首届“黑客松巅峰赛” 硬件赛道三等奖**（200人同场竞技）
 * 🎪 **2026 世界人工智能大会 (WAIC)**：作为青年 AI 原生开发者与“一人公司 / 超级个体（OPC）”代表项目受邀公开展出
 * 📰 **主流权威媒体报道**：
-  * [人民网 (People's Daily Online)](/press/) 专题报道青年创客敏捷交付力
-  * [解放日报 · 上观新闻](/press/) WAIC 展台现场深度特稿
-  * [China Daily (中国日报)](/press/) 英文全球专题报道
-  * [雷科技](/press/) 软硬件深度测评
+  * <a href="http://sh.people.com.cn/n2/2026/0412/c134768-41549854.html" target="_blank" rel="noopener noreferrer">人民网 (People's Daily Online)</a> 专题报道青年创客敏捷交付力
+  * <a href="https://www.jfdaily.com/staticsg/res/html/web/newsDetail.html?id=1085048" target="_blank" rel="noopener noreferrer">解放日报 · 上观新闻</a> WAIC 展台现场深度特稿
+  * <a href="https://cn.chinadaily.com.cn/a/202603/20/WS69bceffea310942cc49a4211.html" target="_blank" rel="noopener noreferrer">China Daily (中国日报)</a> 英文全球专题报道
+  * <a href="https://cloud.tencent.com/developer/news/3820105" target="_blank" rel="noopener noreferrer">腾讯科技 / 开发者特稿</a> 48小时手搓七轴机械臂技术复盘
+  * <a href="https://www.leikeji.com/news/37626.html" target="_blank" rel="noopener noreferrer">雷科技</a> 软硬件深度测评
+
