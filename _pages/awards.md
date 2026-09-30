@@ -89,6 +89,32 @@ nav_order: 4
       </div>
     </div>
   </div>
+
+  <div class="col-md-6 mb-4">
+    <div class="card h-100 shadow-sm border-primary">
+      <div class="card-body">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <span class="badge badge-primary">联合发起人</span>
+          <small class="text-muted">2026.07</small>
+        </div>
+        <h5 class="card-title font-weight-bold">首届“探月计划 · Physical AI 黑客松” 联合发起人</h5>
+        <p class="card-text text-muted">国内首个聚焦 Physical AI 的硬核极限赛事（北京中关村东升科技园），汇聚全球 200+ 青年极客，小米前总裁王翔任创始合伙人，清华大学工训中心学术指导，接受北京日报与海淀融媒专访。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 mb-4">
+    <div class="card h-100 shadow-sm border-dark">
+      <div class="card-body">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <span class="badge badge-dark">永久封存 1000 年</span>
+          <small class="text-muted">2020.07</small>
+        </div>
+        <h5 class="card-title font-weight-bold">GitHub Arctic Code Vault (北极代码宝藏计划) 入选</h5>
+        <p class="card-text text-muted">主持建设的开源项目（含 BUCTBASE 校园开源知识库等）代码被 GitHub 官方转录为特制胶卷，永久封存至挪威斯瓦尔巴群岛（Svalbard）地下千米冻土的北极世界档案馆（AWA）。</p>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="row my-2">
