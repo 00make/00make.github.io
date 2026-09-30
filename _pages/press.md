@@ -15,7 +15,7 @@ nav_order: 5
 * **报道主题**：**《00后浓度超60%！小红书首届黑客松巅峰赛收官，创客机械臂斩获大奖》**
 * **发布时间**：2026.04
 * **核心内容**：报道张振尧团队在上海张江人工智能创新小镇举办的首届小红书黑客松巅峰赛中，48小时内从零到一“手搓”出基于七轴机械臂与视觉大模型的智能理容机器人，在200人同场竞技中斩获硬件赛道三等奖，展现青年 AI 原生创客的极端敏捷交付力。
-* **报道出处**：<a href="http://sh.people.com.cn/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary mt-1"><i class="fa-solid fa-arrow-up-right-from-square"></i> 阅读人民网专题报道</a>
+* **报道出处**：<a href="http://sh.people.com.cn/n2/2026/0412/c134768-41549854.html" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary mt-1"><i class="fa-solid fa-arrow-up-right-from-square"></i> 阅读人民网报道原文</a>
 
 ---
 
@@ -23,7 +23,7 @@ nav_order: 5
 * **报道主题**：**《国内首个物理AI黑客松在海淀举办，打造“永不落幕”的具身智能生态》**
 * **发布时间**：2026.07
 * **核心内容**：报道首届“探月计划·Physical AI黑客松”在中关村（海淀）具身智能创新产业园东升科技园落幕。作为**赛事联合发起人**及零零后科技CEO，张振尧接受北京日报专访，强调48小时黑客松只是起点，通过长期生态社群触达、硬件补给与商业对接，助力硬核技术跨越“从实验室到市场”的鸿沟。
-* **报道出处**：<a href="https://bj.bjd.com.cn/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary mt-1"><i class="fa-solid fa-arrow-up-right-from-square"></i> 阅读北京日报专访报道</a>
+* **报道出处**：<a href="https://xinwen.bjd.com.cn/content/s6a559f2dd5de3eb735084bde.html" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary mt-1"><i class="fa-solid fa-arrow-up-right-from-square"></i> 阅读北京日报专访原文</a>
 
 ---
 
@@ -31,14 +31,14 @@ nav_order: 5
 * **报道主题**：**《世界人工智能大会（WAIC 2026）现场：一人公司与年轻超级个体的具身智能探索》**
 * **发布时间**：2026.07
 * **核心内容**：作为青年 AI 原生开发者与“一人公司 / 超级个体（OPC）”的代表，张振尧携升级版“吹了么”具身机械臂亮相 2026 世界人工智能大会（WAIC）小红书展台，现场展示大模型驱动的自动化空间追踪与物理世界服务落地。
-* **报道出处**：<a href="https://www.shobserver.com/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary mt-1"><i class="fa-solid fa-arrow-up-right-from-square"></i> 阅读解放日报特写报道</a>
+* **报道出处**：<a href="https://www.jfdaily.com/staticsg/res/html/web/newsDetail.html?id=1085048" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary mt-1"><i class="fa-solid fa-arrow-up-right-from-square"></i> 阅读解放日报特写原文</a>
 
 ---
 
 #### 4. China Daily (中国日报)
 * **报道主题**：**《Young Innovators Redefine AI-native Hardware at Global Stage》**
 * **核心内容**：英文专题报道中国年轻一代极客工程师如何将前沿大语言模型与多自由度机械臂结合，解决日常生活中的实际物理交互痛点。
-* **报道出处**：<a href="https://www.chinadaily.com.cn/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary mt-1"><i class="fa-solid fa-arrow-up-right-from-square"></i> 阅读中国日报英文专题</a>
+* **报道出处**：<a href="https://cn.chinadaily.com.cn/a/202603/20/WS69bceffea310942cc49a4211.html" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary mt-1"><i class="fa-solid fa-arrow-up-right-from-square"></i> 阅读中国日报报道原文</a>
 
 ---
 
@@ -46,7 +46,7 @@ nav_order: 5
 * **报道主题**：**《校园青春榜样：张振尧与零零后科技的极客创业之路》**
 * **发布时间**：2020.10
 * **核心内容**：专稿报道张振尧作为北化巴黎居里工程师学院与机械工程专业优秀学子，创立“零零后（北京）科技有限公司”并入选中关村高新技术企业与雏鹰人才，研发《农村房屋安全管理系统》助力精准扶贫与乡村振兴的创客历程。
-* **报道出处**：<a href="https://www.buct.edu.cn/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary mt-1"><i class="fa-solid fa-arrow-up-right-from-square"></i> 查看北化官方榜样专访</a>
+* **报道出处**：<a href="https://news.buct.edu.cn/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary mt-1"><i class="fa-solid fa-arrow-up-right-from-square"></i> 查看北化官方榜样专访</a>
 
 ---
 
@@ -59,7 +59,7 @@ nav_order: 5
 * **对话主题**：**《机器人通用化还需要多久？》**
 * **对谈嘉宾**：张振尧（具身智能极客开发者 / “九只机器狗”主人）× 赵哲伦（维他动力）
 * **核心议题**：从第一线硬件开发与算法工程师视角，深入探讨具身智能从实验室走向大众的“硬件生死线”、机器人跨平台软件中间件演进，以及年轻一代极客对物理 AI 平民化的探索。
-* **报道出处**：<a href="https://new.qq.com/ch/tech/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary mt-1"><i class="fa-solid fa-arrow-up-right-from-square"></i> 查看腾讯科技直播专题</a>
+* **报道出处**：<a href="https://36kr.com/p/3271005551976577" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary mt-1"><i class="fa-solid fa-arrow-up-right-from-square"></i> 查看腾讯科技直播精编专文</a>
 
 ---
 
@@ -73,7 +73,7 @@ nav_order: 5
 #### 3. 虎嗅网 (Huxiu) 深度产业专稿
 * **报道主题**：**《人形机器人半程马拉松与 AI 硬件的落地生死线》**
 * **探讨核心**：从工程鲁棒性、关节力矩冲击吸收、地面接触模型与散热换电逻辑，拆解当前具身智能整机硬件在动态高负荷环境下的物理边界。
-* **报道出处**：<a href="https://www.huxiu.com/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary mt-1"><i class="fa-solid fa-arrow-up-right-from-square"></i> 阅读虎嗅网产业特稿</a>
+* **报道出处**：<a href="https://www.huxiu.com/article/4851853.html" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary mt-1"><i class="fa-solid fa-arrow-up-right-from-square"></i> 阅读虎嗅网产业特稿原文</a>
 
 ---
 
@@ -93,14 +93,14 @@ nav_order: 5
 #### 6. 新华报业 · 科技周刊 / 腾讯新闻深度连线
 * **报道主题**：**《影石跨界入局摄影机器人：消费电子巨头重塑机器人产业链？》**
 * **探讨核心**：作为硬件工程师与具身智能创业者受邀深度解读，剖析消费级高精度防抖云台、供应链优势与自研伺服关节如何赋能新一代摄影机器人形态。
-* **报道出处**：<a href="https://www.xhby.net/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary mt-1"><i class="fa-solid fa-arrow-up-right-from-square"></i> 阅读新华报业访谈报道</a>
+* **报道出处**：<a href="http://jsjjb.xhby.net/pc/con/202505/09/content_1446314.html" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary mt-1"><i class="fa-solid fa-arrow-up-right-from-square"></i> 阅读新华报业访谈报道原文</a>
 
 ---
 
 #### 7. 雷科技 · 硬件与黑客松深度评测
 * **报道主题**：**《48小时从零手搓！七轴模块化具身机械臂深度解析》**
 * **核心内容**：全方位评测“吹了么”具身理容机械臂的模块化快拆机构、手眼协同视觉算法与大模型交互逻辑。
-* **报道出处**：<a href="https://www.leikeji.com/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary mt-1"><i class="fa-solid fa-arrow-up-right-from-square"></i> 阅读雷科技硬件评测</a>
+* **报道出处**：<a href="https://www.leikeji.com/news/37626.html" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary mt-1"><i class="fa-solid fa-arrow-up-right-from-square"></i> 阅读雷科技硬件评测原文</a>
 
 ---
 
@@ -113,7 +113,7 @@ nav_order: 5
 * **科普拆解**：
   * **电池与换电工程逻辑**：为什么不能盲目堆大电池包？解释整机重量增加导致电机更大扭矩、发热与耗电恶性循环的物理矛盾，提出将电池控制在整机 10%-15% 的敏捷换电最优解。
   * **机器人“穿鞋”的力学奥秘**：拆解地面接触模型、摩擦系数与反作用力冲击，解释跑鞋如何充当机器人的人工“半月板”保护精密传动齿轮与关节。
-* **报道出处**：<a href="https://tech.sina.com.cn/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary mt-1"><i class="fa-solid fa-arrow-up-right-from-square"></i> 阅读新浪科技科普专文</a>
+* **报道出处**：<a href="https://k.sina.cn/article_1726918143_66eeadff02001tqau.html?from=tech" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary mt-1"><i class="fa-solid fa-arrow-up-right-from-square"></i> 阅读新浪科技科普专文原文</a>
 
 ---
 
