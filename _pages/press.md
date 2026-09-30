@@ -2,7 +2,7 @@
 layout: page
 title: 媒体
 permalink: /press/
-description: 播客专访、深度媒体报道、行业技术对话及官方媒体资料包 (Press Kit)。
+description: 播客专访、深度媒体报道、行业技术对话、B站开发者影响力与官方媒体资料包 (Press Kit)。
 nav: true
 nav_order: 5
 ---
@@ -37,6 +37,32 @@ nav_order: 5
 #### 3. 行业提案探讨：《桌面机器人：下一代陪伴宠物，还是下一代智商税？》
 * **媒体**：腾讯新闻主持人提案交流
 * **探讨核心**：从“土豆子”等端侧离线语音与桌面机器人的研发量产实践出发，分析端侧大模型赋能硬件的真正体验临界点。
+
+---
+
+### 📺 开发者社区与视频内容影响力
+
+<div class="row my-4">
+  <div class="col-md-6 mb-4">
+    <div class="card h-100 shadow-sm">
+      <img src="/legacy/img/portfolio/star-UP-Page.jpg" class="card-img-top img-fluid" alt="B站官方校园星UP认证">
+      <div class="card-body">
+        <h6 class="font-weight-bold">B站官方“校园星 UP”认证主页</h6>
+        <p class="text-muted small">频道「超级无敌麻辣串」，长期专注机器人软硬件设计、单片机、电机驱动与 AI 大模型应用。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 mb-4">
+    <div class="card h-100 shadow-sm">
+      <img src="/legacy/img/portfolio/b-phone2.jpg" class="card-img-top img-fluid" alt="B站视频播放破百万">
+      <div class="card-body">
+        <h6 class="font-weight-bold">原创科技内容播放突破 200 万次</h6>
+        <p class="text-muted small">单期硬核拆解与算法演示视频引发开发者广泛讨论，沉淀了高粘性的开发者读者群体。</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 ---
 
