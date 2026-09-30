@@ -1,0 +1,149 @@
+cv:
+  name: 张振尧
+  label: 机器人开发者生态 & 全栈具身智能工程师
+  email: towardsrwby@gmail.com
+  location: 中国
+  image: assets/img/prof_pic.jpg
+  summary: NVIDIA 生态走出来的机器人技术布道者：年度黑客松冠军 × 200 万受众开发者内容创作者 × 全栈具身智能工程师。既能亲手把大模型在单张消费级显卡上跑通真机，也能把前沿技术生动讲给百万开发者听。
+
+  social_networks:
+    - network: GitHub
+      username: 00make
+    - network: Bilibili
+      username: "超级无敌麻辣串 (UID: 340935808)"
+    - network: WeChat
+      username: towardsdawn
+
+  sections:
+    核心优势与定位:
+      - company: NVIDIA 生态走出来的机器人布道者
+        position: 具身智能工程师 × 开发者内容创作者
+        start_date: 2019
+        end_date: 至今
+        summary: 全链路打通“模型算法微调 - 边缘硬件部署 - 真实机械臂/四足运控 - 开发者社区布道”。
+        highlights:
+          - 🏆 斩获 2025 NVIDIA Hackathon 年度总决赛冠军、NVIDIA 11th Sky Hackathon 第一名。
+          - 🏆 荣获 2025 国际人形机器人技能大赛全赛道冠军（清华紫荆战队，足球挑战赛）。
+          - 🎥 B站科技 UP 主累计播放量超 200 万次，获官方“校园星 UP”，长期输出具身智能与大模型硬核实践。
+          - ⚡ 在单张 RTX 5090 消费级显卡上跑通 80 层 VLA 模型（WALL-OSS）全链路微调与真机闭环，端到端延迟压至 33–100ms。
+          - 🤝 担任 Genesis 开源具身 AI 社区中国区产品创新与推广负责人、地瓜机器人开发者代表。
+
+    教育背景:
+      - institution: 北京化工大学
+        location: 中国·北京
+        area: 机械设计制造及其自动化（自动化系）
+        studyType: 工学学士
+        start_date: 2018.09
+        end_date: 2023.06
+        score: "化大之星 - 校园青春榜样"
+        highlights:
+          - 获评北京化工大学“化大之星·校园青春榜样”
+          - 获评首都大学生“青年服务国家”先进个人
+          - 获得 ACM 大学生程序设计竞赛、中国高校计算机大赛多项省级及以上奖项
+
+    工作经历:
+      - company: 北京众绘虚拟现实研究院
+        position: 创新研发总监
+        location: 中国·北京
+        start_date: 2022.09
+        end_date: 2025.04
+        summary: 主导医疗虚拟现实手术模拟训练系统及硬件产品研发。
+        highlights:
+          - 主导 5 款医疗模拟产品研发，年营收突破 2000 万元；引入敏捷开发模式，将研发周期缩短 40%。
+          - 申请 5 项发明专利，建立核心技术壁垒。
+          - 负责复杂机构动力学建模、力反馈交互手柄设计与三维物理引擎集成。
+
+      - company: 零零后（北京）科技有限公司
+        position: 创始人 & CEO
+        location: 中国·北京
+        start_date: 2019.04
+        end_date: 2022.09
+        summary: 创立并领导软硬件技术企业，入选中关村科技创新人才计划。
+        highlights:
+          - 带领企业获评北京市“中关村高新技术企业”，个人入选“中关村 U30 雏鹰人才”。
+          - 主导开发 treehollow 开源校园社交平台，覆盖全国 34 所高校，日活跃用户超 10 万+。
+          - 自研 Web 与移动端产品被全国 20 余个省市政府及企事业单位采纳应用。
+
+    核心荣誉与大赛成果:
+      - company: NVIDIA (英伟达)
+        position: 年度总决赛冠军
+        start_date: 2025
+        end_date: 2026
+        highlights:
+          - 🏆 2025 NVIDIA Hackathon 年度总决赛冠军
+          - 🏆 NVIDIA 11th Sky Hackathon 第一名
+          - 🌟 PCBTool AI (NVIDIA NIM 智能体) 入选英伟达展台优秀案例展示，并获授权官方展示
+          - 📜 获得 NVIDIA DLI《大语言模型 — RAG 智能体入门》、《开发基于提示工程的 LLM 应用》认证
+
+      - company: 国际人形机器人技能大赛
+        position: 全赛道冠军
+        start_date: 2025
+        end_date: 2025
+        highlights:
+          - 🏆 2025 国际人形机器人技能大赛 全赛道冠军（清华紫荆战队，人形机器人足球挑战赛冠军）
+
+      - company: 生态与社区荣誉
+        position: 官方荣誉与代表
+        start_date: 2020
+        end_date: 2025
+        highlights:
+          - 🏅 地瓜机器人 开发者代表
+          - 📺 哔哩哔哩 官方“校园星 UP” (视频播放超 200 万次)
+          - 🏛️ 中关村 U30 雏鹰人才计划 入选者
+          - 🎖️ 首都大学生“青年服务国家”表彰团队及个人
+
+    具身智能与硬核开源项目:
+      - company: WALL-OSS 单卡具身智能极速部署
+        position: 独立开发者 / 架构师
+        start_date: 2026.01
+        end_date: 至今
+        summary: 突破消费级硬件算力边界的具身智能端到端方案。
+        highlights:
+          - 在单张 32GB RTX 5090 显卡上跑通 80 层 Decoder 架构 VLA 模型微调与 LeRobot SO-101 机械臂真机闭环。
+          - 运用 8-bit AdamW、Activation Checkpointing、256 步梯度累积等工程优化，将端到端推理动作延迟压缩至 33–100ms。
+          - 采集 30 条 / 8199 帧高质量机械臂遥操作轨迹数据集，完整开源至 HuggingFace。
+
+      - company: Genesis 具身 AI 社区
+        position: 中国区产品创新与推广负责人
+        start_date: 2025.12
+        end_date: 至今
+        summary: 推动全球通用物理仿真与具身智能学习生态发展。
+        highlights:
+          - 深度链接清华、北化等顶尖高校实验室开发者，推动跨本体机器人策略在 Genesis 环境下的训练与评估。
+
+      - company: “启迪”桌面级具身智能开发平台
+        position: 发起人
+        start_date: 2025.08
+        end_date: 至今
+        summary: 降低高校及个人开发者入门门槛的具身智能软硬件套件。
+        highlights:
+          - 打造低成本、可复现的双臂/机械臂实验硬件平台，编撰《具身智能从零到一开发指南》。
+
+      - company: 土豆子 (xiaozhi-esp32 边缘 AI 终端)
+        position: 硬件与固件开发者
+        start_date: 2024.06
+        end_date: 2025.03
+        summary: 端侧离线大模型与语音交互硬件。
+        highlights:
+          - 基于 xiaozhi-esp32-server 打造离线语音 + 大模型边缘计算终端，实现 500+ 台硬件量产与交付。
+
+      - company: dmcan 电机控制库 & robodog
+        position: 开源作者
+        start_date: 2023.01
+        end_date: 2024.12
+        summary: 机器人高性能执行器控制基础设施。
+        highlights:
+          - 封装达妙无刷电机 CAN 总线 MIT/力矩/阻抗控制模式，提供 ROS/ROS2 驱动与 C++/Python 接口。
+          - robodog 集成 6 轴机械臂与 WebXR 空间交互，实现毫米级空间手势遥操作抓取。
+
+    专业技术栈:
+      - company: 技术栈总览
+        position: 全栈工程师
+        start_date: 2018
+        end_date: 至今
+        highlights:
+          - 技术布道与生态：技术写作、硬核视频制作、大型技术会议讲者、开发者工作坊与课程设计
+          - 具身智能与运控：VLA 大模型、LeRobot、ROS/ROS2、正逆运动学/动力学、Sim-to-Real、四足步态
+          - 人工智能与大模型：NVIDIA NIM、RAG 检索增强生成、LangChain、Prompt Engineering、端侧推理
+          - 嵌入式与硬件：NVIDIA Jetson 系列、ESP32、STM32、CAN 总线通信、PCB 原理图与布线、无刷电机伺服
+          - 编程语言与平台：Python、C/C++、Go、Linux (Ubuntu/RT-Linux)、Docker、Git
