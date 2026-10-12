@@ -18,9 +18,9 @@ related_publications: false
 
 ### 🏆 官方认可与合作
 
-* **英伟达官方展台优秀案例**：该项目成功入选英伟达大会展台精选展示案例
-* **官方授权签署**：与 NVIDIA 正式签署第三方资产展示授权书（Declaration Letter）
-* **深度技术栈**：
-  * 构建于 **NVIDIA NIM** (Inference Microservices) 容器化加速底座
-  * 向量检索数据库 + 芯片元器件知识图谱深度融合
-  * 自动化提取 PDF Datasheet 中的电气特性与 Pinout 定义
+- **英伟达官方展台优秀案例**：该项目成功入选英伟达大会展台精选展示案例
+- **官方授权签署**：与 NVIDIA 正式签署第三方资产展示授权书（Declaration Letter）
+- **深度技术栈**：
+  - 构建于 **NVIDIA NIM** (Inference Microservices) 容器化加速底座
+  - 向量检索数据库 + 芯片元器件知识图谱深度融合
+  - 自动化提取 PDF Datasheet 中的电气特性与 Pinout 定义

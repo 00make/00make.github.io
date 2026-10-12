@@ -41,7 +41,7 @@ Read [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md#failure-modes-that-produce-no
 
 1. **Features fail silently.** A feature renders only when its gem is loaded _and_ its flag is on _and_ the page opts in. Otherwise the Liquid tag emits an empty string — no warning, no error.
 2. **`Gemfile` and `_config.yml` are two lists that must agree.** A plugin in only one of them is inert. Adding or removing a plugin means editing both. Repo dirs use hyphens (`al-folio-core`); gem/plugin ids use underscores (`al_folio_core`).
-3. **This repo's effective baseurl is `/al-folio`.** `_config.yml` already sets it, so a plain `bundle exec jekyll build` is correct — that is what `deploy.yml`, `broken-links-site.yml` and `axe.yml` run. Passing `--baseurl /al-folio` is redundant but harmless; blanking the baseurl out is what renders the site unstyled with broken links. Dev server is at `http://localhost:4000/al-folio/`.
+3. **This repo is a deployed personal site, not the upstream starter, so its baseurl is blank.** `_config.yml` sets `url: https://zhangzhenyao.com` with `baseurl:` empty and a `CNAME` of `zhangzhenyao.com`; `deploy.yml` runs a plain `bundle exec jekyll build`. Write asset and page links as root-absolute (`/assets/img/...`, `/awards/`) with no `/al-folio` prefix. The Docker dev server serves `http://localhost:8080/` — not `http://localhost:8080/al-folio/`. (Upstream `alshedivat/al-folio` does use `/al-folio`; if you are reading docs written for upstream, discount that prefix here.)
 
 ## Validated local command set
 

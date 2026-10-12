@@ -18,11 +18,11 @@ related_publications: false
 
 ### 🛠️ 技术特点
 
-* **完整协议封装**：
-  * 支持 MIT 模式（位置-速度-前馈力矩-Kp-Kd）、位置速度模式与直接力矩模式
-  * 毫秒级 CAN 总线丢包检测与状态自动恢复机制
-* **动力学与仿真兼容**：
-  * 输出标准 ROS `sensor_msgs/JointState` 与 `trajectory_msgs` 接口
-  * 便于无缝接入 MoveIt、Isaac Gym 与 Pinocchio 动力学计算库
-* **开发者友好**：
-  * 开源命令行调试工具，支持单关节示教与图形化阶跃响应分析
+- **完整协议封装**：
+  - 支持 MIT 模式（位置-速度-前馈力矩-Kp-Kd）、位置速度模式与直接力矩模式
+  - 毫秒级 CAN 总线丢包检测与状态自动恢复机制
+- **动力学与仿真兼容**：
+  - 输出标准 ROS `sensor_msgs/JointState` 与 `trajectory_msgs` 接口
+  - 便于无缝接入 MoveIt、Isaac Gym 与 Pinocchio 动力学计算库
+- **开发者友好**：
+  - 开源命令行调试工具，支持单关节示教与图形化阶跃响应分析

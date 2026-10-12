@@ -18,25 +18,24 @@ related_publications: false
 
 ### ⚡ 核心技术架构
 
-* **七轴高自由度机械臂运控**：
-  * 精准逆运动学求解与连续平滑轨迹规划
-  * 支持末端工具快拆接口，可毫秒级切换吹发风筒、剃须刀头与洗护模块
-* **视觉大模型手眼协同**：
-  * 引入空间深度相机与实时头部/发型拓扑位姿估计模型
-  * 自适应温控与吹发距离动态闭环控制，避免烫伤并确保护发体验
-* **极速原型交付范式 (Vibe Coding)**：
-  * 运用自然语言智能体驱动运动指令编排，将复杂机构调试周期缩减至极限
+- **七轴高自由度机械臂运控**：
+  - 精准逆运动学求解与连续平滑轨迹规划
+  - 支持末端工具快拆接口，可毫秒级切换吹发风筒、剃须刀头与洗护模块
+- **视觉大模型手眼协同**：
+  - 引入空间深度相机与实时头部/发型拓扑位姿估计模型
+  - 自适应温控与吹发距离动态闭环控制，避免烫伤并确保护发体验
+- **极速原型交付范式 (Vibe Coding)**：
+  - 运用自然语言智能体驱动运动指令编排，将复杂机构调试周期缩减至极限
 
 ---
 
 ### 🏆 官方认可与顶级盛会展出
 
-* 🥉 **小红书首届“黑客松巅峰赛” 硬件赛道三等奖**（200人同场竞技）
-* 🎪 **2026 世界人工智能大会 (WAIC)**：作为青年 AI 原生开发者与“一人公司 / 超级个体（OPC）”代表项目受邀公开展出
-* 📰 **主流权威媒体报道**：
-  * <a href="http://sh.people.com.cn/n2/2026/0412/c134768-41549854.html" target="_blank" rel="noopener noreferrer">人民网 (People's Daily Online)</a> 专题报道青年创客敏捷交付力
-  * <a href="https://www.jfdaily.com/staticsg/res/html/web/newsDetail.html?id=1085048" target="_blank" rel="noopener noreferrer">解放日报 · 上观新闻</a> WAIC 展台现场深度特稿
-  * <a href="https://cn.chinadaily.com.cn/a/202603/20/WS69bceffea310942cc49a4211.html" target="_blank" rel="noopener noreferrer">China Daily (中国日报)</a> 英文全球专题报道
-  * <a href="https://cloud.tencent.com/developer/news/3820105" target="_blank" rel="noopener noreferrer">腾讯科技 / 开发者特稿</a> 48小时手搓七轴机械臂技术复盘
-  * <a href="https://www.leikeji.com/news/37626.html" target="_blank" rel="noopener noreferrer">雷科技</a> 软硬件深度测评
-
+- 🥉 **小红书首届“黑客松巅峰赛” 硬件赛道三等奖**（200人同场竞技）
+- 🎪 **2026 世界人工智能大会 (WAIC)**：作为青年 AI 原生开发者与“一人公司 / 超级个体（OPC）”代表项目受邀公开展出
+- 📰 **主流权威媒体报道**：
+  - <a href="http://sh.people.com.cn/n2/2026/0412/c134768-41549854.html" target="_blank" rel="noopener noreferrer">人民网 (People's Daily Online)</a> 专题报道青年创客敏捷交付力
+  - <a href="https://www.jfdaily.com/staticsg/res/html/web/newsDetail.html?id=1085048" target="_blank" rel="noopener noreferrer">解放日报 · 上观新闻</a> WAIC 展台现场深度特稿
+  - <a href="https://cn.chinadaily.com.cn/a/202603/20/WS69bceffea310942cc49a4211.html" target="_blank" rel="noopener noreferrer">China Daily (中国日报)</a> 英文全球专题报道
+  - <a href="https://cloud.tencent.com/developer/news/3820105" target="_blank" rel="noopener noreferrer">腾讯科技 / 开发者特稿</a> 48小时手搓七轴机械臂技术复盘
+  - <a href="https://www.leikeji.com/news/37626.html" target="_blank" rel="noopener noreferrer">雷科技</a> 软硬件深度测评

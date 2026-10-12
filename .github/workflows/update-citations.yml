@@ -9,6 +9,11 @@ on:
 
 jobs:
   update-citations:
+    # Upstream-only: this scrapes Google Scholar for the demo author configured in
+    # _config.yml (scholar.last_name: [Einstein]) and git-pushes _data/citations.yml
+    # back to master. On a personal site it would overwrite real citation data with
+    # Einstein's and race content commits with non-fast-forward rejections.
+    if: github.repository == 'alshedivat/al-folio'
     runs-on: ubuntu-latest
 
     steps:
