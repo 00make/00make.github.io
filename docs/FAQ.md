@@ -28,7 +28,7 @@ Here are some frequently asked questions. If you have a different question, plea
   - [How can I update icon library versions on the template](#how-can-i-update-icon-library-versions-on-the-template)
   - [How should I name plugins in v1.x?](#how-should-i-name-plugins-in-v1x)
   - [How can I propose featuring my plugin in al-folio?](#how-can-i-propose-featuring-my-plugin-in-al-folio)
-  - [Why does plugin integration use Gemfile + \_config.yml instead of a gemspec?](#why-does-plugin-integration-use-gemfile--_configyml-instead-of-a-gemspec)
+  - [Why does plugin integration use Gemfile + _config.yml instead of a gemspec?](#why-does-plugin-integration-use-gemfile--_configyml-instead-of-a-gemspec)
   - [What do all these GitHub actions/workflows mean?](#what-do-all-these-github-actionsworkflows-mean)
 
 <!--te-->
@@ -323,5 +323,5 @@ Build and deployment:
   - [How can I update icon library versions on the template](#how-can-i-update-icon-library-versions-on-the-template)
   - [How should I name plugins in v1.x?](#how-should-i-name-plugins-in-v1x)
   - [How can I propose featuring my plugin in al-folio?](#how-can-i-propose-featuring-my-plugin-in-al-folio)
-  - [Why does plugin integration use Gemfile + \_config.yml instead of a gemspec?](#why-does-plugin-integration-use-gemfile--_configyml-instead-of-a-gemspec)
+  - [Why does plugin integration use Gemfile + _config.yml instead of a gemspec?](#why-does-plugin-integration-use-gemfile--_configyml-instead-of-a-gemspec)
   - [What do all these GitHub actions/workflows mean?](#what-do-all-these-github-actionsworkflows-mean)
