@@ -1,5 +1,6 @@
 _site
 .bundle
+.DS_Store
 .DS_store
 .idea
 .jekyll-cache
@@ -19,3 +20,10 @@ vendor
 # Python bytecode from bin/ helper scripts
 __pycache__/
 *.pyc
+
+# macOS Finder duplicate copies ("photo 2.jpg", "LICENSE 2").
+# These are byte-identical copies created by Finder copy/paste, never real content.
+# Caveat: this also ignores an intentionally-named file like "chapter 2.md";
+# use `git add -f <path>` to force-track one.
+* 2
+* 2.*
