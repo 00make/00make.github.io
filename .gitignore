@@ -21,6 +21,13 @@ vendor
 __pycache__/
 *.pyc
 
+# bin/check_claims.sh loads its value-bearing rules from here. Those rules must
+# spell out the literal 学号 / 单月收入 / 统一社会信用代码 and the third-party
+# name denylist in order to grep for them, and this repo is public — so the file
+# itself must never be committed. The script exits 2 rather than reporting a
+# false "clean" when it is missing.
+bin/check_claims.private.rules
+
 # macOS Finder duplicate copies ("photo 2.jpg", "LICENSE 2").
 # These are byte-identical copies created by Finder copy/paste, never real content.
 # Caveat: this also ignores an intentionally-named file like "chapter 2.md";
