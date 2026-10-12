@@ -184,15 +184,11 @@ newsletter:
 # -----------------------------------------------------------------------------
 
 collections:
-  books:
-    output: true
   news:
     defaults:
       layout: post
     output: true
   projects:
-    output: true
-  teachings:
     output: true
 
 # -----------------------------------------------------------------------------
@@ -230,12 +226,35 @@ exclude:
   - package.json
   - package-lock.json
   - _pages/about_einstein.md
+  # Upstream starter demo pages. Each is `nav: false` and ships English
+  # placeholder content (Einstein's bibliography, torvalds/alshedivat repo
+  # cards, The Godfather bookshelf, "Prof. Example" courses, the al-folio
+  # plugin catalog, a two-profile lab page). Excluding them here is the same
+  # mechanism already used for `about_einstein.md` above: the files stay in the
+  # repo as reference, but no HTML is emitted, so they cannot appear in search,
+  # the sitemap, or the lychee link scan.
+  #
+  # To re-enable one, delete its line here AND give it real content AND, if it
+  # should appear in the navbar, set `nav: true` in its front matter.
+  - _pages/books.md
+  - _pages/dropdown.md
+  - _pages/plugins.md
+  - _pages/profiles.md
+  - _pages/publications.md
+  - _pages/repositories.md
+  - _pages/teaching.md
   - purgecss.config.js
   - README.md
   - readme_preview/
   - gems/
   - migrations/
   - vendor
+  # Not site content: CI scaffolding and dependency manifests that Jekyll was
+  # otherwise copying verbatim into the public `_site/` (verified by inspecting
+  # the built tree — `/test/integration_*.sh`, `/test/visual/*.spec.js` and
+  # `/requirements.txt` were all publicly reachable).
+  - test/
+  - requirements.txt
 keep_files:
   - CNAME
   - .nojekyll
@@ -330,11 +349,15 @@ jekyll-archives:
       year: "/blog/:year/"
       tags: "/blog/:type/:name/"
       categories: "/blog/:type/:name/"
-  books:
-    enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
 
-display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
-display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
+# Tag / category chips rendered on the blog index. Each value must be a tag or
+# category that at least one post actually carries, otherwise jekyll-archives
+# generates no archive page for it and the chip becomes a dead link on /blog/.
+# Left empty because the upstream demo posts (which carried "formatting",
+# "images", "math", "external-services", ...) were removed. Repopulate from the
+# real 开发者日志 vocabulary once those posts exist.
+display_tags: []
+display_categories: []
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
@@ -679,10 +702,15 @@ third_party_libraries:
 # Get external JSON data
 # -----------------------------------------------------------------------------
 
-jekyll_get_json:
-  - data: resume
-    json: assets/json/resume.json # it can also be an url
+# Intentionally empty. The upstream starter used this to load Albert Einstein's
+# demo `assets/json/resume.json` for the `cv_format: jsonresume` renderer. This
+# site renders its CV with `cv_format: rendercv` from `_data/cv.yml` instead, so
+# there is no external JSON resume to fetch. Add entries here only if you switch
+# a page back to `cv_format: jsonresume`.
+jekyll_get_json: []
 
+# Section order used by the jsonresume CV renderer. Inert while no page sets
+# `cv_format: jsonresume`; kept so the renderer's config contract stays intact.
 jsonresume:
   - basics
   - work
