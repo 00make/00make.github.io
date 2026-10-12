@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#f8fafc"/>
+  <rect x="40" y="40" width="1120" height="595" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="3" stroke-dasharray="12 12"/>
+  <g transform="translate(600, 260)" text-anchor="middle">
+    <!-- Camera / Cube Icon -->
+    <rect x="-45" y="-40" width="90" height="70" rx="10" fill="#e2e8f0" stroke="#94a3b8" stroke-width="4"/>
+    <circle cx="0" cy="-5" r="20" fill="#cbd5e1" stroke="#94a3b8" stroke-width="4"/>
+    <circle cx="25" cy="-22" r="5" fill="#94a3b8"/>
+    <!-- Text -->
+    <text y="80" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="32" font-weight="600" fill="#475569">Project Asset Coming Soon</text>
+    <text y="125" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="22" fill="#94a3b8">实物与现场素材待补充 ｜ 稍后上传</text>
+  </g>
+</svg>

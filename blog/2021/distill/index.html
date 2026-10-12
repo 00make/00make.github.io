@@ -1114,21 +1114,21 @@ ninja.data = [{
           },
         },{id: "nav-演讲",
           title: "演讲",
-          description: "公开技术演讲、开发者大会、高校学术报告与实战工作坊。提供完整课件 PDF 与演讲大纲下载。",
+          description: "公开技术演讲、开发者大会、高校学术报告与实战工作坊。记录从校园极客到具身智能前沿的实战思考与工程总结，提供完整课件 PDF、演讲大纲与现场记录。",
           section: "Navigation",
           handler: () => {
             window.location.href = "/talks/";
           },
         },{id: "nav-荣誉",
           title: "荣誉",
-          description: "顶级黑客松冠军、国际机器人大赛荣誉、企业技术授权与学术科技竞赛奖励证书。",
+          description: "记录从大学极客创客时期到具身智能前沿探索的全量大赛荣誉、科技竞赛奖项、高新企业资质、知识产权与官方认证。",
           section: "Navigation",
           handler: () => {
             window.location.href = "/awards/";
           },
         },{id: "nav-媒体",
           title: "媒体",
-          description: "播客专访、深度媒体报道、行业技术对话及官方媒体资料包 (Press Kit)。",
+          description: "记录主流官媒、头部科技媒体、深度产业智库、科技播客对张振尧及其项目的专访与报道，并提供官方媒体资料包 (Press Kit)。",
           section: "Navigation",
           handler: () => {
             window.location.href = "/press/";
@@ -1526,21 +1526,32 @@ ninja.data = [{
           section: "News",},{id: "news-在单张-32gb-rtx-5090-显卡上成功跑通-80-层-decoder-架构-vla-模型-wall-oss-微调与-lerobot-so-101-机械臂真机闭环-端到端延迟低至-33-100ms-相关轨迹数据集已开源至-huggingface",
           title: '🚀 在单张 32GB RTX 5090 显卡上成功跑通 **80 层 Decoder 架构 VLA 模型（WALL-OSS）微调与 LeRobot...',
           description: "",
-          section: "News",},{id: "projects-单卡极限部署-80层-vla-模型真机闭环",
+          section: "News",},{id: "news-在上海张江举办的小红书首届-黑客松巅峰赛-中-48-小时极限开发完成模块化具身理容机械臂-吹了么-斩获硬件赛道三等奖-获-人民网报道原文-http-sh-people-com-cn-n2-2026-0412-c134768-41549854-html-china-daily-报道-https-cn-chinadaily-com-cn-a-202603-20-ws69bceffea310942cc49a4211-html",
+          title: '🥉 在上海张江举办的小红书首届 **“黑客松巅峰赛”** 中，48 小时极限开发完成模块化具身理容机械臂“吹了么”，斩获硬件赛道三等奖，获[人民网报道原文](http://sh.people.com.cn/n2/2026/0412/c134768-41549854.html)、[China Daily 报道](https://cn.chinadaily.com.cn/a/202603/20/WS69bceffea310942cc49a4211.html)！',
+          description: "",
+          section: "News",},{id: "news-项目受邀亮相-2026-世界人工智能大会-waic-小红书展台现场展出-并作为青年-ai-原生创客与超级个体代表接受-解放日报-上观新闻专题报道-https-www-jfdaily-com-staticsg-res-html-web-newsdetail-html-id-1085048",
+          title: '🎪 项目受邀亮相 **2026 世界人工智能大会 (WAIC)** 小红书展台现场展出，并作为青年 AI 原生创客与超级个体代表接受[解放日报·上观新闻专题报道](https://www.jfdaily.com/staticsg/res/html/web/newsDetail.html?id=1085048)！',
+          description: "",
+          section: "News",},{id: "projects-github-arctic-code-vault-北极代码宝藏计划",
+          title: 'GitHub Arctic Code Vault (北极代码宝藏计划)',
+          description: "主持建设的校园开源知识库与技术项目被 GitHub 官方转录为特制长存胶卷，永久封存至挪威斯瓦尔巴群岛冻土深处 1000 年。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/10_arctic_code_vault/";
+            },},{id: "projects-单卡极限部署-80层-vla-模型真机闭环",
           title: '单卡极限部署：80层 VLA 模型真机闭环',
           description: "在单张 32GB RTX 5090 消费级显卡上跑通 80 层 Decoder 架构 VLA 模型（WALL-OSS）全链路微调 + LeRobot SO-101 机械臂真机闭环，端到端延迟低至 33–100ms。",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_single_gpu_vla/";
-            },},{id: "projects-启迪-桌面级具身智能开发平台",
-          title: '“启迪”桌面级具身智能开发平台',
-          description: "打造桌面级低成本具身智能实验套件与《具身智能从零到一开发指南》，为高校教学与开发者提供标准化、可复现的学习与研发底盘。",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/2_qidi_embodied_platform/";
             },},{id: "projects-robodog-与-agentos-机器人实时操作系统",
           title: 'robodog 与 AgentOS 机器人实时操作系统',
           description: "机器狗高自由度运动控制库，结合 6 轴机械臂与 WebXR 空间交互，支持姿态估计、UWB 定位、自主避障与手势抓取。",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/3_robodog_agentos/";
+              window.location.href = "/projects/2_robodog_agentos/";
+            },},{id: "projects-吹了么-tri-me-模块化具身理容机械臂",
+          title: '“吹了么” (TRI.ME) — 模块化具身理容机械臂',
+          description: "基于七轴机械臂与视觉大模型，48 小时极限开发斩获小红书首届黑客松硬件赛道三等奖，受邀亮相 2026 世界人工智能大会 (WAIC) 公开展出，获人民网、解放日报·上观新闻、China Daily 专题报道。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/3_trime_hairdryer_robot/";
             },},{id: "projects-pcbtool-ai-基于-nvidia-nim-的电路设计智能体",
           title: 'PCBTool AI — 基于 NVIDIA NIM 的电路设计智能体',
           description: "运行于 NVIDIA NIM 微服务架构的 RAG 驱动电路设计智能体。入选英伟达展台优秀案例展示，并签署正式官方展示授权。",
