@@ -12,7 +12,7 @@ nav_order: 4
 <div class="row my-4">
   <div class="col-md-6 mb-4">
     <div class="card h-100 shadow-sm border-primary">
-      <img src="/assets/img/awards/2025%20NVIDIA%20Sky%20Hackathon%20%E5%B9%B4%E5%BA%A6%E6%80%BB%E5%86%B3%E8%B5%9B%20%E5%86%A0%E5%86%9B.jpg" class="card-img-top img-fluid" alt="2025 NVIDIA Sky Hackathon 年度总决赛 冠军">
+      <img src="/assets/img/awards/nvidia_sky_hackathon_final_champion.jpg" class="card-img-top img-fluid" alt="2025 NVIDIA Sky Hackathon 年度总决赛 冠军">
       <div class="card-body">
         <div class="d-flex justify-content-between align-items-center mb-2">
           <span class="badge badge-primary">年度总决赛冠军</span>
@@ -26,7 +26,7 @@ nav_order: 4
 
   <div class="col-md-6 mb-4">
     <div class="card h-100 shadow-sm border-primary">
-      <img src="/assets/img/awards/NVIDlA%2011th%20Sky%20Hackathon%20%E7%AC%AC%E4%B8%80%E5%90%8D.jpg" class="card-img-top img-fluid" alt="NVIDIA 11th Sky Hackathon 第一名">
+      <img src="/assets/img/awards/nvidia_11th_sky_hackathon_first.jpg" class="card-img-top img-fluid" alt="NVIDIA 11th Sky Hackathon 第一名">
       <div class="card-body">
         <div class="d-flex justify-content-between align-items-center mb-2">
           <span class="badge badge-primary">第一名</span>
@@ -64,6 +64,8 @@ nav_order: 4
         <p class="card-text text-muted">基于 NVIDIA NIM 微服务架构的电路设计智能体 PCBTool AI 入选英伟达官方展台优秀案例，并正式签署官方第三方资产展示授权书。</p>
       </div>
     </div>
+  </div>
+
   <div class="col-md-6 mb-4">
     <div class="card h-100 shadow-sm border-danger">
       <div class="card-body">
@@ -120,7 +122,7 @@ nav_order: 4
 <div class="row my-2">
   <div class="col-md-6 mb-4">
     <div class="card h-100 shadow-sm">
-      <img src="/assets/img/awards/大语言模型%20--%20RAG%20智能体入门.png" class="card-img-top img-fluid" alt="NVIDIA DLI 认证：大语言模型 — RAG 智能体入门">
+      <img src="/assets/img/awards/nvidia_dli_rag.png" class="card-img-top img-fluid" alt="NVIDIA DLI 认证：大语言模型 — RAG 智能体入门">
       <div class="card-body">
         <span class="badge badge-secondary mb-2">NVIDIA DLI 认证</span>
         <h6 class="card-title font-weight-bold">大语言模型 — RAG 智能体入门</h6>
@@ -131,7 +133,7 @@ nav_order: 4
 
   <div class="col-md-6 mb-4">
     <div class="card h-100 shadow-sm">
-      <img src="/assets/img/awards/开发基于提示工程的大语言模型(LLM)应用.png" class="card-img-top img-fluid" alt="NVIDIA DLI 认证：开发基于提示工程的 LLM 应用">
+      <img src="/assets/img/awards/nvidia_dli_prompt_engineering.png" class="card-img-top img-fluid" alt="NVIDIA DLI 认证：开发基于提示工程的 LLM 应用">
       <div class="card-body">
         <span class="badge badge-secondary mb-2">NVIDIA DLI 认证</span>
         <h6 class="card-title font-weight-bold">开发基于提示工程的大语言模型应用</h6>
