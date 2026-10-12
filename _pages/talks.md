@@ -2,60 +2,252 @@
 layout: page
 title: 演讲
 permalink: /talks/
-description: 公开技术演讲、开发者大会、高校学术报告与实战工作坊。提供完整课件 PDF 与演讲大纲下载。
+description: 公开技术演讲、开发者大会、高校学术报告与实战工作坊。记录从校园极客到具身智能前沿的实战思考与工程总结，提供完整课件 PDF、演讲大纲与现场记录。
 nav: true
 nav_order: 3
 ---
 
-### 🎙️ 精选公开技术演讲与工作坊
+### 🎙️ 精选公开演讲、技术研讨与实战工坊
+
+> “论文里的机器人永远不会摔倒，摩擦力永远是线性的。但现实不是。算法可以在云端飘逸，但硬件必须在泥泞里打滚——请把手弄脏（Get your hands dirty），去感受物理世界的真实阻抗。”
 
 ---
 
-#### 1. 清华大学具身智能俱乐部专场分享
-* **主题**：**《代码的重量——如何用一行 Python 撬动物理世界》**
-* **时间**：2026
-* **地点**：清华大学
-* **摘要**：面向高校顶尖机器人与 AI 开发者，深度剖析从纯数字世界（LLM / VLM）走向物理实体世界的阻抗匹配；详解在消费级单卡上优化 80 层 VLA 模型推理与 LeRobot 机械臂低延迟闭环的工程实战细节。
-* **资料下载**：[📄 完整课件 PDF 下载](/assets/pdf/talks/代码的重量——如何用一行%20Python%20撬动物理世界_compressed.pdf)
+#### 🤖 一、 具身智能与大模型软硬协同 (Embodied AI & VLA)
+
+<div class="card mb-4 shadow-sm border-left-primary">
+  <div class="card-body">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <span class="badge badge-primary">高校学术俱乐部分享</span>
+      <span class="text-muted small">2026 · 清华大学</span>
+    </div>
+    <h4 class="card-title font-weight-bold">《代码的重量——如何用一行 Python 撬动物理世界》</h4>
+    <h6 class="card-subtitle text-muted mb-3">副题：跨越“虚实鸿沟”——从 GitHub 开源到具身智能的工程着陆 | 主办：清华大学具身智能俱乐部 (THU Embodied AI Club)</h6>
+    <p class="card-text">
+      <strong>演讲背景与摘要：</strong>面对高校顶尖机器人与 AI 开发者，深度剖析从纯数字世界（LLM / VLM）走向物理实体世界的阻抗匹配。开篇直面 2025 国际人形机器人技能大赛夺冠背后的“工程幸存者偏差”，讲述在决赛前一周为消除步态抖动连续熬夜调试、在焊锡焦味与电机过热中攻坚真机闭环的战壕经历；详解消费级单卡上优化 80 层 VLA 模型推理与 LeRobot 机械臂低延迟控制的软硬件协同方法。
+    </p>
+    <div class="bg-light p-3 rounded mb-3">
+      <strong>🔥 核心观点与金句：</strong>
+      <ul class="mb-0 mt-2 pl-3">
+        <li><strong>第一性原理突破门槛</strong>：从在宿舍自制微米级无掩模光刻机被 CERN 关注，到具身智能开发——“昂贵的设备从来不是壁垒，对物理第一性原理的理解才是。”</li>
+        <li><strong>先造好用的铲子</strong>：痛陈市售机器狗封闭黑盒与糟糕 SDK，逆向打造开源底层驱动 <code>dmcan</code> 与 <code>robodog</code>，“在这个赛道，造好用的铲子，有时候比挖金矿更有价值。”</li>
+        <li><strong>做“缝合怪”而非“完美主义者”</strong>：不要苦等通用 AGI 降临才去动身，先用人类生物大脑借助 WebXR/VR 遥操作接管机器躯体，为未来大模型沉淀真实的 Ground Truth。</li>
+        <li><strong>请把手弄脏 (Get your hands dirty)</strong>：鼓励学术开发者走出无摩擦力的仿真环境，下场听电机异响、解决电磁温漂，成为物理世界的开拓者。</li>
+      </ul>
+    </div>
+    <div class="d-flex flex-wrap gap-2">
+      <a href="/assets/pdf/talks/代码的重量——如何用一行%20Python%20撬动物理世界_compressed.pdf" class="btn btn-sm btn-outline-primary" target="_blank">📄 下载完整演示课件 PDF</a>
+    </div>
+  </div>
+</div>
+
+<div class="card mb-4 shadow-sm border-left-success">
+  <div class="card-body">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <span class="badge badge-success">顶尖创新答辩</span>
+      <span class="text-muted small">2026.03 · 具身智能创新评审</span>
+    </div>
+    <h4 class="card-title font-weight-bold">《打通具身智能落地的最后一公里：基于单卡的 WALL-OSS 机械臂全栈部署闭环》</h4>
+    <h6 class="card-subtitle text-muted mb-3">“具亮计划 2026” 答辩演讲 | 汇报人：张振尧（零零后科技）</h6>
+    <p class="card-text">
+      <strong>演讲背景与摘要：</strong>针对具身智能动辄依赖 8 卡集群与高昂算力的痛点，系统汇报团队在<strong>单张 32GB 显存消费级显卡 (RTX 5090)</strong> 上实现 80 层 VLA 大模型端到端微调与 LeRobot SO-101 真机平滑闭环的极致工程突破。现场展示抓取腕带与溜溜球任务的丝滑操作。
+    </p>
+    <div class="bg-light p-3 rounded mb-3">
+      <strong>🔥 硬核技术亮点：</strong>
+      <ul class="mb-0 mt-2 pl-3">
+        <li><strong>拒绝机械臂抖动的数学基石</strong>：抛弃易受噪声畸变的 Min-Max 归一化，采用 <strong>q1-q99 分位数归一化</strong>；引入 OpenPI RunningStats 架构与 5000 动态 bin 算法，实现在线流式分位数估计，彻底杜绝 OOM。</li>
+        <li><strong>紧耦合 MoE 与 Flow Matching</strong>：基于 Qwen2.5-VL 语义底座，语言专家理解指令，动作专家通过 10 步 ODE 连续流匹配（Flow Matching）预测连续平滑流场，解决离散 Token 阶跃抖动。</li>
+        <li><strong>算力极限压榨“四板斧”</strong>：8-bit AdamW 显存降 4 倍 + 梯度检查点 (Gradient Checkpointing) + 图像分辨率降至 224 + 单步 Batch=1 配合 <strong>256 步超长梯度累积</strong>，成功攻破单卡显存墙。</li>
+        <li><strong>gRPC 毫秒级通信闭环</strong>：云端 Server 处理重推理，本地边缘端高频采集双目视频并执行 6-DOF 底层 PID，32 步长 Action Chunk 将端到端闭环延迟压至 33–100ms。</li>
+      </ul>
+    </div>
+    <div class="d-flex flex-wrap gap-2">
+      <a href="https://huggingface.co/datasets/00make/so100_teleoperation_dataset" class="btn btn-sm btn-outline-info" target="_blank">🌐 查看 HuggingFace 8199帧物理轨迹数据集</a>
+    </div>
+  </div>
+</div>
+
+<div class="card mb-4 shadow-sm border-left-info">
+  <div class="card-body">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <span class="badge badge-info">社群技术公开课</span>
+      <span class="text-muted small">2026 · 开发者社群</span>
+    </div>
+    <h4 class="card-title font-weight-bold">《Single GPU Full Stack Embodied AI：消费级硬件上的具身智能全栈探索》</h4>
+    <h6 class="card-subtitle text-muted mb-3">单卡全栈具身智能实践分享</h6>
+    <p class="card-text">
+      <strong>演讲背景与摘要：</strong>向开源社区开发者系统讲解如何用一台单卡消费级主机完成从机器人硬件搭设、数据遥操作采集（LeRobot / SO-100）、异构传感器 Key Mapping 统一、流式数据微调到轻量化真机部署的全流程，打消初学者“没有算力集群就无法做具身智能”的壁垒。
+    </p>
+    <div class="d-flex flex-wrap gap-2">
+      <a href="/assets/pdf/talks/Single_GPU_Full_Stack_Embodied_AI.pdf" class="btn btn-sm btn-outline-primary" target="_blank">📄 下载演示课件 PDF</a>
+    </div>
+  </div>
+</div>
 
 ---
 
-#### 2. 字节跳动 AI+ 主题演讲与工坊
-* **主题一**：**《用 Vibe Coding 与 Skill 打造具身智能 Agent：从手搓几千行 C++ 到一句话让机器人跳舞》**
-  * **形式**：开发者工作坊 / 技术研讨
-  * **摘要**：介绍基于 Trae 等现代 AI 工具的 Vibe Coding 范式，如何利用 Skill 机制与自然语言交互，快速编排复杂机器人运动学与轨迹规划，实现秒级原型生成。
-  * **资料下载**：[📄 演讲幻灯片 PDF 下载](/assets/pdf/talks/用%20Vibe%20Coding%20与%20Skill%20打造“具身智能”机器人%20Agent_compressed.pdf)
-* **主题二**：**《DeepSeek 赋能硬件：从大模型到端侧智能落地》**
-  * **摘要**：探讨开源高性能推理模型与国产嵌入式硬件结合的工程演进路径。
+#### 🛠️ 二、 开源硬件、极限压榨与工程量产 (Hardware Engineering & Maker)
+
+<div class="card mb-4 shadow-sm border-left-warning">
+  <div class="card-body">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <span class="badge badge-warning text-dark font-weight-bold">开源硬件年度盛会特邀演讲</span>
+      <span class="text-muted small">2026.09 · 深圳会展中心</span>
+    </div>
+    <h4 class="card-title font-weight-bold">《从原型到真实应用：跨学科硬件项目的落地实践》</h4>
+    <h6 class="card-subtitle text-muted mb-3">第四届嘉立创开源硬件星火会主会场演讲 | 主讲人：张振尧（零零后科技 CEO）</h6>
+    <p class="card-text">
+      <strong>演讲背景与摘要：</strong>在深圳会展中心 3.72:1 超宽屏主会场，面向数千名硬核硬件开发者、嵌入式工程师与创客同仁展开 15 分钟深度主题演讲。通过生动的“个人编年史”叙事，剖析一个跨学科硬件产品如何从学生时代的“玩具原型”一步步走向真实世界量产。
+    </p>
+    <div class="bg-light p-3 rounded mb-3">
+      <strong>🔥 精彩故事与工程干货：</strong>
+      <ul class="mb-0 mt-2 pl-3">
+        <li><strong>极客起点</strong>：10 岁拆坏 DVD、16 岁用生活费在垃圾桶捡破损 iPhone 4 翻新成功；大学手搓步进电机写字机器人与 550W 高功率动力系统。</li>
+        <li><strong>48小时黑客松的极限反转</strong>：首届小红书黑客松巅峰赛，“吹了么”七轴理容机械臂在赛前夜突发连线烧毁，团队通宵重构通信协议，最终在决赛舞台完成全场首次“机械臂全自主抓取并平稳吹干湿发”，斩获硬件赛道大奖。</li>
+        <li><strong>跨学科技术融合</strong>：“YOLO 强开物理世界的‘数字领地’”，结合 PaliGemma 与 Pi0.5 轻量化模型，让边缘硬件拥有毫秒级视觉反馈。</li>
+        <li><strong>避开量产的“万丈深坑”</strong>：从 1 台手搓 Demo 到 500+ 台规模交付，复盘 4G 射频噪声对音频电路的疯狂干扰、PCB 走线阻抗匹配、供应链元器件断货平替、以及通过自研自动化治具将生产测试成本压缩 70% 的工业级工程方法论。</li>
+      </ul>
+    </div>
+    <div class="d-flex flex-wrap gap-2">
+      <a href="/assets/pdf/talks/从原型到真实应用-张振尧-星火会.pptx" class="btn btn-sm btn-outline-primary" target="_blank">📊 下载星火会超宽屏演示 PPTX</a>
+    </div>
+  </div>
+</div>
+
+<div class="card mb-4 shadow-sm border-left-danger">
+  <div class="card-body">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <span class="badge badge-danger">企业技术分享与实战工坊</span>
+      <span class="text-muted small">2025–2026 · 字节跳动</span>
+    </div>
+    <h4 class="card-title font-weight-bold">《用 Vibe Coding 与 Skill 打造具身智能 Agent：从“手搓”几千行 C++ 到一句话让机器人跳舞》</h4>
+    <h6 class="card-subtitle text-muted mb-3">字节跳动 AI+ 主题演讲 / ADG 技术研讨与工作坊 | 主讲人：张振尧</h6>
+    <p class="card-text">
+      <strong>演讲背景与摘要：</strong>传统机器人开发门槛极高，复杂的正逆运动学解算、ROS 环境配置、异构网络接口让大量富有创意的开发者和跨界设计师望而却步。张振尧现场展示如何借助以 Trae 为代表的现代 AI 编码助手开启 <strong>Vibe Coding</strong> 范式，通过自然语言编排 Agent Skill，将开发者从底层繁琐语法与环境报错中解放出来。
+    </p>
+    <div class="bg-light p-3 rounded mb-3">
+      <strong>🔥 现场金句与实践展示：</strong>
+      <ul class="mb-0 mt-2 pl-3">
+        <li>“以前为了让机器人转个头，我们要面对密密麻麻的运动学方程和抓耳挠腮的编译报错；现在有了 Skill 模块与 AI Agent，<strong>我们不再是写底层的‘码农’，我们是‘导演’，机器人是听话的‘演员’</strong>。”</li>
+        <li>现场演示仅用自然语言对话编排，在 10 分钟内完成多足机器人姿态控制与音乐节奏舞蹈编排。</li>
+      </ul>
+    </div>
+    <div class="d-flex flex-wrap gap-2">
+      <a href="/assets/pdf/talks/用%20Vibe%20Coding%20与%20Skill%20打造“具身智能”机器人%20Agent_compressed.pdf" class="btn btn-sm btn-outline-primary" target="_blank">📄 下载 Vibe Coding 幻灯片 PDF</a>
+    </div>
+  </div>
+</div>
+
+<div class="card mb-4 shadow-sm border-left-secondary">
+  <div class="card-body">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <span class="badge badge-secondary">生态开发者大会</span>
+      <span class="text-muted small">2026 · 地瓜机器人</span>
+    </div>
+    <h4 class="card-title font-weight-bold">《RDK 机器人操作系统与算法演进：从算力芯片到通用运动大脑》</h4>
+    <h6 class="card-subtitle text-muted mb-3">地瓜机器人开发者生态大会 | 特邀分享：地瓜生态资深开发者代表 张振尧</h6>
+    <p class="card-text">
+      <strong>演讲背景与摘要：</strong>基于旭日/地瓜 RDK 系列嵌入式边缘算力套件，深入剖析国产端侧芯片在嵌入式 ROS2 桥接、多路 CSI 摄像头硬件编码、轻量化 Yolov8 目标追踪以及多传感器时间同步上的工程优化方案，助力开发者低成本打造高性能机器人系统。
+    </p>
+    <div class="d-flex flex-wrap gap-2">
+      <a href="/assets/pdf/talks/RDK演讲稿_重构版.pdf" class="btn btn-sm btn-outline-primary" target="_blank">📄 下载 RDK 演讲文稿 PDF</a>
+    </div>
+  </div>
+</div>
 
 ---
 
-#### 3. 2026 嘉立创星火会大会特邀演讲
-* **主题**：**《从原型到真实应用——硬核创客的工程化之路》**
-* **时间**：2026
-* **形式**：大会主会场特邀主题演讲
-* **摘要**：分享从校园创客实验室的“手搓 Demo”，跨越至 500+ 台硬件量产与上千万元产业化落地过程中，所踩过的 PCB 设计、供应链选型、电磁兼容、量产工装与敏捷测试“工程深坑”。
+#### 💡 三、 智能体变革与黑客松路演 (AI Engineering & Hackathon)
+
+<div class="card mb-4 shadow-sm border-left-info">
+  <div class="card-body">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <span class="badge badge-info">大模型工程架构路演</span>
+      <span class="text-muted small">2026 · 扣子 AI 开发者大赛</span>
+    </div>
+    <h4 class="card-title font-weight-bold">《AI Engineering Revolution：智能体驱动的工程范式跃迁》</h4>
+    <h6 class="card-subtitle text-muted mb-3">扣子 (Coze) 开发者路演分享</h6>
+    <p class="card-text">
+      <strong>演讲背景与摘要：</strong>探讨大型语言模型从“Chat 对话助手”走向“自动化工程全流程”的变革。深度解析多智能体任务拆解、状态机路由、工具动态调用以及基于上下文记忆的长链路任务执行方案。
+    </p>
+    <div class="d-flex flex-wrap gap-2">
+      <a href="/assets/pdf/talks/AI_Engineering_Revolution_compressed.pdf" class="btn btn-sm btn-outline-primary" target="_blank">📄 下载 AI Engineering Revolution 课件 PDF</a>
+    </div>
+  </div>
+</div>
+
+<div class="card mb-4 shadow-sm border-left-primary">
+  <div class="card-body">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <span class="badge badge-primary">NVIDIA 官方优秀案例项目路演</span>
+      <span class="text-muted small">2025–2026 · 开发者大赛</span>
+    </div>
+    <h4 class="card-title font-weight-bold">《PCBTool AI：基于大模型微调的电路硬件设计专家智能体》</h4>
+    <h6 class="card-subtitle text-muted mb-3">智能硬件设计与 EDA 自动化路演（该项目入选英伟达官方展台展示案例）</h6>
+    <p class="card-text">
+      <strong>演讲背景与摘要：</strong>介绍利用 NVIDIA NIM 微服务架构与专用电路设计语料微调构建的 PCBTool AI 智能体系统。系统打通了从硬件原理图校验、元器件封装库推荐、阻抗走线建议到 Gerber 制造可行性分析的自动化全流程，将传统数天的硬件原理图初审缩短至数分钟。
+    </p>
+    <div class="d-flex flex-wrap gap-2">
+      <a href="/assets/pdf/talks/1450-1500-PCBToolAI_compressed.pdf" class="btn btn-sm btn-outline-primary" target="_blank">📄 下载 PCBTool AI 演示文稿 PDF</a>
+    </div>
+  </div>
+</div>
 
 ---
 
-#### 4. 单卡消费级具身智能全栈技术分享
-* **主题**：**《Single GPU Full Stack Embodied AI》**
-* **摘要**：向开发者社区分享低门槛软硬件开发路线与消费级单卡极致工程优化实践。
-* **资料下载**：[📄 Single GPU Full Stack Embodied AI 演示文稿 PDF](/assets/pdf/talks/Single_GPU_Full_Stack_Embodied_AI.pdf)
+#### 🎓 四、 青年创新、高校巡讲与闭门对谈 (University, Media & Industry Talks)
 
----
+<div class="card mb-4 shadow-sm border-left-success">
+  <div class="card-body">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <span class="badge badge-success">高校官方特邀创新讲座</span>
+      <span class="text-muted small">2025 · 北京化工大学</span>
+    </div>
+    <h4 class="card-title font-weight-bold">《从校园创客到技术创业者：一块碎屏引发的硬核探索》</h4>
+    <h6 class="card-subtitle text-muted mb-3">北京化工大学机工系生产实习大会 & 巴黎居里工程师学院特邀主题讲座 | 主讲人：张振尧</h6>
+    <p class="card-text">
+      <strong>演讲背景与摘要：</strong>受母校邀请为机工系与工程师学院学弟学妹开展创新创业经验报告。张振尧以“一块摔碎的手机屏幕”为引子，坦诚分享如何从大一在宿舍里帮室友换屏、自学维修技术创立“新干线维修”服务 3000+ 订单、设立 100+ 勤工助学岗位，再到获得学校孵化基地支持创办零零后科技，研发“屋必安”物联网危房监测传感器助力脱贫攻坚防灾减灾，并最终跨入前沿具身智能赛道的真实蜕变历程。
+    </p>
+    <div class="bg-light p-3 rounded mb-3">
+      <strong>💡 寄语青年学子：</strong>
+      “动手是最好的老师。不要把年轻当成资本，而要把年轻当成试错的筹码。真正的技术创业不是站在聚光灯下讲概念，而是在宿舍台灯下、在实验室工作台前，用一行行代码和一块块电路板，去解决身边哪怕最微小的一个真实痛点。”
+    </div>
+  </div>
+</div>
 
-#### 5. 地瓜机器人开发者生态大会
-* **主题**：**《RDK 机器人操作系统与算法演进》**
-* **身份**：地瓜机器人开发者代表
-* **资料下载**：[📄 RDK 演讲文稿 PDF](/assets/pdf/talks/RDK演讲稿_重构版.pdf)
+<div class="card mb-4 shadow-sm border-left-info">
+  <div class="card-body">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <span class="badge badge-info">产业高端闭门沙龙</span>
+      <span class="text-muted small">2026 · 清华科技园 Luma</span>
+    </div>
+    <h4 class="card-title font-weight-bold">《从玩家到开发者，我为什么要给机器狗写 SDK？》</h4>
+    <h6 class="card-subtitle text-muted mb-3">清华科技园 Luma 具身智能闭门沙龙 | 对谈嘉宾：张振尧 × 维他动力赵哲伦 × 脑放电波 Nixon</h6>
+    <p class="card-text">
+      <strong>沙龙核心观点：</strong>与具身机器人创业一线核心创始人展开长达数小时的高浓度硬核对话。剖析当前四足机器人赛道“硬件堆料过剩但开发者体验极差”的现实矛盾；分享为什么坚持逆向通讯协议并开源易用 Python SDK；展望四足机器狗从“展示大玩具”向巡检、科研以及桌面级物理执行终端演进的破局点。
+    </p>
+  </div>
+</div>
 
----
-
-#### 6. 高校巡讲与青年创新报告
-* **主题**：**《从校园创客到技术创业者》**
-* **主办**：北京化工大学
-* **摘要**：受邀为巴黎居里工程师学院、机工系学弟学妹开展创新创业与科技竞赛主题讲座。
+<div class="card mb-4 shadow-sm border-left-dark">
+  <div class="card-body">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <span class="badge badge-dark">腾讯科技产业专题研讨</span>
+      <span class="text-muted small">2026 · 腾讯科技《具身之路》</span>
+    </div>
+    <h4 class="card-title font-weight-bold">《桌面机器人：下一代陪伴宠物，还是下一代智商税？》</h4>
+    <h6 class="card-subtitle text-muted mb-3">腾讯科技《具身之路》系列专题直播与产业深度研讨</h6>
+    <p class="card-text">
+      <strong>研讨重点：</strong>
+      <ul class="mb-0 mt-2 pl-3">
+        <li><strong>产业兴衰镜鉴</strong>：复盘 Jibo、Vector 等早期桌面陪伴机器人商业折戟的核心原因（硬件成本高企、需求单一与高期待落差）。</li>
+        <li><strong>动力与结构极限</strong>：在桌面级紧凑体积下塞入小型高精度伺服电机、微型传动机构与立体散热系统的工程取舍。</li>
+        <li><strong>真伪需求之辩</strong>：在桌面终端接入端侧大模型，究竟是噱头套壳还是情感刚需？多模态音视频交互与动作流畅协同的延迟瓶颈何在。</li>
+        <li><strong>商业变现模式</strong>：硬件一次性销售 vs 订阅制内容服务，如何跨越“买回家玩三天吃灰”的用户粘性挑战。</li>
+      </ul>
+    </p>
+  </div>
+</div>
 
 ---
 
@@ -67,7 +259,7 @@ nav_order: 3
       <img src="/legacy/img/portfolio/191207-DevFEST.jpg" class="card-img-top img-fluid" alt="Google DevFest 现场">
       <div class="card-body p-3">
         <h6 class="font-weight-bold mb-1">Google DevFest 开发者大会</h6>
-        <small class="text-muted">参与 Google 开发者社区技术交流与工作坊</small>
+        <small class="text-muted">参与 Google 开发者社区前沿技术分享与工作坊研讨</small>
       </div>
     </div>
   </div>
@@ -77,17 +269,40 @@ nav_order: 3
       <img src="/legacy/img/portfolio/gdg2020.jpg" class="card-img-top img-fluid" alt="2020 谷歌开发者大会">
       <div class="card-body p-3">
         <h6 class="font-weight-bold mb-1">谷歌开发者大会 (GDG) PRE</h6>
-        <small class="text-muted">前沿技术分享与极客开发实践</small>
+        <small class="text-muted">开源开发工具、Web 前沿与端侧计算实践交流</small>
       </div>
     </div>
   </div>
 
   <div class="col-md-4 mb-4">
     <div class="card h-100 shadow-sm">
-      <img src="/legacy/img/portfolio/cxsqyj.jpg" class="card-img-top img-fluid" alt="创享商圈年会演讲">
+      <img src="/legacy/img/portfolio/cxsqyj.jpg" class="card-img-top img-fluid" alt="创享商圈年会特邀演讲现场">
       <div class="card-body p-3">
         <h6 class="font-weight-bold mb-1">创享商圈年会特邀演讲</h6>
-        <small class="text-muted">校园创新创业与技术服务模式汇报</small>
+        <small class="text-muted">汇报高校青年硬核科技创业、技术服务与社会价值实践</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  <div class="col-md-6 mb-4">
+    <div class="card h-100 shadow-sm">
+      <img src="/assets/img/awards/humanoid_robot_skills_champion.png" class="card-img-top img-fluid" alt="清华紫荆战队夺冠现场">
+      <div class="card-body p-3">
+        <h6 class="font-weight-bold mb-1">清华紫荆战队 · 技能大赛夺冠现场</h6>
+        <small class="text-muted">2025 国际人形机器人技能大赛全赛道总冠军颁奖与真机动态演示</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 mb-4">
+    <div class="card h-100 shadow-sm">
+      <img src="/assets/img/awards/nvidia_booth_showcase.jpg" class="card-img-top img-fluid" alt="英伟达展台现场案例展示">
+      <div class="card-body p-3">
+        <h6 class="font-weight-bold mb-1">英伟达展台项目优秀案例展示</h6>
+        <h6 class="card-subtitle text-muted mb-2 font-size-sm">NVIDIA 官方展台深度展示与官方签署授权案例</h6>
+        <small class="text-muted">PCBTool AI 电路设计专家智能体入选官方展台展示案例</small>
       </div>
     </div>
   </div>
