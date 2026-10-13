@@ -1,0 +1,2492 @@
+<!DOCTYPE html> <html lang="zh-CN"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Digital Poverty Defense | 张振尧 </title> <meta name="author" content="张振尧 "> <meta name="description" content="张振尧，具身智能全栈工程师、机器人开发者生态布道者。NVIDIA Hackathon 年度总决赛冠军。 "> <meta name="keywords" content="张振尧, 具身智能, 机器人, VLA, NVIDIA, 开发者生态, 技术布道"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%A4%96&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://zhangzhenyao.com/news/2020-10-27-digital-poverty-defense/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> 张振尧 </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">关于 </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">项目 </a> </li> <li class="nav-item "> <a class="nav-link" href="/talks/">演讲 </a> </li> <li class="nav-item "> <a class="nav-link" href="/awards/">荣誉 </a> </li> <li class="nav-item "> <a class="nav-link" href="/press/">媒体 </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">简历 </a> </li> <li class="nav-item "> <a class="nav-link" href="/blog/">日志 </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Digital Poverty Defense</h1> <p class="post-meta"> Created on October 27, 2020 </p> <p class="post-tags"> <i class="fa-solid fa-calendar fa-sm"></i> 2020 </p> </header> <article class="post-content"> <div id="markdown-content"> <p>🧭 数字扶贫暑期实践答辩：团队在安徽省池州市青阳县精准录入 <strong>4,784 户</strong> 建档立卡贫困户住房档案，落实 <strong>985 户</strong> 低保户危房改造，实现一户一档数字化监测，助力石台县退出贫困县序列。</p> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 张振尧 . © 2026 张振尧 · 零零后科技 CEO<br>合作与媒体采访见 <a href="/press/#press-kit">媒体资料包</a> · 站点基于 <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> 构建 </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-关于",
+    title: "关于",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-项目",
+          title: "项目",
+          description: "聚焦具身智能（VLA/机械臂/四足运控）、AI 智能体应用、边缘硬件与开源生态。",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
+        },{id: "nav-演讲",
+          title: "演讲",
+          description: "公开技术演讲、开发者大会、高校学术报告与实战工作坊。记录从校园极客到具身智能前沿的实战思考与工程总结，提供完整课件 PDF、演讲大纲与现场记录。",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/talks/";
+          },
+        },{id: "nav-荣誉",
+          title: "荣誉",
+          description: "记录从大学极客创客时期到具身智能前沿探索的全量大赛荣誉、科技竞赛奖项、高新企业资质、知识产权与官方认证。",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/awards/";
+          },
+        },{id: "nav-媒体",
+          title: "媒体",
+          description: "记录主流官媒、头部科技媒体、深度产业智库、科技播客对张振尧及其项目的专访与报道，并提供官方媒体资料包 (Press Kit)。",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/press/";
+          },
+        },{id: "nav-简历",
+          title: "简历",
+          description: "个人简历与履历档案。包含教育背景、工作经历、核心荣誉与技术栈。",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
+        },{id: "nav-日志",
+          title: "日志",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
+          },
+        },{id: "post-在刚刚落幕的-shenicest-千人黑客松现场-一台装扮格外特殊的机器狗吸",
+        
+          title: "在刚刚落幕的 SheNicest 千人黑客松现场，一台装扮格外特殊的机器狗吸…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-15022760299331982008/";
+          
+        },
+      },{id: "post-在杭州的开发者访谈结束了",
+        
+          title: "在杭州的开发者访谈结束了",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-15021402007889384111/";
+          
+        },
+      },{id: "post-2-个人2-天2-等奖2-份黄金证书",
+        
+          title: "2 个人2 天2 等奖2 份黄金证书",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-15017763320079127217/";
+          
+        },
+      },{id: "post-上海s创科技展-感谢大家对零零后的喜爱",
+        
+          title: "上海S创科技展 感谢大家对零零后的喜爱",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-15016985203822891705/";
+          
+        },
+      },{id: "post-嘉立创第四届开源硬件星火会暨全球ai硬件创新生态大会hubday-2026",
+        
+          title: "嘉立创第四届开源硬件星火会暨全球AI硬件创新生态大会Hubday 2026 …",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-15013463445882999415/";
+          
+        },
+      },{id: "post-s创上海2026初创展商-路演舞台丨我们也在其中",
+        
+          title: "S创上海2026初创展商➕路演舞台丨我们也在其中",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-15012113933586993662/";
+          
+        },
+      },{id: "post-九月开学季北京理工大学开学典礼",
+        
+          title: "九月开学季北京理工大学开学典礼",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-15009722546138190325/";
+          
+        },
+      },{id: "post-现在养老机器人还处在从点状试点向规模化过渡的阶段-技术上-场景上都还没有全",
+        
+          title: "“现在养老机器人还处在从点状试点向规模化过渡的阶段，技术上、场景上都还没有全…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-15008984913852830205/";
+          
+        },
+      },{id: "post-送-20-张-s-创门票-有需要的自取",
+        
+          title: "送 20 张 S 创门票，有需要的自取",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-15008924996088041981/";
+          
+        },
+      },{id: "post-最新消息-deepseek决定-停用目前的v4pro-模型-将在9月10日把",
+        
+          title: "最新消息：Deepseek决定，停用目前的v4Pro 模型，将在9月10日把…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-15007065881319117568/";
+          
+        },
+      },{id: "post-嘉立创开源大会",
+        
+          title: "嘉立创开源大会",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-15006922704463205115/";
+          
+        },
+      },{id: "post-支持一下子圣",
+        
+          title: "支持一下子圣",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-15006741321159676665/";
+          
+        },
+      },{id: "post-本次-ota-1-5-上线户外伴随-beta-5速度档位-近距离防护-ag",
+        
+          title: "本次 OTA 1.5 上线户外伴随 Beta、×5速度档位、近距离防护、Ag…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-15006674331958055681/";
+          
+        },
+      },{id: "post-开始了-rebuild-z-x-geia-具身智能-ai-黑客松大赛-从创",
+        
+          title: "开始了！Rebuild-Z x GEIA 具身智能 AI 黑客松大赛🚀 从创…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-15006671237008003841/";
+          
+        },
+      },{id: "post-我做了个离谱的东西-六只-ai-机器鸭在浏览器里踢足球-直接玩-h",
+        
+          title: "我做了个离谱的东西：六只 AI 机器鸭在浏览器里踢足球 🦆⚽ 👉 直接玩：h…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-15005349886793487103/";
+          
+        },
+      },{id: "post-最近录了一期线下开发者访谈",
+        
+          title: "最近录了一期线下开发者访谈",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-15004383480943743739/";
+          
+        },
+      },{id: "post-大模型评测挑战赛的那两天刚好是机器人运动会开幕式-我在网吧通宵做了一套评测集",
+        
+          title: "大模型评测挑战赛的那两天刚好是机器人运动会开幕式，我在网吧通宵做了一套评测集",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-15001674446412321529/";
+          
+        },
+      },{id: "post-这种-quot-本地agent-quot-的模式正在快速普及",
+        
+          title: "这种&quot;本地Agent&quot;的模式正在快速普及",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-15001630874112889601/";
+          
+        },
+      },{id: "post-感谢-人形机器人简史-作者胡熙坤赠书及亲笔签名",
+        
+          title: "感谢《人形机器人简史》作者胡熙坤赠书及亲笔签名",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-15001065292387783435/";
+          
+        },
+      },{id: "post-9-月-9-10-日-rebuild-z-geia-具身智能-ai-黑客",
+        
+          title: "9 月 9—10 日，Rebuild-Z × GEIA 具身智能 AI 黑客…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14999570944126751484/";
+          
+        },
+      },{id: "post-今天在shenicest-路演日当评委-256-个项目真的太精彩了",
+        
+          title: "今天在SheNicest 路演日当评委，256 个项目真的太精彩了",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14999413115155256069/";
+          
+        },
+      },{id: "post-hicool-峰会圆满收官-这次我们策划了-16-个探月计划具身项目集体",
+        
+          title: "🌟HICOOL 峰会圆满收官✨ 这次我们策划了 16 个探月计划具身项目集体…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14998782154022785786/";
+          
+        },
+      },{id: "post-感谢hackingclub邀请",
+        
+          title: "感谢HackingClub邀请",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14998124478785393417/";
+          
+        },
+      },{id: "post-机器人运动会-1500-米第一名成绩-2-分-21-秒",
+        
+          title: "机器人运动会 1500 米第一名成绩 2 分 21 秒",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14995163549466628728/";
+          
+        },
+      },{id: "post-买了牛来准备给机器人套上-结果快递又被偷了",
+        
+          title: "买了牛来准备给机器人套上 结果快递又被偷了",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14993752860506329714/";
+          
+        },
+      },{id: "post-世界人形机器人运动会-最后一场彩排-今天真是累坏了",
+        
+          title: "世界人形机器人运动会 最后一场彩排，今天真是累坏了",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14993083736645243513/";
+          
+        },
+      },{id: "post-地瓜精酿馆",
+        
+          title: "地瓜精酿馆",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14992955533069587062/";
+          
+        },
+      },{id: "post-2026-wrc-vbot全家族产品发布会圆满结束-人形-轮足-模型集体亮相",
+        
+          title: "2026 WRC Vbot全家族产品发布会圆满结束 人形，轮足，模型集体亮相",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14992307474714727030/";
+          
+        },
+      },{id: "post-wrc世界机器人大会2026-来",
+        
+          title: "WRC世界机器人大会2026🔥 来",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14990904223922655865/";
+          
+        },
+      },{id: "post-感谢hicool的邀请-欢迎大家来探月的专属展区-体验二开的乐趣-体验脑洞",
+        
+          title: "感谢HICOOL的邀请，欢迎大家来探月的专属展区，体验二开的乐趣，体验脑洞、…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14988601806280397431/";
+          
+        },
+      },{id: "post-实测下来-我们最深刻的感受是-deepseek-harness-不只是又一个",
+        
+          title: "实测下来，我们最深刻的感受是：DeepSeek Harness 不只是又一个…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14987461428451873393/";
+          
+        },
+      },{id: "post-vbot-edu机器狗-全国首个跑通代码控制维他机器狗达成-有线调试-代",
+        
+          title: "【Vbot EDU机器狗】全国首个跑通代码控制维他机器狗达成✅ 有线调试、代…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14978459111768986226/";
+          
+        },
+      },{id: "post-今年在",
+        
+          title: "今年在",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14974297409185387133/";
+          
+        },
+      },{id: "post-感谢人民网-感谢小红书-感谢waic",
+        
+          title: "感谢人民网！感谢小红书！感谢WAIC",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14974183436354589301/";
+          
+        },
+      },{id: "post-adventurex-2026-感谢松灵机器人邀请-今天在-workshop",
+        
+          title: "AdventureX 2026 感谢松灵机器人邀请 今天在 Workshop…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14973625000043680374/";
+          
+        },
+      },{id: "post-2026-世界机器人大会-有想参展的公司初创团队速速联系-展位推荐无展位费直",
+        
+          title: "2026 世界机器人大会 有想参展的公司初创团队速速联系，展位推荐无展位费直…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14972559768537207410/";
+          
+        },
+      },{id: "post-奖杯加一-感谢申智杯组委会",
+        
+          title: "奖杯加一！感谢申智杯组委会！",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14972065622957298299/";
+          
+        },
+      },{id: "post-第三名-两天的机器人比赛结束了-在展区-比赛两地穿梭太累了-明天后天我都在世",
+        
+          title: "第三名🥉两天的机器人比赛结束了 在展区，比赛两地穿梭太累了 明天后天我都在世…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14968367729511305854/";
+          
+        },
+      },{id: "post-今天真的累爆了-凌晨两点在北京吃夜宵-中午飞到上海晒了三个小时完成布展-现在",
+        
+          title: "今天真的累爆了 凌晨两点在北京吃夜宵 中午飞到上海晒了三个小时完成布展 现在…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14967040675891712627/";
+          
+        },
+      },{id: "post-影石-cameraman未来的形态-更可能是一套能够适配无人机-手持设备和穿",
+        
+          title: "影石 Cameraman未来的形态，更可能是一套能够适配无人机、手持设备和穿…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14965774076883243645/";
+          
+        },
+      },{id: "post-感恩各位媒体老师的专题报道",
+        
+          title: "感恩各位媒体老师的专题报道",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14965686814254895734/";
+          
+        },
+      },{id: "post-下午在维他动力拍摄大头机器狗-同济子豪兄-脑放电波",
+        
+          title: "下午在维他动力拍摄大头机器狗 @同济子豪兄 @脑放电波",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14964742551180939897/";
+          
+        },
+      },{id: "post-感谢官媒-首届physical-ai黑客松圆满落幕",
+        
+          title: "感谢官媒！首届Physical AI黑客松圆满落幕",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14964711503919649392/";
+          
+        },
+      },{id: "post-我们办了一场最大规模具身黑客松",
+        
+          title: "我们办了一场最大规模具身黑客松",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14964199016457966202/";
+          
+        },
+      },{id: "post-具身智能顶流黑客松",
+        
+          title: "具身智能顶流黑客松",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14959110330584207981/";
+          
+        },
+      },{id: "post-我们是一等奖开源鸿蒙芯片大赛-newradiotech-空间全场景交互终端",
+        
+          title: "我们是一等奖开源鸿蒙芯片大赛 NewRadiotech 空间全场景交互终端—…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14952367586173981293/";
+          
+        },
+      },{id: "post-感谢探月邀请",
+        
+          title: "感谢探月邀请",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14947459498263581295/";
+          
+        },
+      },{id: "post-华为开发者大会-感谢",
+        
+          title: "华为开发者大会 感谢",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14947434132949373553/";
+          
+        },
+      },{id: "post-探月计划黑客松-嘉宾第一弹放送",
+        
+          title: "探月计划黑客松 嘉宾第一弹放送",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14938021668393718387/";
+          
+        },
+      },{id: "post-探月-physical-ai-黑客松-7-月北京中关村开赛-2026-7",
+        
+          title: "探月・Physical AI 黑客松｜7 月北京中关村开赛🌍 2026.7.…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14937858133336134256/";
+          
+        },
+      },{id: "post-感谢",
+        
+          title: "感谢",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14929153526942339703/";
+          
+        },
+      },{id: "post-25岁生日那天-我做了一个看来有些任性的决定-默认拒接所有来电",
+        
+          title: "25岁生日那天，我做了一个看来有些任性的决定：默认拒接所有来电",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14924932931417412207/";
+          
+        },
+      },{id: "post-非常荣幸受邀参加-华为-hdc-2026-开发者大会-并且会作为华为和小",
+        
+          title: "非常荣幸受邀参加 「华为 HDC 2026 开发者大会」，并且会作为华为和小…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14922720785096512118/";
+          
+        },
+      },{id: "post-图一是在小红书黑客松上演示完项目的报道-有幸收到了-insta360-创始人",
+        
+          title: "图一是在小红书黑客松上演示完项目的报道，有幸收到了 Insta360 创始人…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14922715831860335224/";
+          
+        },
+      },{id: "post-昨天和创始人聊完发现人家真有自己的工厂-产线-测试-组装全自己来-连电机都是",
+        
+          title: "昨天和创始人聊完发现人家真有自己的工厂，产线、测试、组装全自己来，连电机都是…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14904735298137952895/";
+          
+        },
+      },{id: "post-灵心巧手-数采场-机器人6s-店-人工智能-6s-店",
+        
+          title: "灵心巧手 数采场 机器人6S 店 人工智能 6S 店",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14904683827811455611/";
+          
+        },
+      },{id: "post-感谢-镜相工作室-的邀请-很高兴能参与这次关于亦庄机器人马拉松的深度探讨与复",
+        
+          title: "感谢「镜相工作室」的邀请，很高兴能参与这次关于亦庄机器人马拉松的深度探讨与复…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14903053778996302462/";
+          
+        },
+      },{id: "post-感谢-北京智源人工智能研究院-的邀请-4-11日-北京智源人工智能研究院举办",
+        
+          title: "感谢 北京智源人工智能研究院 的邀请 4.11日 北京智源人工智能研究院举办…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14899728646858412664/";
+          
+        },
+      },{id: "post-感谢人民网-少数派-张江发布-极客公园-以及鸿蒙开发者的大力支持",
+        
+          title: "感谢人民网，少数派，张江发布，极客公园，以及鸿蒙开发者的大力支持",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14899726994547151486/";
+          
+        },
+      },{id: "post-感谢",
+        
+          title: "感谢",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14897454426278466156/";
+          
+        },
+      },{id: "post-小红书巅峰赛-决赛三等奖-和队友们极限48小时-做了一次未来浴室新家电的探",
+        
+          title: "小红书巅峰赛 决赛三等奖🥉 和队友们极限48小时，做了一次未来浴室新家电的探…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14897135086843335290/";
+          
+        },
+      },{id: "post-感谢小红书-去上海和自己打卡-陆家嘴-合生汇-西岸",
+        
+          title: "感谢小红书！去上海和自己打卡 🧭 陆家嘴 合生汇 西岸",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14893761965211980397/";
+          
+        },
+      },{id: "post-感谢",
+        
+          title: "感谢",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14888494138219106937/";
+          
+        },
+      },{id: "post-我们的智能电路工程生成系统-pcbtool-ai-正式被-nvidia-官网",
+        
+          title: "我们的智能电路工程生成系统 PCBTool.AI 正式被 NVIDIA 官网…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14881558359897346680/";
+          
+        },
+      },{id: "post-我们这一代人要用技术填平世间所有的饥饿与匮乏",
+        
+          title: "我们这一代人要用技术填平世间所有的饥饿与匮乏",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14879973032566133372/";
+          
+        },
+      },{id: "post-作为特邀嘉宾在模力营-地瓜机器人-给上百人现场拆解了openclaw硬件端从",
+        
+          title: "作为特邀嘉宾在模力营·地瓜机器人，给上百人现场拆解了OpenClaw硬件端从…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14877951463515558508/";
+          
+        },
+      },{id: "post-感谢字节adg-agent-developer-group-社区的大力支持",
+        
+          title: "感谢字节ADG （Agent Developer Group）社区的大力支持…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14877948923704513146/";
+          
+        },
+      },{id: "post-感谢主办方-深圳模力营-的信任和邀请-让我有机会作为8位-虾主-之一-在这个",
+        
+          title: "感谢主办方「深圳模力营」的信任和邀请，让我有机会作为8位“虾主”之一，在这个…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14876344128701665906/";
+          
+        },
+      },{id: "post-感谢地瓜机器人的邀请-让我有机会把这段时间的实战经验-踩坑笔记做一次技术分享",
+        
+          title: "感谢地瓜机器人的邀请，让我有机会把这段时间的实战经验、踩坑笔记做一次技术分享",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14876342154538717812/";
+          
+        },
+      },{id: "post-今天下午-我在-adg-深圳分享-用-vibe-coding-打造机器人-a",
+        
+          title: "今天下午，我在 ADG 深圳分享《用 Vibe Coding 打造机器人 A…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14846461585053848190/";
+          
+        },
+      },{id: "post-今天在-清华具身智能俱乐部-的分享结束了-感谢微信-22-000-位线上观",
+        
+          title: "今天在 清华具身智能俱乐部 的分享结束了，感谢微信 22,000+ 位线上观…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14816862968686973567/";
+          
+        },
+      },{id: "post-感谢-清华具身智能俱乐部-的邀请-也特别感谢-探月社区-的支持",
+        
+          title: "感谢 @清华具身智能俱乐部 的邀请，也特别感谢 @探月社区 的支持",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14816825911568044658/";
+          
+        },
+      },{id: "post-感谢清华具身智能俱乐部-探月社区-简化开发流程-加速信息流动",
+        
+          title: "感谢清华具身智能俱乐部+探月社区 简化开发流程，加速信息流动",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14811752709019669113/";
+          
+        },
+      },{id: "post-感谢地瓜邀请",
+        
+          title: "感谢地瓜邀请",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14811356309716341365/";
+          
+        },
+      },{id: "post-感谢智身科技邀请-交流机器狗开发",
+        
+          title: "感谢智身科技邀请 交流机器狗开发",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14807477280630051442/";
+          
+        },
+      },{id: "post-感谢字节跳动-扣子-火山引擎-企业-ai-挑战赛二等奖-打卡英伟达大湾区",
+        
+          title: "感谢字节跳动，扣子，火山引擎 企业 AI 挑战赛二等奖 打卡英伟达大湾区",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14806026401904726652/";
+          
+        },
+      },{id: "post-感谢腾讯科技-二等奖-全程只能让-ai-编程-不允许人类写代码-codebu",
+        
+          title: "感谢腾讯科技，二等奖 全程只能让 AI 编程，不允许人类写代码 CodeBu…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14801868711558845053/";
+          
+        },
+      },{id: "post-抢先体验了新技术-sam-3d-小红书上一天有五百个反馈-分割和生成模型空间",
+        
+          title: "抢先体验了新技术 SAM 3D，小红书上一天有五百个反馈 分割和生成模型空间…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14795282385231483516/";
+          
+        },
+      },{id: "post-感谢地瓜机器人和大家又见面了-上午新品发布会-下午小红书科技直播",
+        
+          title: "感谢地瓜机器人和大家又见面了 上午新品发布会，下午小红书科技直播",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14795241868873044593/";
+          
+        },
+      },{id: "post-感谢小红书科技-地瓜机器人开发者大会邀请",
+        
+          title: "感谢小红书科技，地瓜机器人开发者大会邀请",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14794399423959994999/";
+          
+        },
+      },{id: "post-nvidia-中国开发者日-2025-三大分论坛-12-场技术分享视频将于近",
+        
+          title: "NVIDIA 中国开发者日 2025 三大分论坛 12 场技术分享视频将于近…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14792241775761494638/";
+          
+        },
+      },{id: "post-又是冠军-感谢英伟达",
+        
+          title: "又是冠军🏆 感谢英伟达",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14790216245668745846/";
+          
+        },
+      },{id: "post-感谢新京报-贝壳财经采访-中国将主导整个机器人市场",
+        
+          title: "感谢新京报，贝壳财经采访 中国将主导整个机器人市场",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14787998908199801470/";
+          
+        },
+      },{id: "post-感谢地瓜机器人邀请-三天-科技春晚-活动满满-我在直播现场等待大家",
+        
+          title: "感谢地瓜机器人邀请 三天“科技春晚”活动满满，我在直播现场等待大家",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14785083703021998707/";
+          
+        },
+      },{id: "post-铸网2025-机器人攻防演练解决方案-感谢",
+        
+          title: "铸网2025，机器人攻防演练解决方案 感谢",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14752530933466403407/";
+          
+        },
+      },{id: "post-出息了-我打比赛的作品被部署到英伟达展台了",
+        
+          title: "出息了，我打比赛的作品被部署到英伟达展台了",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14752517528852501074/";
+          
+        },
+      },{id: "post-刚刚拿了个年度总冠军-很幸运能从300只报名队伍中脱颖而出-今年英伟达开发",
+        
+          title: "刚刚拿了个年度总冠军🏆 很幸运能从300只报名队伍中脱颖而出 今年英伟达开发…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14743105383758303826/";
+          
+        },
+      },{id: "post-感谢北京化工大学-欢迎新同学",
+        
+          title: "感谢北京化工大学，欢迎新同学🎉",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14742273831077941839/";
+          
+        },
+      },{id: "post-感谢北京华贸商圈-华贸天地-北京-skp-春晚同款-宇树机器人-空降华贸",
+        
+          title: "感谢北京华贸商圈，华贸天地，北京 SKP 🤖 春晚同款「宇树机器人」空降华贸…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14742270929509290573/";
+          
+        },
+      },{id: "post-soma-robotics-双臂遥操作机器人",
+        
+          title: "SOMA Robotics 双臂遥操作机器人",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14730031918411747913/";
+          
+        },
+      },{id: "post-七月主要硬件工作进展-人形双臂第一代实机和第二代优化-参考-openar",
+        
+          title: "七月主要硬件工作进展 - 人形双臂第一代实机和第二代优化（参考 openar…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14711249801224393290/";
+          
+        },
+      },{id: "post-感谢智身科技开箱能空翻两圈的机器狗",
+        
+          title: "感谢智身科技开箱能空翻两圈的机器狗",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14700235385097032274/";
+          
+        },
+      },{id: "post-具微科技-全球首家具身智能机器人4s店开业",
+        
+          title: "具微科技-全球首家具身智能机器人4S店开业",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14694251983263830610/";
+          
+        },
+      },{id: "post-想说的太多-和团队一起站上舞台的感觉真的很爽",
+        
+          title: "想说的太多，和团队一起站上舞台的感觉真的很爽",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14690918247225102935/";
+          
+        },
+      },{id: "post-说实话这是我第一次来宇树科技-前面一栋是宇树-后面是围绕宇树的各种生态公司",
+        
+          title: "说实话这是我第一次来宇树科技 前面一栋是宇树，后面是围绕宇树的各种生态公司",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14687017389087265365/";
+          
+        },
+      },{id: "post-成都之行-和机器人同行交流一下机器狗强化学习收获很多",
+        
+          title: "成都之行，和机器人同行交流一下机器狗强化学习收获很多",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14686479501874434644/";
+          
+        },
+      },{id: "post-具身之路之桌面机器人-感谢腾讯科技-辛苦金鼎资本和玄源科技-第一次当主持人",
+        
+          title: "具身之路之桌面机器人 感谢腾讯科技,辛苦金鼎资本和玄源科技 第一次当主持人 …",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14668348754830955085/";
+          
+        },
+      },{id: "post-感谢华贸中心",
+        
+          title: "感谢华贸中心",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14668340920552788564/";
+          
+        },
+      },{id: "post-六一儿童节-提前过-为了看机器狗-小朋友挤得可开心了",
+        
+          title: "六一儿童节 提前过 为了看机器狗 小朋友挤得可开心了",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14668205461280526926/";
+          
+        },
+      },{id: "post-我们是冠军-感谢张江-1-项记录-2-项冠军-4-项亚军",
+        
+          title: "我们是冠军🏆🏆🏆 感谢张江 1 项记录 2 项冠军 4 项亚军",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14667668173801460294/";
+          
+        },
+      },{id: "post-感谢江苏经济报的专题报道与支持",
+        
+          title: "感谢江苏经济报的专题报道与支持",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14652860149741982290/";
+          
+        },
+      },{id: "post-人形机器人租赁市场调查-感谢镜相工作室-腾讯新闻",
+        
+          title: "人形机器人租赁市场调查 感谢镜相工作室，腾讯新闻",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14646758666926166600/";
+          
+        },
+      },{id: "post-还算顺利的一天-部署了tita机器人的controller",
+        
+          title: "还算顺利的一天 部署了TITA机器人的controller",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14643851428681617995/";
+          
+        },
+      },{id: "post-感谢郑州西亚斯学院-机器人火炬手",
+        
+          title: "感谢郑州西亚斯学院 机器人火炬手",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14637059349367034437/";
+          
+        },
+      },{id: "post-下午在天树探界交流学习-遇到了三观出奇一致的创始人-傍晚在研华学习-是智元",
+        
+          title: "下午在天树探界交流学习，遇到了三观出奇一致的创始人 傍晚在研华学习，是智元，…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14635871477125747278/";
+          
+        },
+      },{id: "post-机器人走进北京校园-机器人教育-科技节-接送放学",
+        
+          title: "机器人走进北京校园 机器人教育，科技节，接送放学",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14634976004052816471/";
+          
+        },
+      },{id: "post-回学校的感觉总是亲切温暖",
+        
+          title: "回学校的感觉总是亲切温暖",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14623245161545863684/";
+          
+        },
+      },{id: "post-全场c位-感谢京东选择我们-有机器人租赁需求的朋友们可以联系我",
+        
+          title: "全场C位！感谢京东选择我们！有机器人租赁需求的朋友们可以联系我",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14616914863527563774/";
+          
+        },
+      },{id: "post-上海约起来家人们-关键词-机器人-awe展会-机器狗",
+        
+          title: "上海约起来家人们 关键词：机器人 AWE展会 机器狗",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14616909502730867200/";
+          
+        },
+      },{id: "post-一次成功的具身智能分享会-感谢脑放电波-面壁智能-openbmb-声网-在",
+        
+          title: "一次成功的具身智能分享会 感谢脑放电波，面壁智能，OpenBMB， 声网 在…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14613282929681175074/";
+          
+        },
+      },{id: "post-忙碌的一天-感谢字节跳动筹办的活动-抖音李炮儿来体验机器狗-英伟达的ai黑客",
+        
+          title: "忙碌的一天 感谢字节跳动筹办的活动 抖音李炮儿来体验机器狗 英伟达的AI黑客…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14598893054835167776/";
+          
+        },
+      },{id: "post-所谓第一次参加黑客马拉松的经验-就是30-运气-30-演讲-30-ppt-剩",
+        
+          title: "所谓第一次参加黑客马拉松的经验 就是30%运气+30%演讲+30%PPT 剩…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/log-14359734704853553670/";
+          
+        },
+      },{id: "post-来看陨石-火星-月球-东方之星-南方之星-摄政王-珍珠玛瑙-火山蛋-褶皱断层",
+        
+          title: "来看陨石，火星，月球，东方之星，南方之星，摄政王，珍珠玛瑙，火山蛋，褶皱断层…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/log-14127087177370833544/";
+          
+        },
+      },{id: "post-从一开始moss挂件打样到新干线robotx团队迅速筹划-很受欢迎",
+        
+          title: "从一开始MOSS挂件打样到新干线robotx团队迅速筹划，很受欢迎",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/log-14091355947322774147/";
+          
+        },
+      },{id: "post-推荐大家使用新出的cursor-这款ide集成了copilot和chatgp",
+        
+          title: "推荐大家使用新出的Cursor，这款IDE集成了Copilot和chatGP…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/log-14089699451167642279/";
+          
+        },
+      },{id: "post-沈阳自动化所的复合移动机器人-学习了力反馈从控-ros-rviz-雷达建图",
+        
+          title: "沈阳自动化所的复合移动机器人 学习了力反馈从控，ros，rviz，雷达建图，…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/log-14085405761702072994/";
+          
+        },
+      },{id: "post-拍的不好-北区的新建筑-大学生活动中心-第二食堂-校史馆-阳光广场-第二教学",
+        
+          title: "拍的不好，北区的新建筑 大学生活动中心，第二食堂，校史馆，阳光广场，第二教学…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/log-14071282598592647847/";
+          
+        },
+      },{id: "post-开箱一家新店铺-新干线维修店是我大学的主要记忆-我在这里帮校内师生修了300",
+        
+          title: "开箱一家新店铺 新干线维修店是我大学的主要记忆，我在这里帮校内师生修了300…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/log-14071270762132804256/";
+          
+        },
+      },{id: "post-北京图书订货会-每个出版社都有直播带货区",
+        
+          title: "北京图书订货会，每个出版社都有直播带货区",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/log-14070562998805336713/";
+          
+        },
+      },{id: "post-在高铁上玩vr-可以正常看视频-6dof追踪会漂移-拍了几张照片-体现出快门",
+        
+          title: "在高铁上玩VR，可以正常看视频，6dof追踪会漂移 拍了几张照片，体现出快门…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/log-14059542235917652638/";
+          
+        },
+      },{id: "post-来新公司实习开发的一堆产品-还是挺有趣的-希望年后可以顺利上市-走向全国",
+        
+          title: "来新公司实习开发的一堆产品，还是挺有趣的 希望年后可以顺利上市，走向全国",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/log-14032750259035443872/";
+          
+        },
+      },{id: "post-忙碌的一天-展位-视频和设备准备就绪-祝会议顺利",
+        
+          title: "忙碌的一天。展位，视频和设备准备就绪，祝会议顺利！",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2022/log-13993654816492228744/";
+          
+        },
+      },{id: "post-最近加入了一家创业公司做医疗硬件",
+        
+          title: "最近加入了一家创业公司做医疗硬件",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2022/log-13992974253413109882/";
+          
+        },
+      },{id: "post-东校区一个月住宿体验结束了",
+        
+          title: "东校区一个月住宿体验结束了",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2022/log-13968912165876797545/";
+          
+        },
+      },{id: "post-亲爱的各位用户们-为了向各位提供更加优质的产品体验-本团队目前正对-syl",
+        
+          title: "亲爱的各位用户们： 为了向各位提供更加优质的产品体验，本团队目前正对 Syl…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2022/log-13854427578406998221/";
+          
+        },
+      },{id: "post-从八号到今天-忙碌了一整个星期-十位参赛选手从拿零件拼装调试智能小车到参赛不",
+        
+          title: "从八号到今天，忙碌了一整个星期，十位参赛选手从拿零件拼装调试智能小车到参赛不…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2022/log-13842213249122046168/";
+          
+        },
+      },{id: "post-有生之年-上大学后-对我来说-每天上课真的好困难-全方面的困难",
+        
+          title: "有生之年 上大学后，对我来说，每天上课真的好困难，全方面的困难",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2022/log-13841292142764101842/";
+          
+        },
+      },{id: "post-新干线维修公开课第一期圆满结课-本次有24位同学参与-经过1个月4次课程-结",
+        
+          title: "新干线维修公开课第一期圆满结课 本次有24位同学参与，经过1个月4次课程，结…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2022/log-13837156596976980175/";
+          
+        },
+      },{id: "post-上次给这个厂家做了期开箱视频-厂家又给我寄了十套-大家有什么比较好的想法吗",
+        
+          title: "上次给这个厂家做了期开箱视频，厂家又给我寄了十套 大家有什么比较好的想法吗，…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2022/log-13836205301640401117/";
+          
+        },
+      },{id: "post-昨天下午在学校拍的-设备-zcam-e2-m4-手持-镜头-太苦玛smc",
+        
+          title: "昨天下午在学校拍的 设备 ZCAM E2 M4（手持） 镜头 太苦玛SMC …",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2022/log-13827722825291665645/";
+          
+        },
+      },{id: "post-感谢电影机z-cam厂家雷特世创提供给我一台机器和时间码配件-我不怎么懂摄影",
+        
+          title: "感谢电影机Z CAM厂家雷特世创提供给我一台机器和时间码配件，我不怎么懂摄影…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2022/log-13808580815208648935/";
+          
+        },
+      },{id: "post-去年10月我尝试做开箱视频时-相机内置麦克风收音全是空调嗡嗡嗡-很头疼",
+        
+          title: "去年10月我尝试做开箱视频时，相机内置麦克风收音全是空调嗡嗡嗡，很头疼",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2022/log-13804561033217249492/";
+          
+        },
+      },{id: "post-我们的buctbase-com进行了一波大的更新-首先感谢一群同学在上个学期",
+        
+          title: "我们的buctbase.com进行了一波大的更新，首先感谢一群同学在上个学期…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2022/log-13784582023965577435/";
+          
+        },
+      },{id: "post-2020年6月17日-t大树洞正式上线运行",
+        
+          title: "2020年6月17日，T大树洞正式上线运行",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2022/log-13768017457909272800/";
+          
+        },
+      },{id: "post-近日观影一览-个人评分排序-教父-意味深长-重庆森林-bgm赞-基地",
+        
+          title: "近日观影一览 个人评分排序 教父 （意味深长 重庆森林 （BGM赞 基地 （…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13764041203457593586/";
+          
+        },
+      },{id: "post-这个机器人厂家寄来了他们的产品让我拍广告-我也不知道拍点啥-大家有什么比较好",
+        
+          title: "这个机器人厂家寄来了他们的产品让我拍广告 我也不知道拍点啥，大家有什么比较好…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13763701135837237450/";
+          
+        },
+      },{id: "post-从网上买原料做了个首饰-巧妙的将校园卡写到了nfc芯片里-既有装饰作用又能当",
+        
+          title: "从网上买原料做了个首饰 巧妙的将校园卡写到了NFC芯片里 既有装饰作用又能当…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13763076233897447651/";
+          
+        },
+      },{id: "post-igem竞赛宣讲会-时间-12月23日-第16周-星期四-第9-10节",
+        
+          title: "【iGEM竞赛宣讲会】 时间：12月23日 第16周 星期四 第9-10节 …",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13759299127973122289/";
+          
+        },
+      },{id: "post-接11月24打算买基站-于是某天晚上冲动花一千多买来了这根天线-特大-感觉是",
+        
+          title: "接11月24打算买基站 于是某天晚上冲动花一千多买来了这根天线 特大，感觉是…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13755860332761387233/";
+          
+        },
+      },{id: "post-已经2021年8月了-我的服务器还在用着20年3月的cookie帮我按时打卡",
+        
+          title: "已经2021年8月了，我的服务器还在用着20年3月的cookie帮我按时打卡",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13658180452947529957/";
+          
+        },
+      },{id: "post-新买一台光固化机子-精度高-操作流程繁琐但很实惠-今天打印了分区曝光测试文件",
+        
+          title: "新买一台光固化机子，精度高，操作流程繁琐但很实惠 今天打印了分区曝光测试文件…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13658170113529024744/";
+          
+        },
+      },{id: "post-thanks-to-dr-magniez-juan-for-helping",
+        
+          title: "Thanks to Dr. Magniez Juan for helping…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13605912741860675799/";
+          
+        },
+      },{id: "post-p1-机器目前版本-p2-自组装亲疏水图案化表面-p3-朴显光学-365nm",
+        
+          title: "P1 机器目前版本 P2 自组装亲疏水图案化表面 P3 朴显光学 365nm…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13601510499983036638/";
+          
+        },
+      },{id: "post-感谢工程训练中心金工实习老师帮我们加工钢管外螺纹-光刻胶103-b-和-光敏",
+        
+          title: "感谢工程训练中心金工实习老师帮我们加工钢管外螺纹 光刻胶103-B 和 光敏…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13596514846315254002/";
+          
+        },
+      },{id: "post-p1-北京化工厂-光刻胶-不知道是否有毒-p2-3-迈克尔逊干涉实验测自制微",
+        
+          title: "P1 北京化工厂 光刻胶 不知道是否有毒 P2.3 迈克尔逊干涉实验测自制微…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13595848877240488161/";
+          
+        },
+      },{id: "post-三月初帮朋友们申请的软件著作权都下证了-在各种参赛中取得了优异成绩-有需求的",
+        
+          title: "三月初帮朋友们申请的软件著作权都下证了 在各种参赛中取得了优异成绩 有需求的…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13595537300120998109/";
+          
+        },
+      },{id: "post-esp32-cam-能做远程显微摄像头-还能跑图像识别-还白菜价-图4-5",
+        
+          title: "ESP32 CAM，能做远程显微摄像头，还能跑图像识别，还白菜价 图4，5 …",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13577251864038609123/";
+          
+        },
+      },{id: "post-无掩膜光刻机制作-day23-15um-p4为游标卡尺两尺间距1mm-目镜单",
+        
+          title: "无掩膜光刻机制作 Day23 15um P4为游标卡尺两尺间距1mm，目镜单…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13574650697128808668/";
+          
+        },
+      },{id: "post-显影法制作pcb-第一次上手-难度有点大",
+        
+          title: "显影法制作PCB 第一次上手，难度有点大",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13565383237683056865/";
+          
+        },
+      },{id: "post-别人训练的网络-我训练的网络-fakes140轮就闪退了-示例中v100要算",
+        
+          title: "别人训练的网络 我训练的网络（fakes140轮就闪退了 示例中V100要算…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13563933156954804446/";
+          
+        },
+      },{id: "post-今日已返校-p2-激光测试dmd光通量-p3-p5-色轮-dmd-光通-晚上",
+        
+          title: "今日已返校 p2 激光测试dmd光通量 p3~p5 色轮，dmd，光通 晚上…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13557459530227192034/";
+          
+        },
+      },{id: "post-buct-online-其实早就做出来了-和新媒体工作室的同学们又一起测",
+        
+          title: "🐛 buct.online 其实早就做出来了，和新媒体工作室的同学们又一起测…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13534753463578595573/";
+          
+        },
+      },{id: "post-医用外科口罩的随意丢弃本身会造成相当大的环境风险-因为它们含有不可生物降解的",
+        
+          title: "医用外科口罩的随意丢弃本身会造成相当大的环境风险，因为它们含有不可生物降解的…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13525113297403973861/";
+          
+        },
+      },{id: "post-构建-成功-0-error-https-github-com-00mak",
+        
+          title: "构建 成功 0 ERROR https://github.com/00mak…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13518451063415836879/";
+          
+        },
+      },{id: "post-今日喜事-和北化4位同学开发的软件申请到了5份软件著作权-第一次弄这个花的时",
+        
+          title: "今日喜事，和北化4位同学开发的软件申请到了5份软件著作权，第一次弄这个花的时…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13515739718892851436/";
+          
+        },
+      },{id: "post-返校打卡自动化程序在155天内帮同学们完成了119万次上报-返校打卡自动化程",
+        
+          title: "返校打卡自动化程序在155天内帮同学们完成了119万次上报 返校打卡自动化程…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13515389755026837744/";
+          
+        },
+      },{id: "post-求助贴-求会做游戏的大佬-团队参加了今年工训比赛的数字赛道-做了一个垃圾回",
+        
+          title: "求助贴！ 求会做游戏的大佬，团队参加了今年工训比赛的数字赛道，做了一个垃圾回…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13508862934269300951/";
+          
+        },
+      },{id: "post-选了一个课-感觉我要起飞-了-听说是画图-但这个画板比想象中的大很多",
+        
+          title: "选了一个课 感觉我要起飞🛫了 听说是画图，但这个画板比想象中的大很多",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/log-13498611517682159825/";
+          
+        },
+      },{id: "post-学不下去了-一学期选了18门课是什么体验-下周一上午大二的电路期末考试-下午",
+        
+          title: "学不下去了 一学期选了18门课是什么体验 下周一上午大二的电路期末考试，下午…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/log-13496440969373880532/";
+          
+        },
+      },{id: "post-这是我的一小步-也是零零后的一大步",
+        
+          title: "这是我的一小步，也是零零后的一大步",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/log-13485348664310960372/";
+          
+        },
+      },{id: "post-折腾了一天的路由器刷机超频救砖终于弄好了-谈一下经验-主要问题-刷机后可搜索",
+        
+          title: "折腾了一天的路由器刷机超频救砖终于弄好了，谈一下经验 主要问题：刷机后可搜索…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/log-13479928470910669005/";
+          
+        },
+      },{id: "post-感谢igem国际遗传工程机器竞赛带给我宝贵的竞赛经历-中关村生命科学园颁奖线",
+        
+          title: "感谢IGEM国际遗传工程机器竞赛带给我宝贵的竞赛经历 中关村生命科学园颁奖线…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/log-13472622996316885219/";
+          
+        },
+      },{id: "post-感谢gdg上海主办方的邀请-11月的谷歌开发者devfest年度大会-自己应",
+        
+          title: "感谢GDG上海主办方的邀请 11月的谷歌开发者DevFest年度大会 自己应…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/log-13454370912635654385/";
+          
+        },
+      },{id: "post-以后每天睡觉之前拍张照-提醒自己要早睡-来学校之后-没有一天是两点前睡的-每",
+        
+          title: "以后每天睡觉之前拍张照，提醒自己要早睡 来学校之后，没有一天是两点前睡的 每…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/log-13453192729499406555/";
+          
+        },
+      },{id: "post-对比一下还是-互联网-给分比较比较宽松",
+        
+          title: "对比一下还是“互联网+”给分比较比较宽松",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/log-13449761463684108491/";
+          
+        },
+      },{id: "post-夜空中最亮的星-今天22时18分-火星将运行至未来15年内最接近地球处-距",
+        
+          title: "夜空中最亮的星 “今天22时18分，火星将运行至未来15年内最接近地球处，距…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/log-13438527028620169421/";
+          
+        },
+      },{id: "post-感谢队员队友的努力-特别感谢指导老师和学院的大力支持",
+        
+          title: "感谢队员队友的努力 特别感谢指导老师和学院的大力支持",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/log-13437541296988623090/";
+          
+        },
+      },{id: "post-惊了-buctbase-com那么大竟然被存到北极了-一千年后北极考古发现",
+        
+          title: "惊了，BUCTBASE.com那么大竟然被存到北极了 一千年后北极考古发现…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/log-13380257622360920117/";
+          
+        },
+      },{id: "post-微信企业微信聊天记录互通后-企业微信撤回信息微信端无法及时撤回-微信",
+        
+          title: "微信企业微信聊天记录互通后 - 企业微信撤回信息微信端无法及时撤回 - 微信…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/log-13355289342190030911/";
+          
+        },
+      },{id: "post-北京化工大学课程资料共享计划-旨在打破信息不对称-对课件-教材-攻略进行永",
+        
+          title: "北京化工大学课程资料共享计划# 旨在打破信息不对称，对课件，教材，攻略进行永…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/log-13352954605913837665/";
+          
+        },
+      },{id: "post-这是零零后的一小步-也是零零后的一大步",
+        
+          title: "这是零零后的一小步，也是零零后的一大步",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/log-13345705598919970870/";
+          
+        },
+      },{id: "post-第一次参加这种比赛",
+        
+          title: "第一次参加这种比赛",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/log-13344115544153591875/";
+          
+        },
+      },{id: "post-感谢老师们分享我的文章",
+        
+          title: "感谢老师们分享我的文章",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/log-13336115685294542943/";
+          
+        },
+      },{id: "post-说实话-b站能送我这个奖我是意外的",
+        
+          title: "说实话，b站能送我这个奖我是意外的",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/log-13329376016879063108/";
+          
+        },
+      },{id: "post-第一次以网络授课的形式给同学们上课-上课过程很顺利-运用了自己的专长-课程评",
+        
+          title: "第一次以网络授课的形式给同学们上课 上课过程很顺利，运用了自己的专长，课程评…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/log-13293441415531663430/";
+          
+        },
+      },{id: "post-我一直以为这个弹珠汽水的弹珠就是好玩-没想到室友科普-日本小孩子喝汽水时太急",
+        
+          title: "我一直以为这个弹珠汽水的弹珠就是好玩，没想到室友科普 日本小孩子喝汽水时太急…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2019/log-13230516794619400271/";
+          
+        },
+      },{id: "post-用新学的知识对昨天朋友圈-你懂我吗-答题得分进行简单数据处理-看自己题是不是",
+        
+          title: "用新学的知识对昨天朋友圈“你懂我吗”答题得分进行简单数据处理，看自己题是不是…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2019/log-13223304756650053693/";
+          
+        },
+      },{id: "post-六级作文论社区责任的重要性-实在不知道咋写150字-急中生智-我就写写开发软",
+        
+          title: "六级作文论社区责任的重要性，实在不知道咋写150字 急中生智，我就写写开发软…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2019/log-13223114320506261587/";
+          
+        },
+      },{id: "post-今天华强北老板送来一台被卡车和轿车碾压过的华为手机-看图就知道多么惨烈-送店",
+        
+          title: "今天华强北老板送来一台被卡车和轿车碾压过的华为手机，看图就知道多么惨烈 送店…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2019/log-13222557963738026041/";
+          
+        },
+      },{id: "post-今日给人民邮电出版社活动拍视频-两位小伙伴表现的很不错-早上5-起来打车到现",
+        
+          title: "今日给人民邮电出版社活动拍视频 两位小伙伴表现的很不错，早上5.起来打车到现…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2019/log-13208072181586202719/";
+          
+        },
+      },{id: "post-北化up主-戴博士们一起做的视频",
+        
+          title: "北化up主，戴博士们一起做的视频",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2019/log-13208070467045036102/";
+          
+        },
+      },{id: "post-今日数独战况-附题-预告-决赛题目难度会简单",
+        
+          title: "今日数独战况，附题 预告:决赛题目难度会简单",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2019/log-13181917599635148874/";
+          
+        },
+      },{id: "post-360bugcloud开源漏洞响应平台-bugcloud-360-cn-今天",
+        
+          title: "360bugcloud开源漏洞响应平台(bugcloud.360.cn)今天…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2019/log-13181892932603940925/";
+          
+        },
+      },{id: "post-9月1号00-06校园网交的90包月结果00-09给我扣费了-去信息中心他们",
+        
+          title: "9月1号00:06校园网交的90包月结果00:09给我扣费了 去信息中心他们…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2019/log-13148280656716238944/";
+          
+        },
+      },{id: "post-p1-m记在日本设计的mcfizz情侣饮料杯-p2-饮料杯的正确用法-叠在一",
+        
+          title: "P1 M记在日本设计的McFizz情侣饮料杯 P2 饮料杯的正确用法:叠在一…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2019/log-13126995251687788599/";
+          
+        },
+      },{id: "post-今天看了一天的雪花-看书过程中-在计算上花了一些时间-思路是主要问题-利用边",
+        
+          title: "今天看了一天的雪花 看书过程中，在计算上花了一些时间 思路是主要问题，利用边…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2019/log-13119699795613782095/";
+          
+        },
+      },{id: "post-装完了-稍后评测-cpu-r5-2600-主板-msi-b450m迫击炮-内",
+        
+          title: "装完了，稍后评测 CPU R5-2600 主板 MSI B450M迫击炮 内…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2019/log-13099892576093605968/";
+          
+        },
+      },{id: "post-打印机墨盒到了-大家又可以不出门免费打印啦-顺便做了个加墨换硒鼓教程-以防我",
+        
+          title: "打印机墨盒到了，大家又可以不出门免费打印啦 顺便做了个加墨换硒鼓教程，以防我…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2019/log-13069469757584904273/";
+          
+        },
+      },{id: "post-感谢北化创协两星期的追踪报道-欢迎大家转发集赞换些主板cpu",
+        
+          title: "感谢北化创协两星期的追踪报道 欢迎大家转发集赞换些主板CPU",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2019/log-13047819103451091017/";
+          
+        },
+      },{id: "post-北化新干线将于3月12日下午4-开始装修-我们邀请了北化力量协助拍摄-届时还",
+        
+          title: "北化新干线将于3月12日下午4.开始装修 我们邀请了北化力量协助拍摄 届时还…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2019/log-13022309395839062082/";
+          
+        },
+      },{id: "post-今天和大家一起拼3d打印机-准确地说是拆了6个小时-中间还遇到了小蜘蛛-还有",
+        
+          title: "今天和大家一起拼3D打印机 准确地说是拆了6个小时 中间还遇到了小蜘蛛，还有…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2019/log-13020880463228244055/";
+          
+        },
+      },{id: "post-拼3d打印机ing-大家来看看吧",
+        
+          title: "拼3D打印机ing 大家来看看吧",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2019/log-13020785704337018944/";
+          
+        },
+      },{id: "post-经过三天三夜的不懈努力-新干线在线-网站终于搭好啦-下面几个链接都是可以直达",
+        
+          title: "经过三天三夜的不懈努力 新干线在线 网站终于搭好啦 下面几个链接都是可以直达…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2019/log-12993407429746757691/";
+          
+        },
+      },{id: "post-戊戌年在北化的最后一个夜晚-宿舍楼的灯星星点灯-食堂也不再那么热闹-朦朦胧胧",
+        
+          title: "戊戌年在北化的最后一个夜晚 宿舍楼的灯星星点灯 食堂也不再那么热闹 朦朦胧胧…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2019/log-12985322775830204480/";
+          
+        },
+      },{id: "post-昨天晚上接到通知-要在萌芽杯分享会上主持一下演讲-作为一名大一新生倍感荣幸",
+        
+          title: "昨天晚上接到通知，要在萌芽杯分享会上主持一下演讲 作为一名大一新生倍感荣幸 …",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2018/log-12963694297617076316/";
+          
+        },
+      },{id: "post-大学生创新创业报名开始啦-我们这边做液态金属机器人-指导老师已到位-有意向的",
+        
+          title: "大学生创新创业报名开始啦，我们这边做液态金属机器人，指导老师已到位，有意向的…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2018/log-12940512545241239615/";
+          
+        },
+      },{id: "post-今年的万圣节-有幸参加jd-hitb安全峰会-和清北人一起做志愿者-遇见cc",
+        
+          title: "今年的万圣节 有幸参加JD-HITB安全峰会 和清北人一起做志愿者 遇见CC…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2018/log-12926835943636799557/";
+          
+        },
+      },{id: "post-今日修机摘录-从4k的dell到2w的mac-pro-联想拯救者较多-还有来",
+        
+          title: "今日修机摘录 从4K的DELL到2W的MAC PRO 联想拯救者较多 还有来…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2018/log-12913822904212918367/";
+          
+        },
+      },{id: "post-macbook安装及激活windows教程-1-64位非geniouswin",
+        
+          title: "macbook安装及激活Windows教程 1.64位非geniouswin…",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2018/log-12912168561769320529/";
+          
+        },
+      },{id: "news-第一次面对数百人开讲-受邀在校园-萌芽杯-分享会担任主持-并分享大一独立完成的写字机器人软硬件控制系统",
+          title: '🎤 第一次面对数百人开讲：受邀在校园「萌芽杯」分享会担任主持，并分享大一独立完成的写字机器人软硬件控制系统。',
+          description: "",
+          section: "News",},{id: "news-零零后-迈出公司化的第一步-此前由本人创办-义务服务师生超-3-000-单的校园软硬件服务团队-新干线-是这家公司全部工程能力的起点",
+          title: '🚀 「零零后」迈出公司化的第一步。此前由本人创办、义务服务师生超 3,000 单的校园软硬件服务团队「新干线」，是这家公司全部工程能力的起点。',
+          description: "",
+          section: "News",},{id: "news-️-萌芽杯-写字机器人-完成答辩-步进电机插补算法-g-code-控制器-从机构-电路到固件全链路自研",
+          title: '✍️ 萌芽杯「写字机器人」完成答辩：步进电机插补算法 + G-code 控制器，从机构、电路到固件全链路自研。',
+          description: "",
+          section: "News",},{id: "news-屋必安-农村房屋安全管理动态监测系统立项启动-把软硬件能力用于安徽贫困户危房改造一线-本人为该项目所属公司创始人",
+          title: '🏠 「屋必安」农村房屋安全管理动态监测系统立项启动，把软硬件能力用于安徽贫困户危房改造一线——本人为该项目所属公司创始人。',
+          description: "",
+          section: "News",},{id: "news-数字扶贫暑期实践答辩-团队在安徽省池州市青阳县精准录入-4-784-户-建档立卡贫困户住房档案-落实-985-户-低保户危房改造-实现一户一档数字化监测-助力石台县退出贫困县序列",
+          title: '🧭 数字扶贫暑期实践答辩：团队在安徽省池州市青阳县精准录入 4,784 户 建档立卡贫困户住房档案，落实 985 户 低保户危房改造，实现一户一档数字化监测，助力石台县退出贫困县序列。',
+          description: "",
+          section: "News",},{id: "news-️-公司获评-中关村高新技术企业-认定编号-20202010386401-本人同期获评-中关村-u30-雏鹰人才-这是-全国首家零零后高新技术企业",
+          title: '🏛️ 公司获评**中关村高新技术企业**（认定编号 20202010386401），本人同期获评**中关村 U30 雏鹰人才**——这是**全国首家零零后高新技术企业**。',
+          description: "",
+          section: "News",},{id: "news-️-用一整周带十位参赛选手从零件拼装-结构调试到上路参赛-赛前不足-24-小时完成智能小车整机联调",
+          title: '🏎️ 用一整周带十位参赛选手从零件拼装、结构调试到上路参赛，赛前不足 24 小时完成智能小车整机联调。',
+          description: "",
+          section: "News",},{id: "news-出任-北航虚拟现实国家重点研究院-医疗仿真硬件负责人-2023-06-2025-02-主导-5-款医疗仿真硬件产品从需求到量产导入",
+          title: '🩺 出任**北航虚拟现实国家重点研究院 医疗仿真硬件负责人**（2023-06 ~ 2025-02），主导 5 款医疗仿真硬件产品从需求到量产导入。',
+          description: "",
+          section: "News",},{id: "news-代表-清华大学紫荆战队-出征在上海张江科学会堂举行的-2025-国际人形机器人技能大赛-张江启动赛-夺得-人形机器人应用场景挑战赛-张江纪录-第一名-全赛事累计-1-项世界纪录-3-项冠军-4-项亚军",
+          title: '🤖 代表 **清华大学紫荆战队** 出征在上海张江科学会堂举行的 2025 国际人形机器人技能大赛（张江启动赛），夺得 **人形机器人应用场景挑战赛「张江纪录」第一名**，全赛事累计 1 项世界纪录 · 3 项冠军 ·...',
+          description: "",
+          section: "News",},{id: "news-七月硬件盘点-人形双臂第一代实机与第二代优化并行推进-多本体机器狗二开进入常态-底层控制库-dmcan-与-robodog-已开源并被开发者社区使用-pip-install-robodog-把接入成本从一天压缩到五分钟",
+          title: '🦾 七月硬件盘点：人形双臂第一代实机与第二代优化并行推进，多本体机器狗二开进入常态。底层控制库 **dmcan** 与 **robodog** 已开源并被开发者社区使用——`pip install robodog` 把接入成本从一天压缩到五分钟。',
+          description: "",
+          section: "News",},{id: "news-在-字节跳动-ai-主题分享会-开展-用-vibe-coding-与-skill-打造具身智能-agent-开发者工作坊分享",
+          title: '💻 在 **字节跳动 AI+ 主题分享会** 开展《用 Vibe Coding 与 Skill 打造具身智能 Agent》开发者工作坊分享。',
+          description: "",
+          section: "News",},{id: "news-斩获-2025-nvidia-hackathon-年度总决赛-冠军-在英伟达年度最高级别技术黑客松中拔得头筹-查看获奖详情与证书-awards",
+          title: '🏆 斩获 **2025 NVIDIA Hackathon 年度总决赛 冠军**！在英伟达年度最高级别技术黑客松中拔得头筹，[查看获奖详情与证书](/awards/)。',
+          description: "",
+          section: "News",},{id: "news-受邀在-清华大学具身智能俱乐部-发表主题演讲-代码的重量-如何用一行-python-撬动物理世界-点击查看演讲详情与课件下载-talks",
+          title: '🎤 受邀在 **清华大学具身智能俱乐部** 发表主题演讲《代码的重量——如何用一行 Python 撬动物理世界》，[点击查看演讲详情与课件下载](/talks/)。',
+          description: "",
+          section: "News",},{id: "news-在单张-32gb-rtx-5090-显卡上成功跑通-80-层-decoder-架构-vla-模型-wall-oss-微调与-lerobot-so-101-机械臂真机闭环-端到端延迟低至-33-100ms-相关轨迹数据集已开源至-huggingface",
+          title: '🚀 在单张 32GB RTX 5090 显卡上成功跑通 **80 层 Decoder 架构 VLA 模型（WALL-OSS）微调与 LeRobot...',
+          description: "",
+          section: "News",},{id: "news-智能电路工程生成系统-pcbtool-ai-被-nvidia-官网收录推荐-感谢-nvidia-开发者社区的认可与生态支撑-该项目的现场挑战赛战绩见-荣誉与奖项-awards",
+          title: '⚡ 智能电路工程生成系统 **PCBTool.AI** 被 NVIDIA 官网收录推荐，感谢 NVIDIA 开发者社区的认可与生态支撑。该项目的现场挑战赛战绩见 [荣誉与奖项](/awards/)。',
+          description: "",
+          section: "News",},{id: "news-在上海张江举办的小红书首届-黑客松巅峰赛-中-48-小时极限开发完成模块化具身理容机械臂-吹了么-斩获硬件赛道三等奖-获-人民网报道原文-http-sh-people-com-cn-n2-2026-0412-c134768-41549854-html-china-daily-报道-https-cn-chinadaily-com-cn-a-202603-20-ws69bceffea310942cc49a4211-html",
+          title: '🥉 在上海张江举办的小红书首届 **“黑客松巅峰赛”** 中，48 小时极限开发完成模块化具身理容机械臂“吹了么”，斩获硬件赛道三等奖，获[人民网报道原文](http://sh.people.com.cn/n2/2026/0412/c134768-41549854.html)、[China Daily 报道](https://cn.chinadaily.com.cn/a/202603/20/WS69bceffea310942cc49a4211.html)！',
+          description: "",
+          section: "News",},{id: "news-tri-me-吹了么-亮相-七轴机械臂-边缘-ai-推理-单卡-vla-真机闭环-一键完成洗-吹-刷-本人为-具身智能浴室理容机械臂领域创始人",
+          title: '🛁 TRI.ME「吹了么」亮相：七轴机械臂 + 边缘 AI 推理 + 单卡 VLA 真机闭环，一键完成洗、吹、刷。本人为**具身智能浴室理容机械臂领域创始人**。',
+          description: "",
+          section: "News",},{id: "news-开源鸿蒙芯片大赛一等奖-newradiotech-空间全场景交互终端",
+          title: '🥇 开源鸿蒙芯片大赛一等奖：NewRadiotech 空间全场景交互终端。',
+          description: "",
+          section: "News",},{id: "news-项目受邀亮相-2026-世界人工智能大会-waic-小红书展台现场展出-并作为青年-ai-原生创客与超级个体代表接受-解放日报-上观新闻专题报道-https-www-jfdaily-com-staticsg-res-html-web-newsdetail-html-id-1085048",
+          title: '🎪 项目受邀亮相 **2026 世界人工智能大会 (WAIC)** 小红书展台现场展出，并作为青年 AI 原生创客与超级个体代表接受[解放日报·上观新闻专题报道](https://www.jfdaily.com/staticsg/res/html/web/newsDetail.html?id=1085048)！',
+          description: "",
+          section: "News",},{id: "news-中国首届-physical-ai-黑客松-探月计划-在北京中关村落幕-48-小时-200-位开发者-50-支战队-本人作为-赛事主理人-负责选手邀请与赛制管理-并把-48-小时的极限赛事延伸为长期社群-硬件补给与商业对接机制",
+          title: '🌙 中国首届 **Physical AI 黑客松**「探月计划」在北京中关村落幕：48 小时、200 位开发者、50 支战队。本人作为**赛事主理人**负责选手邀请与赛制管理，并把 48 小时的极限赛事延伸为长期社群、硬件补给与商业对接机制。',
+          description: "",
+          section: "News",},{id: "news-受邀在-第四届嘉立创开源硬件星火会暨全球-ai-硬件创新生态大会-hubday-2026-深圳福田-2000-工程师到场-主会场发表特邀演讲-从原型到真实应用-硬核创客的工程化之路-分享硬件量产与软硬件架构避坑经验",
+          title: '💡 受邀在 **第四届嘉立创开源硬件星火会暨全球 AI 硬件创新生态大会 Hubday 2026**（深圳福田，2000+ 工程师到场）主会场发表特邀演讲《从原型到真实应用——硬核创客的工程化之路》，分享硬件量产与软硬件架构避坑经验。',
+          description: "",
+          section: "News",},{id: "projects-github-arctic-code-vault-北极代码宝藏计划",
+          title: 'GitHub Arctic Code Vault (北极代码宝藏计划)',
+          description: "主持建设的校园开源知识库与技术项目被 GitHub 官方转录为特制长存胶卷，永久封存至挪威斯瓦尔巴群岛冻土深处 1000 年。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/10_arctic_code_vault/";
+            },},{id: "projects-servo-robot-开源双足舵机机器人运动控制框架",
+          title: 'Servo Robot — 开源双足舵机机器人运动控制框架',
+          description: "用 Python 驱动 10 个串行总线舵机的开源双足机器人框架：自动扫描发现、手掰示教零代码编排动作、变速回放，并提供 WebSerial 在线调试工具。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/11_servo_robot_biped/";
+            },},{id: "projects-robogen-一张图片复刻机器人",
+          title: 'RoboGen — 一张图片复刻机器人',
+          description: "从单张机器人图片生成可组装、可进入 Isaac Sim 仿真的机器人模型，2025 NVIDIA Sky Hackathon 年度总决赛冠军方案。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/12_robogen_image_to_robot/";
+            },},{id: "projects-机器狗群控-遥操作与商业化演出系统",
+          title: '机器狗群控、遥操作与商业化演出系统',
+          description: "把四足机器人从实验室演示变成可编排、可复制、可结算的商业演出资产：VR / AVP / WebXR / WebRTC 多路线遥操作、UWB 智能跟随、群控编排与现场执行。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/13_quadruped_swarm_shows/";
+            },},{id: "projects-hasel-静电柔性驱动器-国家级大学生创新创业训练计划",
+          title: 'HASEL 静电柔性驱动器（国家级大学生创新创业训练计划）',
+          description: "3D 打印刻画介电薄膜 + 液压放大 + 液体电介质自愈 + 静电致动的柔性驱动器研究，5–15V 输入升压至约 1kV 观测静电吸附，项目负责人。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/14_hasel_soft_robot/";
+            },},{id: "projects-高速多尺度无掩膜芯片直写光刻机与扫描隧道显微镜",
+          title: '高速多尺度无掩膜芯片直写光刻机与扫描隧道显微镜',
+          description: "以 Grbl_Esp32 运动控制 + 无刷电调 + 树莓派（nanodlp）搭建的「手搓光刻机」开源硬件项目，并深化为基于楞次定律减震体系的扫描隧道显微镜系统。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/15_maskless_lithography_stm/";
+            },},{id: "projects-纽瑞芯-uwb-定位与追踪-sdk-方案",
+          title: '纽瑞芯 UWB 定位与追踪 SDK 方案',
+          description: "围绕纽瑞芯（NewRadiotech）UWB 芯片开发的机器狗追踪 SDK、低成本定位方案与遥控器结构件，并把该模组推进到开发者社区的物料体系。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/16_uwb_positioning_sdk/";
+            },},{id: "projects-ue4duino-与-unreal-engine-串口通信插件",
+          title: 'UE4Duino 与 Unreal Engine 串口通信插件',
+          description: "让 Arduino/嵌入式板卡与 Unreal Engine 之间通过串口互通的桥接库与插件，用于医疗仿真设备的力反馈与运动学数据接入。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/17_ue4duino_serial_bridge/";
+            },},{id: "projects-联想委托开发项目-esp32-硬件与机器狗遥操作",
+          title: '联想委托开发项目 — ESP32 硬件与机器狗遥操作',
+          description: "作为乙方技术负责人承接的工业委托开发：ESP32 硬件方案与机器狗遥操作链路，交付开发计划与项目介绍文档。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/18_lenovo_agent_hardware/";
+            },},{id: "projects-xiaozhi-server-语音-ai-与语音智能体外包交付",
+          title: 'xiaozhi-server 语音 AI 与语音智能体外包交付',
+          description: "开源语音 AI 项目 xiaozhi 生态的早期参与者，以及以语音交互为核心的智能体硬件外包交付。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/19_xiaozhi_voice_agent/";
+            },},{id: "projects-单卡极限部署-80层-vla-模型真机闭环",
+          title: '单卡极限部署：80层 VLA 模型真机闭环',
+          description: "在单张 32GB RTX 5090 消费级显卡上跑通 80 层 Decoder 架构 VLA 模型（WALL-OSS）全链路微调 + LeRobot SO-101 机械臂真机闭环，端到端延迟低至 33–100ms。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/1_single_gpu_vla/";
+            },},{id: "projects-维他动力-vbot-devrel-共创与开发者生态",
+          title: '维他动力 Vbot DevRel 共创与开发者生态',
+          description: "以维他动力（Vbot）DevRel 共创顾问身份参与开发者关系建设，在千人规模女性开发者黑客松现场四天产出 6 个二次开发项目。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/20_vbot_devrel/";
+            },},{id: "projects-buctbase-北化课程资料共享开源仓库",
+          title: 'BUCTBASE — 北化课程资料共享开源仓库',
+          description: "本科期间发起并维护的课程资料共享开源仓库，配合公众号发布共享计划，是校园开放知识实践的早期尝试。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/21_buctbase_open_source/";
+            },},{id: "projects-青阳县农村房屋鉴定管理系统-屋必安前身",
+          title: '青阳县农村房屋鉴定管理系统（屋必安前身）',
+          description: "面向县级住建部门的农村房屋鉴定管理系统，作为落地开发项目完成验收，并成为后续「屋必安」参赛与部署系统的技术基础。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/22_qingyang_housing_appraisal/";
+            },},{id: "projects-robodog-与-agentos-机器人实时操作系统",
+          title: 'robodog 与 AgentOS 机器人实时操作系统',
+          description: "机器狗高自由度运动控制库，结合 6 轴机械臂与 WebXR 空间交互，支持姿态估计、UWB 定位、自主避障与手势抓取。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2_robodog_agentos/";
+            },},{id: "projects-吹了么-tri-me-模块化具身理容机械臂",
+          title: '“吹了么” (TRI.ME) — 模块化具身理容机械臂',
+          description: "基于七轴机械臂与视觉大模型，48 小时极限开发斩获小红书首届黑客松硬件赛道三等奖，受邀亮相 2026 世界人工智能大会 (WAIC) 公开展出，获人民网、解放日报·上观新闻、China Daily 专题报道。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/3_trime_hairdryer_robot/";
+            },},{id: "projects-pcbtool-ai-基于-nvidia-nim-的电路设计智能体",
+          title: 'PCBTool AI — 基于 NVIDIA NIM 的电路设计智能体',
+          description: "运行于 NVIDIA NIM 微服务架构的 RAG 驱动电路设计智能体。入选英伟达展台优秀案例展示，并签署正式官方展示授权。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/4_pcbtool_ai/";
+            },},{id: "projects-土豆子-边缘-ai-伴侣与量产硬件",
+          title: '“土豆子”边缘 AI 伴侣与量产硬件',
+          description: "基于 xiaozhi-esp32-server 的低延迟端侧语音与 LLM 边缘交互硬件方案，实现 500+ 台整机硬件量产与结构/固件全流程交付。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/5_tudouzi_edge_ai/";
+            },},{id: "projects-dmcan-电机控制库与-ros-动力学集成",
+          title: 'dmcan 电机控制库与 ROS 动力学集成',
+          description: "封装达妙（DM）无刷电机 CAN 总线力矩与阻抗控制算法，构建基于 ROS/ROS2 的分布式实时驱动框架。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/6_dmcan_motor_control/";
+            },},{id: "projects-treehollow-校园匿名社交平台与开源社区",
+          title: 'treehollow 校园匿名社交平台与开源社区',
+          description: "发起并主开发的校园匿名社区 bucthole.com，多子域名架构 + WebSocket 实时推送 + reCAPTCHA 风控，2021 年 Web 与 iOS 双端上线，成为校内热议社区，仓库已开源并被开发者社区使用。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/7_treehollow/";
+            },},{id: "projects-农村住房安全管理系统-屋必安",
+          title: '农村住房安全管理系统 (屋必安)',
+          description: "作为公司创始人带领零零后科技独立自研并在安徽青阳县政府落地，录入 4,784 户建档立卡贫困户、落实 985 户低保户危房改造，助力石台县退出贫困县序列；获挑战杯省部级奖、国家级大创立项结题与国家计算机软件著作权登记。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/8_rural_housing_safety/";
+            },},{id: "projects-医疗仿真硬件研发-北航虚拟现实国家重点研究院",
+          title: '医疗仿真硬件研发（北航虚拟现实国家重点研究院）',
+          description: "任医疗仿真硬件负责人（2023-06 ~ 2025-02），主导牙科椅、消化内镜、气管插管假人、高级综合急救模拟人等医疗仿真硬件研发，攻关 Unreal Engine 串口通信仿真联动。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/9_medical_vr_simulation/";
+            },},{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%74%6F%77%61%72%64%73%72%77%62%79@%67%6D%61%69%6C.%63%6F%6D", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/00make", "_blank");
+        },
+      },{
+        id: 'social-cv',
+        title: 'CV',
+        section: 'Socials',
+        handler: () => {
+          window.open("/assets/pdf/resume/resume.pdf", "_blank");
+        },
+      },{
+        id: 'social-bilibili',
+        title: 'Bilibili',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://space.bilibili.com/340935808", "_blank");
+        },
+      },{
+        id: 'social-wechat',
+        title: 'Wechat',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://zhangzhenyao.com/press/#press-kit", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>
