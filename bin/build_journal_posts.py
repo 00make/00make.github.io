@@ -17,6 +17,17 @@ Design rules (these are load-bearing — see AGENTS.md and the site plan):
   runs (ids), WeChat sticker codes, and support.weixin.qq.com links.
 * Filenames are pure ASCII because `permalink: /blog/:year/:title/` would put
   CJK in URLs; the post id keeps them unique and stable.
+* Two-stage pipeline. This script only ever produces **drafts**: a truncated
+  first-sentence title, the raw Moments text as one blob, and `polished: false`.
+  A separate editorial pass rewrites each draft into blog prose (real title,
+  paragraphing, first-person voice, third-party notices moved into `>` quotes),
+  derives `description:` from the post's own first sentence, and stamps
+  `polished: true`. Re-running this script skips any post already marked
+  `polished: true` unless `--force` is given — and `--force` therefore throws
+  away that editorial work. After any regeneration, re-run the editorial pass
+  and then `bash bin/check_claims.sh` and `bash bin/check_internal_links.sh`:
+  neither gate is wired into CI (check_claims.sh needs a gitignored rules file),
+  so they only protect you if you run them.
 
 Usage:
     python3 bin/build_journal_posts.py --dry-run     # stats + samples only
@@ -241,6 +252,15 @@ def eligible(item: dict, deny: set[str], names: list[str], secrets: list[str], m
 
 
 def render(item: dict, body: str, images: list[str], era: str, tags: list[str]) -> str:
+    """Emit the *unpolished* draft of one log entry.
+
+    This is stage 1 of a two-stage pipeline. The draft keeps the original wording
+    verbatim (after privacy filtering) and is deliberately rough: run-on sentences,
+    a truncated title, Moments-style "P1/P2" photo references. Stage 2 is a manual
+    editorial pass that rewrites each draft into blog prose and then stamps
+    `polished: true` into the front matter — which makes this generator skip the
+    file on every later run, so re-filtering never clobbers edited copy.
+    """
     d = item["date"]
     stamp = f'{d} {(item.get("datetime") or d + " 00:00").split(" ")[1]}:00'
     venue = clean(str(item.get("venue") or item.get("city") or ""))[:40]
@@ -256,10 +276,12 @@ def render(item: dict, body: str, images: list[str], era: str, tags: list[str]) 
     if images:
         fm.append(f"thumbnail: {images[0]}")
     fm.append("related_posts: true")
+    fm.append("polished: false")
     fm.append("---")
     fm.append("")
-    fm.append(f"> 🗓️ **开发者日志** · {d} 现场记录" + (f" · 📍 {venue}" if venue else ""))
-    fm.append("")
+    if venue:
+        fm.append(f"_地点：{venue}_")
+        fm.append("")
     for line in body.split("\n"):
         fm.append(line)
     if images:
@@ -273,12 +295,6 @@ def render(item: dict, body: str, images: list[str], era: str, tags: list[str]) 
             )
         fm.append("</div>")
     fm.append("")
-    fm.append(
-        "<small class=\"text-muted\">本条为按时间轴归档的一线开发记录，原文经轻度校对与隐私脱敏处理："
-        "联系方式、账号凭据、财务与人事信息一律不收录；公开场合的机构与合作方鸣谢按原样保留。"
-        "如需引用请注明出处并联系作者。</small>"
-    )
-    fm.append("")
     return "\n".join(fm)
 
 
@@ -287,6 +303,11 @@ def main() -> int:
     ap.add_argument("--write", action="store_true")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--limit", type=int, default=0)
+    ap.add_argument(
+        "--force",
+        action="store_true",
+        help="overwrite posts even when they are already marked `polished: true`",
+    )
     args = ap.parse_args()
 
     deny, names, secrets = load_private()
@@ -352,13 +373,19 @@ def main() -> int:
         return 0
 
     os.makedirs(POSTS, exist_ok=True)
-    written = 0
+    written = kept = 0
     for d, pid, text in chosen:
         path = os.path.join(POSTS, f"{d}-log-{pid}.md")
+        # Never overwrite a post that has already been through the editorial pass.
+        if not args.force and os.path.exists(path):
+            with open(path, encoding="utf-8") as fh:
+                if "polished: true" in fh.read():
+                    kept += 1
+                    continue
         with open(path, "w", encoding="utf-8") as fh:
             fh.write(text)
         written += 1
-    print("written:", written)
+    print("written:", written, "kept (already polished):", kept)
     return 0
 
 
