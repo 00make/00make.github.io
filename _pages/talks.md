@@ -288,10 +288,10 @@ nav_order: 3
 <div class="row my-2">
   <div class="col-md-6 mb-4">
     <div class="card h-100 shadow-sm">
-      <img src="/assets/img/awards/humanoid_robot_skills_champion.png" class="card-img-top img-fluid" alt="清华紫荆战队夺冠现场">
+      <img src="/assets/img/awards/humanoid_robot_skills_champion.png" class="card-img-top img-fluid" alt="2025 国际人形机器人技能大赛（张江启动赛）人形机器人应用场景挑战赛张江记录第一名 荣誉证书">
       <div class="card-body p-3">
-        <h6 class="font-weight-bold mb-1">清华紫荆战队 · 技能大赛夺冠现场</h6>
-        <small class="text-muted">2025 国际人形机器人技能大赛全赛道总冠军颁奖与真机动态演示</small>
+        <h6 class="font-weight-bold mb-1">清华紫荆战队 · 张江启动赛纪录第一名证书</h6>
+        <small class="text-muted">2025 国际人形机器人技能大赛（上海张江）荣誉证书，参赛成员含本人</small>
       </div>
     </div>
   </div>

@@ -40,14 +40,14 @@ nav_order: 4
 
   <div class="col-md-6 mb-4">
     <div class="card h-100 shadow-sm border-success">
-      <img src="/assets/img/awards/humanoid_robot_champion.jpg" class="card-img-top img-fluid" alt="2025 国际人形机器人技能大赛 全赛道冠军">
+      <img src="/assets/img/awards/humanoid_robot_champion.jpg" class="card-img-top img-fluid" alt="2025 国际人形机器人技能大赛（张江启动赛）人形机器人应用场景挑战赛张江记录第一名 荣誉证书">
       <div class="card-body">
         <div class="d-flex justify-content-between align-items-center mb-2">
-          <span class="badge badge-success">清华紫荆战队 · 全赛道冠军</span>
-          <small class="text-muted">2025</small>
+          <span class="badge badge-success">清华紫荆战队 · 1 纪录 3 冠 4 亚</span>
+          <small class="text-muted">2025.05</small>
         </div>
-        <h5 class="card-title font-weight-bold">2025 国际人形机器人技能大赛 全赛道总冠军</h5>
-        <p class="card-text text-muted">作为清华紫荆战队成员，荣获人形机器人足球挑战赛冠军及全赛道总冠军，实现了高动态双足运控与视觉协同规划。 <a href="/assets/img/awards/2025国际人形机器人技能大赛-全赛道冠军.pdf" target="_blank">[查看完整获奖证书集 PDF]</a></p>
+        <h5 class="card-title font-weight-bold">2025 国际人形机器人技能大赛 1 项世界纪录 · 3 项冠军 · 4 项亚军</h5>
+        <p class="card-text text-muted">代表清华大学紫荆战队出战上海张江科学会堂，夺得人形机器人应用场景挑战赛「张江纪录」第一名，实现高动态双足运控与视觉协同规划。 <a href="/assets/img/awards/2025国际人形机器人技能大赛-获奖证书集.pdf" target="_blank">[查看完整获奖证书集 PDF]</a></p>
       </div>
     </div>
   </div>
