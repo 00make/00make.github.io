@@ -36,7 +36,7 @@ nav_order: 3
       </ul>
     </div>
     <div class="d-flex flex-wrap gap-2">
-      <a href="/assets/pdf/talks/代码的重量——如何用一行%20Python%20撬动物理世界_compressed.pdf" class="btn btn-sm btn-outline-primary" target="_blank">📄 下载完整演示课件 PDF</a>
+      <a href="/assets/pdf/talks/代码的重量——如何用一行%20Python%20撬动物理世界_compressed.pdf" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener noreferrer">📄 下载完整演示课件 PDF</a>
     </div>
   </div>
 </div>
@@ -62,7 +62,7 @@ nav_order: 3
       </ul>
     </div>
     <div class="d-flex flex-wrap gap-2">
-      <a href="https://huggingface.co/datasets/00make/so100_teleoperation_dataset" class="btn btn-sm btn-outline-info" target="_blank">🌐 查看 HuggingFace 8199帧物理轨迹数据集</a>
+      <a href="https://huggingface.co/datasets/00make/so100_teleoperation_dataset" class="btn btn-sm btn-outline-info" target="_blank" rel="noopener noreferrer">🌐 查看 HuggingFace 8199帧物理轨迹数据集</a>
     </div>
   </div>
 </div>
@@ -79,7 +79,7 @@ nav_order: 3
       <strong>演讲背景与摘要：</strong>向开源社区开发者系统讲解如何用一台单卡消费级主机完成从机器人硬件搭设、数据遥操作采集（LeRobot / SO-100）、异构传感器 Key Mapping 统一、流式数据微调到轻量化真机部署的全流程，打消初学者“没有算力集群就无法做具身智能”的壁垒。
     </p>
     <div class="d-flex flex-wrap gap-2">
-      <a href="/assets/pdf/talks/Single_GPU_Full_Stack_Embodied_AI.pdf" class="btn btn-sm btn-outline-primary" target="_blank">📄 下载演示课件 PDF</a>
+      <a href="/assets/pdf/talks/Single_GPU_Full_Stack_Embodied_AI.pdf" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener noreferrer">📄 下载演示课件 PDF</a>
     </div>
   </div>
 </div>
@@ -109,7 +109,7 @@ nav_order: 3
       </ul>
     </div>
     <div class="d-flex flex-wrap gap-2">
-      <a href="/assets/pdf/talks/从原型到真实应用-张振尧-星火会.pptx" class="btn btn-sm btn-outline-primary" target="_blank">📊 下载星火会超宽屏演示 PPTX</a>
+      <a href="/assets/pdf/talks/从原型到真实应用-张振尧-星火会.pptx" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener noreferrer">📊 下载星火会超宽屏演示 PPTX</a>
     </div>
   </div>
 </div>
@@ -133,7 +133,7 @@ nav_order: 3
       </ul>
     </div>
     <div class="d-flex flex-wrap gap-2">
-      <a href="/assets/pdf/talks/用%20Vibe%20Coding%20与%20Skill%20打造“具身智能”机器人%20Agent_compressed.pdf" class="btn btn-sm btn-outline-primary" target="_blank">📄 下载 Vibe Coding 幻灯片 PDF</a>
+      <a href="/assets/pdf/talks/用%20Vibe%20Coding%20与%20Skill%20打造“具身智能”机器人%20Agent_compressed.pdf" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener noreferrer">📄 下载 Vibe Coding 幻灯片 PDF</a>
     </div>
   </div>
 </div>
@@ -150,7 +150,7 @@ nav_order: 3
       <strong>演讲背景与摘要：</strong>基于旭日/地瓜 RDK 系列嵌入式边缘算力套件，深入剖析国产端侧芯片在嵌入式 ROS2 桥接、多路 CSI 摄像头硬件编码、轻量化 Yolov8 目标追踪以及多传感器时间同步上的工程优化方案，助力开发者低成本打造高性能机器人系统。
     </p>
     <div class="d-flex flex-wrap gap-2">
-      <a href="/assets/pdf/talks/RDK演讲稿_重构版.pdf" class="btn btn-sm btn-outline-primary" target="_blank">📄 下载 RDK 演讲文稿 PDF</a>
+      <a href="/assets/pdf/talks/RDK演讲稿_重构版.pdf" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener noreferrer">📄 下载 RDK 演讲文稿 PDF</a>
     </div>
   </div>
 </div>
@@ -171,7 +171,7 @@ nav_order: 3
       <strong>演讲背景与摘要：</strong>探讨大型语言模型从“Chat 对话助手”走向“自动化工程全流程”的变革。深度解析多智能体任务拆解、状态机路由、工具动态调用以及基于上下文记忆的长链路任务执行方案。
     </p>
     <div class="d-flex flex-wrap gap-2">
-      <a href="/assets/pdf/talks/AI_Engineering_Revolution_compressed.pdf" class="btn btn-sm btn-outline-primary" target="_blank">📄 下载 AI Engineering Revolution 课件 PDF</a>
+      <a href="/assets/pdf/talks/AI_Engineering_Revolution_compressed.pdf" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener noreferrer">📄 下载 AI Engineering Revolution 课件 PDF</a>
     </div>
   </div>
 </div>
@@ -188,7 +188,7 @@ nav_order: 3
       <strong>演讲背景与摘要：</strong>介绍利用 NVIDIA NIM 微服务架构与专用电路设计语料微调构建的 PCBTool AI 智能体系统。系统打通了从硬件原理图校验、元器件封装库推荐、阻抗走线建议到 Gerber 制造可行性分析的自动化全流程，将传统数天的硬件原理图初审缩短至数分钟。
     </p>
     <div class="d-flex flex-wrap gap-2">
-      <a href="/assets/pdf/talks/1450-1500-PCBToolAI_compressed.pdf" class="btn btn-sm btn-outline-primary" target="_blank">📄 下载 PCBTool AI 演示文稿 PDF</a>
+      <a href="/assets/pdf/talks/1450-1500-PCBToolAI_compressed.pdf" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener noreferrer">📄 下载 PCBTool AI 演示文稿 PDF</a>
     </div>
   </div>
 </div>
@@ -233,7 +233,7 @@ nav_order: 3
   <div class="card-body">
     <div class="d-flex justify-content-between align-items-center mb-2">
       <span class="badge badge-dark">腾讯科技产业专题研讨</span>
-      <span class="text-muted small">2026 · 腾讯科技《具身之路》</span>
+      <span class="text-muted small">2025.05 · 腾讯科技《具身之路》</span>
     </div>
     <h4 class="card-title font-weight-bold">《桌面机器人：下一代陪伴宠物，还是下一代智商税？》</h4>
     <h6 class="card-subtitle text-muted mb-3">腾讯科技《具身之路》系列专题直播与产业深度研讨</h6>
@@ -303,6 +303,119 @@ nav_order: 3
         <h6 class="font-weight-bold mb-1">英伟达展台项目优秀案例展示</h6>
         <h6 class="card-subtitle text-muted mb-2 font-size-sm">NVIDIA 官方展台深度展示与官方签署授权案例</h6>
         <small class="text-muted">PCBTool AI 电路设计专家智能体入选官方展台展示案例</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+---
+
+### 📅 公开演讲与技术布道年表 (2019–2026)
+
+上表为本人在影像与文字档案中**逐条可核证的 18 场次**（2019—2026），并非完整全量；平台覆盖 Google、腾讯科技、智源研究院、地瓜机器人、嘉立创、火山引擎、NVIDIA 生态、清华 MBA 具身智能俱乐部与小红书科技。线下单场规模最大为嘉立创星火大会（现场 2,000+ 工程师开发者），单场报名最快满员为模力营公开课（400+ 人）。各场次人数为**独立现场数据，非累计去重**。
+
+| 时间    | 场合                                                | 身份                          |
+| ------- | --------------------------------------------------- | ----------------------------- |
+| 2026-10 | 小红书科技 × 探月「具身智能 AMA」                   | 主讲                          |
+| 2026-09 | 嘉立创星火大会（2000+ 工程师，深圳会展中心）        | 主讲                          |
+| 2026-09 | S 创上海 2026 × 小红书 Showcase 专场                | 主讲                          |
+| 2026-09 | 上海具身智能师资培训（职教师资班）                  | 主讲                          |
+| 2026-08 | 探月黑客松 × HICOOL 全球创业者峰会专场              | 主持人                        |
+| 2026-07 | 探月计划 Physical AI 黑客松开幕式                   | 致辞嘉宾                      |
+| 2026-04 | 北京智源研究院「智源虾客行」                        | 讲师                          |
+| 2026-03 | 地瓜机器人官方技术直播                              | 主讲                          |
+| 2026-03 | 模力营 · 地瓜机器人（400+ 人，央视财经现场拍摄）    | 特邀嘉宾                      |
+| 2026-01 | 火山引擎深圳社区 ADG 分享会（Intel 大湾区创新中心） | 讲师                          |
+| 2025-12 | 探月 · 具身智能轻享 Talk（清华 MBA 具身智能俱乐部） | 主讲（线上 22,000+ 观看）     |
+| 2025-11 | DDC2025 地瓜机器人开发者大会 · 小红书 AMA           | 圆桌嘉宾（获「年度星推官」）  |
+| 2025-05 | 腾讯科技《具身之路》直播 · 桌面机器人专场           | 主持人                        |
+| 2025-03 | 具身智能畅谈体验会（宇树 G1 + 机器狗）              | 圆桌嘉宾                      |
+| 2024    | 大理 WaytoAGI 出海 Hacker House 技术分享            | 受邀开发者                    |
+| 2023-03 | 中关村论坛 · 青年创新展区                           | 现场分享                      |
+| 2020-11 | Google DevFest Shanghai 2020                        | 圆桌嘉宾（00 后代表性开发者） |
+| 2019    | GDG Beijing / WTM 2019                              | 组织者 / 分享                 |
+
+---
+
+### 🎪 现场掠影与布道影像
+
+<div class="row my-4">
+  <div class="col-md-4 mb-4">
+    <div class="card h-100 shadow-sm">
+      <img src="/assets/img/journal/214-2026-robot_15014227296568480373-0.jpg" class="card-img-top img-fluid" alt="嘉立创第四届开源硬件星火会展馆现场，人群密集的蓝色展位">
+      <div class="card-body p-3">
+        <h6 class="font-weight-bold mb-1">嘉立创开源硬件星火会 · 主会场演讲</h6>
+        <small class="text-muted">2026.09 深圳会展中心，面向 2000+ 硬件工程师与创客，超宽屏主会场 15 分钟主题演讲。</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 mb-4">
+    <div class="card h-100 shadow-sm">
+      <img src="/assets/img/journal/282-2026-robot_14846461585053848190-0.jpg" class="card-img-top img-fluid" alt="智算启航 AI 融合实战活动海报">
+      <div class="card-body p-3">
+        <h6 class="font-weight-bold mb-1">火山引擎深圳社区 ADG 分享会</h6>
+        <small class="text-muted">2026.01 Intel 大湾区创新中心，主讲《用 Vibe Coding 打造机器人 Agent》。</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 mb-4">
+    <div class="card h-100 shadow-sm">
+      <img src="/assets/img/journal/142-2026-talk_15006050226552247034-0.jpg" class="card-img-top img-fluid" alt="展台前众人围观机器人演示">
+      <div class="card-body p-3">
+        <h6 class="font-weight-bold mb-1">上海具身智能师资培训</h6>
+        <small class="text-muted">2026.09 面向职教师资班讲授具身智能课程建设与真机实训，台下为未来的机器人专业教师。</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 mb-4">
+    <div class="card h-100 shadow-sm">
+      <img src="/assets/img/journal/018-2026-talk_14877951463515558508-0.jpg" class="card-img-top img-fluid" alt="白板前授课与听众">
+      <div class="card-body p-3">
+        <h6 class="font-weight-bold mb-1">开源硬件项目实战授课</h6>
+        <small class="text-muted">2026 社群公开课，白板推导 + 真机演示，讲解开源硬件从原型到可复现交付的全过程。</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 mb-4">
+    <div class="card h-100 shadow-sm">
+      <img src="/assets/img/journal/141-2026-robot_14992955533069587062-0.jpg" class="card-img-top img-fluid" alt="WRC 北京站地瓜精酿馆活动观众席坐满听众">
+      <div class="card-body p-3">
+        <h6 class="font-weight-bold mb-1">世界机器人大会 · 生态专场交流</h6>
+        <small class="text-muted">2026 亦庄机器人主题酒馆场，与机器人团队及产业链上下游伙伴同台交流。</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 mb-4">
+    <div class="card h-100 shadow-sm">
+      <img src="/assets/img/journal/318-2024-talk_14359734704853553670-0.jpg" class="card-img-top img-fluid" alt="AI Hacker House 活动海报">
+      <div class="card-body p-3">
+        <h6 class="font-weight-bold mb-1">黑客松方法论分享</h6>
+        <small class="text-muted">2024 年起在多个 Hacker House 与开发者社区分享极限开发经验：作品 30%、演讲 30%、PPT 30%、运气 10%。</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 mb-4">
+    <div class="card h-100 shadow-sm">
+      <img src="/assets/img/journal/171-2023-talk_14137199111566398198-0.jpg" class="card-img-top img-fluid" alt="中关村论坛众人参观圆形展项">
+      <div class="card-body p-3">
+        <h6 class="font-weight-bold mb-1">中关村论坛 · 青年创新展区</h6>
+        <small class="text-muted">2023 年受邀参与中关村论坛展区交流与现场讲解，是早期以在校创业者身份亮相的国家级科技平台。</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 mb-4">
+    <div class="card h-100 shadow-sm">
+      <img src="/assets/img/journal/015-2025-talk_14613282929681175074-0.jpg" class="card-img-top img-fluid" alt="展台人形机器人立姿展示">
+      <div class="card-body p-3">
+        <h6 class="font-weight-bold mb-1">腾讯科技《具身之路》桌面机器人专场</h6>
+        <small class="text-muted">2025.05 主持腾讯科技具身智能系列深度直播，围绕桌面陪伴机器人的真伪需求与商业化路径展开研讨。</small>
       </div>
     </div>
   </div>

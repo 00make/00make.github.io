@@ -2,7 +2,7 @@
 layout: page
 title: 医疗仿真硬件研发（北航虚拟现实国家重点研究院）
 description: 任医疗仿真硬件负责人（2023-06 ~ 2025-02），主导牙科椅、消化内镜、气管插管假人、高级综合急救模拟人等医疗仿真硬件研发，攻关 Unreal Engine 串口通信仿真联动。
-img: assets/img/projects/placeholder.png
+img: assets/img/journal/266-2023-media_14059542235917652638-0.jpg
 importance: 9
 category: 开源生态与创业
 related_publications: false

@@ -2,7 +2,7 @@
 layout: page
 title: “吹了么” (TRI.ME) — 模块化具身理容机械臂
 description: 基于七轴机械臂与视觉大模型，48 小时极限开发斩获小红书首届黑客松硬件赛道三等奖，受邀亮相 2026 世界人工智能大会 (WAIC) 公开展出，获人民网、解放日报·上观新闻、China Daily 专题报道。
-img: assets/img/projects/placeholder.png
+img: assets/img/journal/007-2026-award_14897135086843335290-0.jpg
 importance: 3
 category: 具身智能
 related_publications: false

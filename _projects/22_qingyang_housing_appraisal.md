@@ -2,7 +2,7 @@
 layout: page
 title: 青阳县农村房屋鉴定管理系统（屋必安前身）
 description: 面向县级住建部门的农村房屋鉴定管理系统，作为落地开发项目完成验收，并成为后续「屋必安」参赛与部署系统的技术基础。
-img: assets/img/projects/placeholder.png
+img: assets/img/projects/hms.jpg
 importance: 12
 category: 开源生态与创业
 related_publications: false

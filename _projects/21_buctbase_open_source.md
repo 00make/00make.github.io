@@ -2,7 +2,7 @@
 layout: page
 title: BUCTBASE — 北化课程资料共享开源仓库
 description: 本科期间发起并维护的课程资料共享开源仓库，配合公众号发布共享计划，是校园开放知识实践的早期尝试。
-img: assets/img/projects/placeholder.png
+img: assets/img/journal/226-2021-media_13534753463578595573-0.jpg
 importance: 11
 category: 开源生态与创业
 related_publications: false

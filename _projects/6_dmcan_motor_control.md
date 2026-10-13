@@ -2,7 +2,7 @@
 layout: page
 title: dmcan 电机控制库与 ROS 动力学集成
 description: 封装达妙（DM）无刷电机 CAN 总线力矩与阻抗控制算法，构建基于 ROS/ROS2 的分布式实时驱动框架。
-img: assets/img/projects/placeholder.png
+img: assets/img/journal/327-2026-robot_14979883379102061177-0.jpg
 importance: 6
 category: 边缘智能与嵌入式
 related_publications: false

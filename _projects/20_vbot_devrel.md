@@ -2,7 +2,7 @@
 layout: page
 title: 维他动力 Vbot DevRel 共创与开发者生态
 description: 以维他动力（Vbot）DevRel 共创顾问身份参与开发者关系建设，在千人规模女性开发者黑客松现场四天产出 6 个二次开发项目。
-img: assets/img/projects/placeholder.png
+img: assets/img/journal/308-2025-robot_14818167790699025004-0.jpg
 importance: 22
 category: 开源生态与创业
 related_publications: false
