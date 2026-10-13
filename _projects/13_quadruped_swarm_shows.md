@@ -2,7 +2,7 @@
 layout: page
 title: 机器狗群控、遥操作与商业化演出系统
 description: 把四足机器人从实验室演示变成可编排、可复制、可结算的商业演出资产：VR / AVP / WebXR / WebRTC 多路线遥操作、UWB 智能跟随、群控编排与现场执行。
-img: assets/img/projects/placeholder.png
+img: assets/img/journal/198-2025-robot_14616914863527563774-0.jpg
 importance: 18
 category: 具身智能
 related_publications: false

@@ -2,7 +2,7 @@
 layout: page
 title: Servo Robot — 开源双足舵机机器人运动控制框架
 description: 用 Python 驱动 10 个串行总线舵机的开源双足机器人框架：自动扫描发现、手掰示教零代码编排动作、变速回放，并提供 WebSerial 在线调试工具。
-img: assets/img/projects/placeholder.png
+img: assets/img/journal/014-2026-robot_14993083736645243513-0.jpg
 importance: 20
 category: 具身智能
 related_publications: false

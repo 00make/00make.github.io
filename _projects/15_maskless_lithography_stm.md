@@ -2,7 +2,7 @@
 layout: page
 title: 高速多尺度无掩膜芯片直写光刻机与扫描隧道显微镜
 description: 以 Grbl_Esp32 运动控制 + 无刷电调 + 树莓派（nanodlp）搭建的「手搓光刻机」开源硬件项目，并深化为基于楞次定律减震体系的扫描隧道显微镜系统。
-img: assets/img/projects/placeholder.png
+img: assets/img/journal/227-2021-robot_13565383237683056865-0.jpg
 importance: 16
 category: 边缘智能与嵌入式
 related_publications: false

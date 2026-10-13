@@ -2,7 +2,7 @@
 layout: page
 title: GitHub Arctic Code Vault (北极代码宝藏计划)
 description: 主持建设的校园开源知识库与技术项目被 GitHub 官方转录为特制长存胶卷，永久封存至挪威斯瓦尔巴群岛冻土深处 1000 年。
-img: assets/img/projects/placeholder.png
+img: assets/img/journal/299-2021-robot_13518451063415836879-0.jpg
 importance: 10
 category: 开源生态与创业
 related_publications: false

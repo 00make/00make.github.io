@@ -34,3 +34,7 @@ bin/check_claims.private.rules
 # use `git add -f <path>` to force-track one.
 * 2
 * 2.*
+* 3
+* 3.*
+* 4
+* 4.*

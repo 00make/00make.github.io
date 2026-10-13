@@ -2,7 +2,7 @@
 layout: page
 title: robodog 与 AgentOS 机器人实时操作系统
 description: 机器狗高自由度运动控制库，结合 6 轴机械臂与 WebXR 空间交互，支持姿态估计、UWB 定位、自主避障与手势抓取。
-img: assets/img/projects/placeholder.png
+img: assets/img/journal/204-2025-robot_14720527383684846165-0.jpg
 importance: 2
 category: 具身智能
 related_publications: false

@@ -2,7 +2,7 @@
 layout: page
 title: RoboGen — 一张图片复刻机器人
 description: 从单张机器人图片生成可组装、可进入 Isaac Sim 仿真的机器人模型，2025 NVIDIA Sky Hackathon 年度总决赛冠军方案。
-img: assets/img/projects/placeholder.png
+img: assets/img/journal/307-2025-media_14795282385231483516-0.jpg
 importance: 19
 category: 具身智能
 related_publications: false

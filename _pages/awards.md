@@ -321,11 +321,10 @@ nav_order: 4
 
   <div class="col-md-6 mb-4">
     <div class="card h-100 shadow-sm">
-      <img src="/legacy/img/portfolio/00-zero2.jpg" class="card-img-top img-fluid" alt="零零后科技 营业执照">
       <div class="card-body">
-        <span class="badge badge-secondary mb-2">企业实体</span>
-        <h5 class="card-title font-weight-bold">零零后（北京）科技有限公司 营业执照</h5>
-        <p class="card-text text-muted">创立于 2019 年 4 月，持股 99.98%，主营软硬件技术研发、物联网系统设计与互联网技术服务。</p>
+        <span class="badge badge-secondary mb-2">企业实体与人才认定</span>
+        <h5 class="card-title font-weight-bold">零零后（北京）科技有限公司</h5>
+        <p class="card-text text-muted">创立于 2019 年 4 月，2020 年获中关村高新技术企业认定（编号 20202010386401），同年入选中关村雏鹰人才企业并获 10 万元扶持；本人于 2020 年获评中关村 U30 雏鹰人才。主营软硬件技术研发、物联网系统设计与互联网技术服务。</p>
       </div>
     </div>
   </div>
@@ -604,6 +603,242 @@ nav_order: 4
         <span class="badge badge-success mb-1">开源公益</span>
         <h6 class="card-title font-weight-bold">Wuhan2020 开源项目技术志愿者证书</h6>
         <small class="text-muted d-block">在 2020 战疫期间参与开发开源医疗物资与信息撮合平台。</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+---
+
+### 🥇 2025–2026 赛事荣誉补充（现场影像）
+
+<div class="row my-4">
+  <div class="col-md-6 mb-4">
+    <div class="card h-100 shadow-sm border-primary">
+      <img src="/assets/img/journal/185-2026-robot_14972065622957298299-0.jpg" class="card-img-top img-fluid" alt="申智杯颁奖现场，手举金色环形奖杯">
+      <div class="card-body">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <span class="badge badge-primary">二等奖 · 具身智能与机器人赛道</span>
+          <small class="text-muted">2026</small>
+        </div>
+        <h5 class="card-title font-weight-bold">首届「申智杯」人工智能创新大赛</h5>
+        <p class="card-text text-muted">代表清华大学紫荆战队出战具身智能与机器人赛道，获二等奖。颁奖现场手举环形奖杯合影。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 mb-4">
+    <div class="card h-100 shadow-sm border-primary">
+      <div class="card-body">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <span class="badge badge-primary">一等奖</span>
+          <small class="text-muted">2026</small>
+        </div>
+        <h5 class="card-title font-weight-bold">开源鸿蒙 / RISC-V 芯片大赛</h5>
+        <p class="card-text text-muted">以 NewRadiotech 空间全场景交互终端（开源鸿蒙 + RISC-V）获一等奖，颁奖于 2026 中国（深圳）集成电路峰会。技术栈横跨国产操作系统、RISC-V 指令集与终端硬件整机设计。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 mb-4">
+    <div class="card h-100 shadow-sm border-info">
+      <img src="/assets/img/journal/031-2025-award_14801868711558845053-0.jpg" class="card-img-top img-fluid" alt="腾讯云 CodeBuddy AI 智能体编程大赛海报">
+      <div class="card-body">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <span class="badge badge-info">二等奖 · 全程 AI 编程</span>
+          <small class="text-muted">2025</small>
+        </div>
+        <h5 class="card-title font-weight-bold">腾讯云 CodeBuddy 全栈 AI 智能体编码大赛</h5>
+        <p class="card-text text-muted">全程使用 AI 编程完成全栈智能体应用开发，验证「自然语言编排 + 智能体协作」在真实工程交付中的效率上限。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 mb-4">
+    <div class="card h-100 shadow-sm border-info">
+      <img src="/assets/img/journal/025-2025-award_14598893054835167776-0.jpg" class="card-img-top img-fluid" alt="企业 AI 挑战赛会议厅大屏与演讲台">
+      <div class="card-body">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <span class="badge badge-info">二等奖</span>
+          <small class="text-muted">2025</small>
+        </div>
+        <h5 class="card-title font-weight-bold">字节跳动 / 火山引擎 企业 AI 挑战赛</h5>
+        <p class="card-text text-muted">以扣子 (Coze) 工作流构建企业级智能体方案参赛获二等奖，赛题聚焦多智能体任务拆解与业务流自动化落地。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 mb-4">
+    <div class="card h-100 shadow-sm border-warning">
+      <img src="/assets/img/journal/012-2026-award_14897135086843335290-0.jpg" class="card-img-top img-fluid" alt="黑客松颁奖舞台大屏">
+      <div class="card-body">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <span class="badge badge-warning">二等奖</span>
+          <small class="text-muted">2026</small>
+        </div>
+        <h5 class="card-title font-weight-bold">影石 Insta360 BOLD MAKER 智能影像挑战赛</h5>
+        <p class="card-text text-muted">以智能影像与机器人结合的硬件方案参赛获二等奖，赛后与影石创始人形成产品合作意向。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 mb-4">
+    <div class="card h-100 shadow-sm border-success">
+      <div class="card-body">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <span class="badge badge-success">三等奖 · 队长</span>
+          <small class="text-muted">2026</small>
+        </div>
+        <h5 class="card-title font-weight-bold">自变量「全球首届具身智能开发者大会」具亮计划巅峰赛</h5>
+        <p class="card-text text-muted">以 MVP 队队长身份出战，基于 wall-x / Pi0.5 VLA 大模型完成真机任务闭环，获三等奖。同场完成《打通具身智能落地的最后一公里》答辩汇报。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 mb-4">
+    <div class="card h-100 shadow-sm">
+      <div class="card-body">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <span class="badge badge-secondary">一等奖 · 编程负责人</span>
+          <small class="text-muted">2020</small>
+        </div>
+        <h5 class="card-title font-weight-bold">北京高校数学建模校际联赛 一等奖</h5>
+        <p class="card-text text-muted">承担全队编程与求解环节，负责复杂系统的数值算法实现与结果可视化。同期参加全国大学生数学建模竞赛（CUMCM）获北京赛区二等奖、美国大学生数学建模竞赛（MCM/ICM）等赛事。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 mb-4">
+    <div class="card h-100 shadow-sm">
+      <img src="/assets/img/journal/028-2026-award_14929153526942339703-0.jpg" class="card-img-top img-fluid" alt="京东 Aidol 制造营现场持稿人员与导播台">
+      <div class="card-body">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <span class="badge badge-danger">产业实践</span>
+          <small class="text-muted">2026</small>
+        </div>
+        <h5 class="card-title font-weight-bold">京东 Aidol 制造营 · 机器人现场执行</h5>
+        <p class="card-text text-muted">参与京东 Aidol 制造营的机器人编排与现场执行环节，负责多机型舞台调度与导播联动，把实验室演示转化为可结算的商业演出资产。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+---
+
+### ⚖️ 从选手到规则制定者：赛事主理与评审身份
+
+<div class="row my-4">
+  <div class="col-md-6 mb-4">
+    <div class="card h-100 shadow-sm border-primary">
+      <img src="/assets/img/journal/007-2026-award_14897135086843335290-0.jpg" class="card-img-top img-fluid" alt="黑客松颁奖舞台大屏">
+      <div class="card-body">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <span class="badge badge-primary">赛事主理人 · 决赛评委</span>
+          <small class="text-muted">2026.07</small>
+        </div>
+        <h5 class="card-title font-weight-bold">探月计划 · 中国首届 Physical AI 黑客松</h5>
+        <p class="card-text text-muted">以探月具身智能社区 CTO 身份任赛事主理人与决赛评委：48 小时内组织 50 支战队、200 位开发者，硬件与现金奖池破百万元。同场任 SheNicest 千人黑客松、Rebuild-Z × GEIA 具身智能黑客松赞助商与决赛评委。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 mb-4">
+    <div class="card h-100 shadow-sm border-info">
+      <img src="/assets/img/journal/027-2026-award_14999570944126751484-0.jpg" class="card-img-top img-fluid" alt="Rebuild-Z × GEIA 具身智能黑客松宣传长图">
+      <div class="card-body">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <span class="badge badge-info">赞助商 · 决赛评委</span>
+          <small class="text-muted">2026</small>
+        </div>
+        <h5 class="card-title font-weight-bold">Rebuild-Z × GEIA 具身智能黑客松</h5>
+        <p class="card-text text-muted">同时占据赛事主理方、出资方与评审方席位：为大赛提供硬件物料与现金奖，并参与决赛评分与项目孵化对接。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 mb-4">
+    <div class="card h-100 shadow-sm border-warning">
+      <img src="/assets/img/journal/021-2026-award_14973625000043680374-0.jpg" class="card-img-top img-fluid" alt="AdventureX 2026 红色舞台观众席">
+      <div class="card-body">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <span class="badge badge-warning">官方讲师 · 评委</span>
+          <small class="text-muted">2026</small>
+        </div>
+        <h5 class="card-title font-weight-bold">AdventureX 2026 · 松灵机器人讲师 / 地瓜机器人评委</h5>
+        <p class="card-text text-muted">在国内规模最大的青年黑客松之一担任厂商讲师与评审，负责七轴机械臂开发课程与边缘算力赛道项目评审。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 mb-4">
+    <div class="card h-100 shadow-sm border-dark">
+      <div class="card-body">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <span class="badge badge-dark">身份跃迁</span>
+          <small class="text-muted">2019 → 2026</small>
+        </div>
+        <h5 class="card-title font-weight-bold">六年六段身份：参赛者 → 队长 → 官方讲师 → 决赛评委 → 赞助商 → 赛事主理人</h5>
+        <p class="card-text text-muted">主办方覆盖 NVIDIA、清华大学、小红书、影石 Insta360、字节跳动、腾讯云、中国移动、开源鸿蒙 / RISC-V 生态。2026 年一年内以四类身份深度参与 4 场行业级黑客松。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+---
+
+### 🏅 校园科技竞赛与知识产权影像 (2018–2022)
+
+<div class="row my-4">
+  <div class="col-md-4 mb-4">
+    <div class="card h-100 shadow-sm">
+      <img src="/assets/img/journal/013-2018-talk_12963694297617076316-0.jpg" class="card-img-top img-fluid" alt="萌芽杯竞赛教室讲台授课现场">
+      <div class="card-body">
+        <span class="badge badge-warning mb-1">萌芽杯科技竞赛</span>
+        <h6 class="card-title font-weight-bold">写字机器人软硬件控制系统</h6>
+        <small class="text-muted d-block">大一独立完成的步进电机插补与 G-code 控制器，从机构、电路到固件全链路自研。</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 mb-4">
+    <div class="card h-100 shadow-sm">
+      <div class="card-body">
+        <span class="badge badge-success mb-1">大学生创新创业训练计划</span>
+        <h6 class="card-title font-weight-bold">HASEL 静电柔性机器人（2019 立项）</h6>
+        <small class="text-muted d-block">介电弹性体薄膜 + 液压放大 + 静电致动的柔性驱动器探索，参与样机试制与实验验证——本科阶段即切入软体机器人这一当时极少有人碰的方向。</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 mb-4">
+    <div class="card h-100 shadow-sm">
+      <img src="/assets/img/journal/169-2022-award_13842213249122046168-0.jpg" class="card-img-top img-fluid" alt="智能小车竞赛实验室合影">
+      <div class="card-body">
+        <span class="badge badge-info mb-1">赛事指导</span>
+        <h6 class="card-title font-weight-bold">智能小车竞赛队伍训练与赛前调试</h6>
+        <small class="text-muted d-block">带十位参赛选手从零件拼装、结构调试到上路参赛，赛前不足 24 小时完成整机联调。</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 mb-4">
+    <div class="card h-100 shadow-sm">
+      <img src="/assets/img/journal/229-2021-qual_13595537300120998109-0.jpg" class="card-img-top img-fluid" alt="一叠带二维码的国家版权局软件著作权登记证书">
+      <div class="card-body">
+        <span class="badge badge-primary mb-1">知识产权</span>
+        <h6 class="card-title font-weight-bold">软件著作权批量下证 (2021)</h6>
+        <small class="text-muted d-block">2021 年一次性取得 5 份国家版权局软著登记证书，覆盖微流控仿真、房屋管理、写字机器人、光刻平台、软体机器人管控等系统。</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 mb-4">
+    <div class="card h-100 shadow-sm">
+      <img src="/assets/img/journal/231-2021-qual_13683346129776152803-0.jpg" class="card-img-top img-fluid" alt="手持一叠荣誉证书">
+      <div class="card-body">
+        <span class="badge badge-primary mb-1">累计成果</span>
+        <h6 class="card-title font-weight-bold">软著与专利申报全流程（本科阶段完成）</h6>
+        <small class="text-muted d-block">2021 年为团队与同学批量申报软件著作权并全部下证，同时跑通发明专利的申请、代理对接与补正答复流程。</small>
       </div>
     </div>
   </div>
