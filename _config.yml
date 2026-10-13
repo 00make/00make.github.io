@@ -11,7 +11,8 @@ contact_note: >
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   张振尧，具身智能全栈工程师、机器人开发者生态布道者。NVIDIA Hackathon 年度总决赛冠军。
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+  © 2026 张振尧 · 零零后科技 CEO<br>合作与媒体采访见
+  <a href="/press/#press-kit">媒体资料包</a> · 站点基于 <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> 构建
 keywords: 张振尧, 具身智能, 机器人, VLA, NVIDIA, 开发者生态, 技术布道 # add your own keywords or leave empty
 lang: zh-CN # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🤖 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
