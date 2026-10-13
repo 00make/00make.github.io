@@ -96,11 +96,11 @@ nav_order: 4
     <div class="card h-100 shadow-sm border-primary">
       <div class="card-body">
         <div class="d-flex justify-content-between align-items-center mb-2">
-          <span class="badge badge-primary">联合发起人</span>
+          <span class="badge badge-primary">赛事主理人 · 决赛评委</span>
           <small class="text-muted">2026.07</small>
         </div>
-        <h5 class="card-title font-weight-bold">首届“探月计划 · Physical AI 黑客松” 联合发起人</h5>
-        <p class="card-text text-muted">国内首个聚焦 Physical AI 的硬核极限赛事（北京中关村东升科技园），汇聚全球 200+ 青年极客，小米前总裁王翔任创始合伙人，清华大学工训中心学术指导，接受北京日报与海淀融媒专访。</p>
+        <h5 class="card-title font-weight-bold">中国首届“探月计划 · Physical AI 黑客松” 赛事主理人</h5>
+        <p class="card-text text-muted">中国首届聚焦 Physical AI 的硬核极限赛事（北京中关村东升科技园），汇聚全球 200+ 青年极客，小米前总裁王翔任创始合伙人，清华大学工训中心学术指导，接受北京日报与海淀融媒专访。本人任探月具身智能社区 CTO、赛事主理人与决赛评委。</p>
       </div>
     </div>
   </div>
