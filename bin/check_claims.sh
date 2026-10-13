@@ -61,11 +61,18 @@ FORBIDDEN_ROLE@@@组委会发起人@@@口径禁用：同上
 FORBIDDEN_ROLE@@@发起人致辞@@@口径禁用：同上
 FORBIDDEN_ROLE@@@作为发起人@@@口径禁用：裸「发起人」自称同样无公开佐证，改为「作为赛事模块主理人」
 FORBIDDEN_ROLE@@@发起人之一@@@口径禁用：屋必安统一说「公司创始人」，不用「发起人之一 / 路演主讲」
-FORBIDDEN_NUMBER@@@5[[:space:]]*项发明专利@@@错误数字：本人发明专利为 1 项（申请中）
+FORBIDDEN_NUMBER@@@5[[:space:]]*项(国家)?发明专利@@@错误数字：本人发明专利为 1 项（申请中），且主题是扫描隧道显微镜减震体系，与医疗仿真无关
 FORBIDDEN_NUMBER@@@48[[:space:]]*项.{0,6}软著@@@错误数字：软著为 8 项
 FORBIDDEN_NUMBER@@@48[[:space:]]*项历史奖项@@@错误数字：应为「52 项荣誉证书、资质认证与注册商标」，且其中约 13 项非奖项
-FORBIDDEN_NUMBER@@@4,?733[[:space:]]*户@@@旧数据：公司口径为 4,784 户建档立卡贫困户、985 户低保户危房改造
-FORBIDDEN_NUMBER@@@(年营收|营收).{0,10}2000[[:space:]]*万@@@不可验证：素材库无佐证，降级为「主导 5 款医疗仿真硬件产品」
+FORBIDDEN_NUMBER@@@4,?733@@@查无出处：全站旧用的 4,733 户在资产库 9 处佐证中零命中，正确口径为 4,784 户建档立卡贫困户
+FORBIDDEN_NUMBER@@@631[[:space:]]*户@@@查无出处：与 4,733 同批的虚构伴生数字，正确口径为 985 户低保户危房改造
+FORBIDDEN_NUMBER@@@298[[:space:]]*户@@@查无出处：同上
+FORBIDDEN_NUMBER@@@(年营收|营业额)@@@不可验证：resume_final.md 全文无任何营收口径，只有奖金（8 万 / 10 万 / 累计逾 24 万）。删掉营收表述，改用「主导 5 款医疗仿真硬件产品」
+FORBIDDEN_IP@@@外观专利@@@查无出处：资产库仅记软件著作权 8 份 + 发明专利 1 项（申请中），无外观专利
+FORBIDDEN_NUMBER@@@34[[:space:]]*所(高)?校@@@查无出处：bucthole 记录只到「上线时间 + 多子域架构 + 校内热议」，无任何高校覆盖数
+FORBIDDEN_NUMBER@@@(日活跃|DAU).{0,14}[0-9]@@@查无出处：资产库无 DAU / 注册用户量数据，树洞一律不提用户规模
+FORBIDDEN_STACK@@@Kafka@@@虚构技术栈：树洞真实栈是 treehollow / React / WebSocket / reCAPTCHA / 多子域名，库内无 Kafka
+FORBIDDEN_STACK@@@Go 微服务@@@虚构技术栈：同上，且网页版基于 P 大树洞开源 web 版 xmcp 二次构建
 FORBIDDEN_NUMBER@@@18[[:space:]]*岁创立@@@推算性：需与身份证年龄对齐，改用「大学期间创立公司」
 FORBIDDEN_NUMBER@@@19[[:space:]]*岁.{0,10}认定@@@推算性：同上
 FORBIDDEN_NUMBER@@@七层技术栈均有已交付成果@@@需逐层对应到具体仓库/产品后才可使用
