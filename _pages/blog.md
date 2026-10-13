@@ -1,14 +1,14 @@
 ---
 layout: default
 permalink: /blog/
-title: blog
-nav: false
-nav_order: 1
+title: 日志
+nav: true
+nav_order: 7
 pagination:
   enabled: true
   collection: posts
   permalink: /page/:num/
-  per_page: 5
+  per_page: 10
   sort_field: date
   sort_reverse: true
   trail:

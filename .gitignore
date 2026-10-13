@@ -28,6 +28,13 @@ __pycache__/
 # false "clean" when it is missing.
 bin/check_claims.private.rules
 
+# bin/build_journal_posts.py reads the whole-post denylist from here: the WeChat
+# post ids whose raw records contain payroll, HR, ID-number or third-party
+# content. The ids themselves are harmless, but the set of them *is* the
+# sensitive fact ("which of my archives are private"), and this repo is public.
+# The generator exits 2 rather than generating without it.
+bin/journal_denylist.private.txt
+
 # macOS Finder duplicate copies ("photo 2.jpg", "LICENSE 2").
 # These are byte-identical copies created by Finder copy/paste, never real content.
 # Caveat: this also ignores an intentionally-named file like "chapter 2.md";
