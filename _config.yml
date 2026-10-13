@@ -135,8 +135,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_name: 开发者日志 # blog_name will be displayed in your blog page
+blog_description: 2018—2026 的一线开发记录：真机调试、赛事现场与工程笔记，按时间轴归档
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -354,11 +354,26 @@ jekyll-archives:
 # Tag / category chips rendered on the blog index. Each value must be a tag or
 # category that at least one post actually carries, otherwise jekyll-archives
 # generates no archive page for it and the chip becomes a dead link on /blog/.
-# Left empty because the upstream demo posts (which carried "formatting",
-# "images", "math", "external-services", ...) were removed. Repopulate from the
-# real 开发者日志 vocabulary once those posts exist.
-display_tags: []
-display_categories: []
+# Generated vocabulary: keep this list in sync with bin/build_journal_posts.py
+# (the generator prints the current top-12 tags and the four era categories).
+display_tags:
+  - 开发者日志
+  - 演讲布道
+  - 校园生活
+  - 开源生态
+  - 具身智能
+  - 机器狗
+  - 黑客松
+  - 创业经营
+  - VR与交互
+  - 竞赛荣誉
+  - 大模型
+  - 硬件设计
+display_categories:
+  - 具身智能真机闭环
+  - 创业、公益与工程训练
+  - 校园创客与硬件启蒙
+  - 医疗硬件与工业现场
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
