@@ -300,29 +300,30 @@ Build and deployment:
 - `update-citations.yml`: runs `bin/update_scholar_citations.py` on a schedule to refresh `_data/citations.yml` with Google Scholar citation counts. See [Setting up a Personal Access Token (PAT) for Google Scholar Citation Updates](CUSTOMIZE.md#setting-up-a-personal-access-token-pat-for-google-scholar-citation-updates)
 - `update-tocs.yml`: regenerates the `<!--ts-->…<!--te-->` table of contents blocks in changed Markdown files
 
-## Dependabot flags a vulnerability in `css_parser` and cannot update it. Am I affected?
-
-Almost certainly not, and there is no version you can install to fix it. Both halves of that sentence are worth understanding before you touch the `Gemfile`.
-
-**The alert.** `CssParser::Parser#read_remote_file` performs SSRF (CWE-918) and — by following a cross-scheme `Location: file://…` redirect back into itself — local file disclosure (CWE-73). It is fixed in `css_parser` 3.0.0.
-
-**Why Dependabot gives up.** The chain is `al_img_tools` (1.0.3) → `jekyll-3rd-party-libraries (~> 0.0.1)` → `css_parser (>= 1.6, < 2.0)`. `jekyll-3rd-party-libraries` has exactly one published release ever, 0.0.1, so that `< 2.0` cap is absolute: no patched version is installable and `bundle update css_parser` cannot help. Leave the pin alone — forcing 3.x breaks resolution and the build.
-
-**Why the vulnerable code never runs here.** Three independent reasons, most convenient first:
-
-1. `_config.yml` sets `third_party_libraries.download: false`. The only consumer of `css_parser` in the entire bundle is `download_fonts_from_css`, called from inside `if site.config['third_party_libraries']['download']`. With that flag off, `CssParser::Parser.new` is never reached during a build — which is also why `assets/libs/` does not exist in this repo.
-2. Even with the flag on, that consumer calls `CssParser::Parser.new` and `load_string!` with **no options** — no `base_uri:`, no `base_dir:`. In `add_block!`, an `@import` rule is only fetched when `options[:base_uri]` is set (→ `load_uri!`, the vulnerable path) or `options[:base_dir]` is set (→ `load_file!`, the safe local API). With both nil the rule is scanned and then deleted by `ignore_pattern`, so a hostile `@import url("file:///etc/passwd")` produces no file read and no request. `load_uri!` and `read_remote_file` have zero callers outside `css_parser` itself.
-3. The CSS in question would come from CDN URLs that _you_ declare in `_config.yml`, not from visitor input, and this is a static build — there is no runtime service parsing untrusted CSS.
-
-Re-verify in about thirty seconds instead of trusting this text:
-
-```bash
-grep -n "download: false" _config.yml | head -1
-docker compose exec jekyll bash -c \
-  'grep -rn "CssParser\|load_uri!\|read_remote_file" /usr/local/bundle/gems --include=*.rb | grep -v /css_parser-'
-# expect exactly one hit: jekyll-3rd-party-libraries …:152: css = CssParser::Parser.new
-```
-
-**What to do.** Dismiss the Dependabot alert with the reason _Vulnerable code is not actually used_ and link here. Revisit only when `jekyll-3rd-party-libraries` or `al_img_tools` publishes a release that relaxes the `css_parser < 2.0` cap; at that point run `bundle update`, confirm the lock resolves to `css_parser >= 3.0.0`, and delete this entry.
-
-**If you ever set `third_party_libraries.download: true`**, reason 1 disappears and the build starts fetching remote CSS and font files at build time. Reason 2 still holds, so the `css_parser` sink stays unreachable — but re-read this section first, because you are adding outbound network fetches to your build pipeline against whatever URLs sit in `_config.yml`.
+- [Frequently Asked Questions](#frequently-asked-questions)
+  - [After I create a new repository from this template and setup the repo, I get a deployment error. Isn't the website supposed to correctly deploy automatically?](#after-i-create-a-new-repository-from-this-template-and-setup-the-repo-i-get-a-deployment-error-isnt-the-website-supposed-to-correctly-deploy-automatically)
+  - [I am using a custom domain (e.g., foo.com). My custom domain becomes blank in the repository settings after each deployment. How do I fix that?](#i-am-using-a-custom-domain-eg-foocom-my-custom-domain-becomes-blank-in-the-repository-settings-after-each-deployment-how-do-i-fix-that)
+  - [My webpage works locally. But after deploying, it fails to build and throws Unknown tag 'toc'. How do I fix that?](#my-webpage-works-locally-but-after-deploying-it-fails-to-build-and-throws-unknown-tag-toc-how-do-i-fix-that)
+  - [My webpage works locally. But after deploying, it is not displayed correctly (CSS and JS are not loaded properly). How do I fix that?](#my-webpage-works-locally-but-after-deploying-it-is-not-displayed-correctly-css-and-js-are-not-loaded-properly-how-do-i-fix-that)
+  - [Atom feed doesn't work. Why?](#atom-feed-doesnt-work-why)
+  - [My site doesn't work when I enable related_blog_posts. Why?](#my-site-doesnt-work-when-i-enable-related_blog_posts-why)
+  - [When trying to deploy, it's asking for github login credentials, which github disabled password authentication and it exits with an error. How to fix?](#when-trying-to-deploy-its-asking-for-github-login-credentials-which-github-disabled-password-authentication-and-it-exits-with-an-error-how-to-fix)
+  - [When I manually run the Lighthouse Badger workflow, it fails with Error: Input required and not supplied: token. How do I fix that?](#when-i-manually-run-the-lighthouse-badger-workflow-it-fails-with-error-input-required-and-not-supplied-token-how-do-i-fix-that)
+  - [My code runs fine locally, but when I create a commit and submit it, it fails with prettier code formatter workflow run failed for main branch. How do I fix that?](#my-code-runs-fine-locally-but-when-i-create-a-commit-and-submit-it-it-fails-with-prettier-code-formatter-workflow-run-failed-for-main-branch-how-do-i-fix-that)
+  - [After I update my site with some new content, even a small change, the GitHub action throws an error or displays a warning. What happened?](#after-i-update-my-site-with-some-new-content-even-a-small-change-the-github-action-throws-an-error-or-displays-a-warning-what-happened)
+  - [How do I upgrade from al-folio v1.0 to v1.1+ with minimal friction?](#how-do-i-upgrade-from-al-folio-v10-to-v11-with-minimal-friction)
+  - [Do I need to fork every v1 gem to customize layouts and Liquid files?](#do-i-need-to-fork-every-v1-gem-to-customize-layouts-and-liquid-files)
+  - [How do I know when a local override is stale after a plugin update?](#how-do-i-know-when-a-local-override-is-stale-after-a-plugin-update)
+  - [Why does v1.x starter not have npm run build:css anymore?](#why-does-v1x-starter-not-have-npm-run-buildcss-anymore)
+  - [Jupyter posts are enabled, but my build says jupyter-nbconvert is missing. What are my options?](#jupyter-posts-are-enabled-but-my-build-says-jupyter-nbconvert-is-missing-what-are-my-options)
+  - [How do I handle legacy Bootstrap-marked pages on Tailwind-first v1.x?](#how-do-i-handle-legacy-bootstrap-marked-pages-on-tailwind-first-v1x)
+  - [How does sidebar table of contents work in v1.x?](#how-does-sidebar-table-of-contents-work-in-v1x)
+  - [Why does pretty_table: true still work when Bootstrap compatibility is disabled?](#why-does-pretty_table-true-still-work-when-bootstrap-compatibility-is-disabled)
+  - [Why does Lightbox2 work without jQuery in v1.x?](#why-does-lightbox2-work-without-jquery-in-v1x)
+  - [I am trying to deploy my site, but it fails with Could not find gem 'jekyll-diagrams' in locally installed gems. How do I fix that?](#i-am-trying-to-deploy-my-site-but-it-fails-with-could-not-find-gem-jekyll-diagrams-in-locally-installed-gems-how-do-i-fix-that)
+  - [How can I update icon library versions on the template](#how-can-i-update-icon-library-versions-on-the-template)
+  - [How should I name plugins in v1.x?](#how-should-i-name-plugins-in-v1x)
+  - [How can I propose featuring my plugin in al-folio?](#how-can-i-propose-featuring-my-plugin-in-al-folio)
+  - [Why does plugin integration use Gemfile + _config.yml instead of a gemspec?](#why-does-plugin-integration-use-gemfile--_configyml-instead-of-a-gemspec)
+  - [What do all these GitHub actions/workflows mean?](#what-do-all-these-github-actionsworkflows-mean)
+  - [Dependabot flags a vulnerability in css_parser and cannot update it. Am I affected?](#dependabot-flags-a-vulnerability-in-css_parser-and-cannot-update-it-am-i-affected)
