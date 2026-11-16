@@ -1,11 +1,6 @@
 # Social links for Zhang Zhenyao
-email: 
 github_username: 00make
 cv_pdf: /assets/pdf/resume/resume.pdf
-bilibili:
-  logo: fa-brands fa-bilibili
-  title: 哔哩哔哩 (超级无敌麻辣串)
-  url: https://space.bilibili.com/
 wechat:
   logo: fa-brands fa-weixin
   title: 微信 (towardsdawn)

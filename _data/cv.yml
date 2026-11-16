@@ -1,7 +1,6 @@
 cv:
   name: 张振尧
   label: 机器人开发者生态 & 全栈具身智能工程师
-  email: 
   location: 中国·北京
   image: assets/img/prof_pic.jpg
   summary: NVIDIA 生态走出来的机器人技术布道者：年度黑客松冠军 × 200 万受众开发者内容创作者 × 全栈具身智能工程师。既能亲手把大模型在单张消费级显卡上跑通真机闭环，也能把前沿技术生动讲给百万开发者听。曾获人民网、北京日报、解放日报、China Daily、腾讯科技等全网权威主流媒体深度专访与报道。
@@ -9,8 +8,6 @@ cv:
   social_networks:
     - network: GitHub
       username: 00make
-    - network: Bilibili
-      username: "超级无敌麻辣串 (UID: )"
     - network: WeChat
       username: towardsdawn
 

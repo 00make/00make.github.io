@@ -339,7 +339,7 @@ nav_order: 5
 | 新京报贝壳财经 / 极客公园 / 少数派 / 镜相工作室 | 各媒体官网或电子报按对应年月 +「机器人 00后 / 租赁 / 黑客松」检索；本人可另提供采访录音与现场素材                  |
 | 第四波 · 探月计划专访                           | 2026.07 探月计划 · Physical AI 黑客松 收官后的专访稿                                                               |
 
-> **需要原始报道 PDF / 截图作为引用依据？** 直接来信索取：<a href="mailto:" rel="noopener noreferrer"></a>（邮件主题请注明媒体名称与所需条目）。
+> **需要原始报道 PDF / 截图作为引用依据？** 请通过下方联络通道索取（请注明媒体名称与所需条目）。
 
 ---
 
@@ -419,9 +419,7 @@ nav_order: 5
 <h5 class="font-weight-bold mt-4">官方肖像照与联络通道</h5>
 <ul>
   <li><strong>肖像照下载</strong>：<a href="/assets/img/prof_pic.jpg" target="_blank">高清证件肖像照</a> ｜ <a href="/assets/img/events/191207-DevFEST.jpg" target="_blank">开发者大会现场照</a></li>
-  <li><strong>媒体联络邮箱</strong>：<a href="mailto:"></a></li>
   <li><strong>微信</strong>：towardsdawn（添加请备注媒体/机构名称）</li>
-  <li><strong>手机 / 短信（工作日紧急联络）**：</strong><a href="tel:"></a>（请先短信说明媒体名称与选题，电话优先安排直播与录制档期）</li>
 </ul>
 
 </div>
