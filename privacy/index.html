@@ -1,0 +1,2834 @@
+<!DOCTYPE html> <html lang="zh-CN"> <head>  <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> 隐私政策 | 张振尧 </title> <meta name="author" content="张振尧 "> <meta name="description" content="zhangzhenyao.com 的隐私政策：本站为静态个人网站，不启用统计与评论服务，不主动收集个人信息。"> <meta name="keywords" content="张振尧, 具身智能, 机器人, VLA, NVIDIA, 开发者生态, 技术布道"> <meta property="og:site_name" content="张振尧"> <meta property="og:type" content="website"> <meta property="og:title" content="张振尧 | 隐私政策"> <meta property="og:url" content="https://zhangzhenyao.com/privacy/"> <meta property="og:description" content="zhangzhenyao.com 的隐私政策：本站为静态个人网站，不启用统计与评论服务，不主动收集个人信息。"> <meta property="og:image" content="https://zhangzhenyao.com/assets/img/prof_pic.jpg"> <meta property="og:locale" content="zh-CN"> <meta name="twitter:card" content="summary"> <meta name="twitter:title" content="隐私政策"> <meta name="twitter:description" content="zhangzhenyao.com 的隐私政策：本站为静态个人网站，不启用统计与评论服务，不主动收集个人信息。"> <meta name="twitter:image" content="https://zhangzhenyao.com/assets/img/prof_pic.jpg"> <script type="application/ld+json">
+    {
+        "author":
+        {
+            "@type": "Person",
+            "name": "张振尧"
+        },
+        "url": "https://zhangzhenyao.com/privacy/",
+        "@type": "WebSite",
+        "description": "zhangzhenyao.com 的隐私政策：本站为静态个人网站，不启用统计与评论服务，不主动收集个人信息。",
+        "headline": "隐私政策",
+        
+        "sameAs": ["https://github.com/00make"],
+        
+        "name": "张振尧",
+        "@context": "https://schema.org"
+    }
+  </script> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%A4%96&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://zhangzhenyao.com/privacy/"> <script>
+    // Has to be in the head tag, otherwise a flicker effect will occur.
+
+// Toggle through light, dark, and system theme settings.
+let toggleThemeSetting = () => {
+  let themeSetting = determineThemeSetting();
+  if (themeSetting == "system") {
+    setThemeSetting("light");
+  } else if (themeSetting == "light") {
+    setThemeSetting("dark");
+  } else {
+    setThemeSetting("system");
+  }
+};
+
+// Change the theme setting and apply the theme.
+let setThemeSetting = (themeSetting) => {
+  localStorage.setItem("theme", themeSetting);
+
+  document.documentElement.setAttribute("data-theme-setting", themeSetting);
+
+  applyTheme();
+};
+
+// Apply the computed dark or light theme to the website.
+let applyTheme = () => {
+  let theme = determineComputedTheme();
+
+  transTheme();
+  setHighlight(theme);
+  setGiscusTheme(theme);
+  setSearchTheme(theme);
+  updateCalendarUrl();
+
+  // if mermaid is not defined, do nothing
+  if (typeof mermaid !== "undefined") {
+    setMermaidTheme(theme);
+  }
+
+  // if diff2html is not defined, do nothing
+  if (typeof Diff2HtmlUI !== "undefined") {
+    setDiff2htmlTheme(theme);
+  }
+
+  // if echarts is not defined, do nothing
+  if (typeof echarts !== "undefined") {
+    setEchartsTheme(theme);
+  }
+
+  // if Plotly is not defined, do nothing
+  if (typeof Plotly !== "undefined") {
+    setPlotlyTheme(theme);
+  }
+
+  // if vegaEmbed is not defined, do nothing
+  if (typeof vegaEmbed !== "undefined") {
+    setVegaLiteTheme(theme);
+  }
+
+  document.documentElement.setAttribute("data-theme", theme);
+
+  // Add class to tables.
+  let tables = document.getElementsByTagName("table");
+  for (let i = 0; i < tables.length; i++) {
+    if (theme == "dark") {
+      tables[i].classList.add("table-dark");
+    } else {
+      tables[i].classList.remove("table-dark");
+    }
+  }
+
+  // Set jupyter notebooks themes.
+  let jupyterNotebooks = document.getElementsByClassName("jupyter-notebook-iframe-container");
+  for (let i = 0; i < jupyterNotebooks.length; i++) {
+    let bodyElement = jupyterNotebooks[i].getElementsByTagName("iframe")[0].contentWindow.document.body;
+    if (theme == "dark") {
+      bodyElement.setAttribute("data-jp-theme-light", "false");
+      bodyElement.setAttribute("data-jp-theme-name", "JupyterLab Dark");
+    } else {
+      bodyElement.setAttribute("data-jp-theme-light", "true");
+      bodyElement.setAttribute("data-jp-theme-name", "JupyterLab Light");
+    }
+  }
+
+  // Updates the background of medium-zoom overlay.
+  if (typeof medium_zoom !== "undefined") {
+    medium_zoom.update({
+      background: getComputedStyle(document.documentElement).getPropertyValue("--global-bg-color") + "ee", // + 'ee' for trasparency.
+    });
+  }
+};
+
+let setHighlight = (theme) => {
+  if (theme == "dark") {
+    document.getElementById("highlight_theme_light").media = "none";
+    document.getElementById("highlight_theme_dark").media = "";
+  } else {
+    document.getElementById("highlight_theme_dark").media = "none";
+    document.getElementById("highlight_theme_light").media = "";
+  }
+};
+
+let setGiscusTheme = (theme) => {
+  function sendMessage(message) {
+    const iframe = document.querySelector("iframe.giscus-frame");
+    if (!iframe) return;
+    iframe.contentWindow.postMessage({ giscus: message }, "https://giscus.app");
+  }
+
+  sendMessage({
+    setConfig: {
+      theme: theme,
+    },
+  });
+};
+
+let addMermaidZoom = (records, observer) => {
+  var svgs = d3.selectAll(".mermaid svg");
+  svgs.each(function () {
+    var svg = d3.select(this);
+    svg.html("<g>" + svg.html() + "</g>");
+    var inner = svg.select("g");
+    var zoom = d3.zoom().on("zoom", function (event) {
+      inner.attr("transform", event.transform);
+    });
+    svg.call(zoom);
+  });
+  observer.disconnect();
+};
+
+let setMermaidTheme = (theme) => {
+  if (theme == "light") {
+    // light theme name in mermaid is 'default'
+    // https://mermaid.js.org/config/theming.html#available-themes
+    theme = "default";
+  }
+
+  /* Re-render the SVG, based on https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/_includes/mermaid.html */
+  document.querySelectorAll(".mermaid").forEach((elem) => {
+    // Get the code block content from previous element, since it is the mermaid code itself as defined in Markdown, but it is hidden
+    let svgCode = elem.previousSibling.childNodes[0].innerHTML;
+    elem.removeAttribute("data-processed");
+    elem.innerHTML = svgCode;
+  });
+
+  mermaid.initialize({ theme: theme });
+  window.mermaid.init(undefined, document.querySelectorAll(".mermaid"));
+
+  const observable = document.querySelector(".mermaid svg");
+  if (observable !== null) {
+    var observer = new MutationObserver(addMermaidZoom);
+    const observerOptions = { childList: true };
+    observer.observe(observable, observerOptions);
+  }
+};
+
+let setDiff2htmlTheme = (theme) => {
+  document.querySelectorAll(".diff2html").forEach((elem) => {
+    // Get the code block content from previous element, since it is the diff code itself as defined in Markdown, but it is hidden
+    let textData = elem.previousSibling.childNodes[0].innerHTML;
+    elem.innerHTML = "";
+    const configuration = { colorScheme: theme, drawFileList: true, highlight: true, matching: "lines" };
+    const diff2htmlUi = new Diff2HtmlUI(elem, textData, configuration);
+    diff2htmlUi.draw();
+  });
+};
+
+let setEchartsTheme = (theme) => {
+  document.querySelectorAll(".echarts").forEach((elem) => {
+    // Get the code block content from previous element, since it is the echarts code itself as defined in Markdown, but it is hidden
+    let jsonData = elem.previousSibling.childNodes[0].innerHTML;
+    echarts.dispose(elem);
+
+    if (theme === "dark") {
+      var chart = echarts.init(elem, "dark-fresh-cut");
+    } else {
+      var chart = echarts.init(elem);
+    }
+
+    chart.setOption(JSON.parse(jsonData));
+  });
+};
+
+let setPlotlyTheme = (theme) => {
+  document.querySelectorAll(".js-plotly-plot").forEach((elem) => {
+    // Get the code block content from previous element, since it is the plotly code itself as defined in Markdown, but it is hidden
+    let jsonData = JSON.parse(elem.previousSibling.childNodes[0].innerHTML);
+
+    if (theme === "dark") {
+      // dark theme extracted from https://github.com/plotly/plotly.py/blob/main/plotly/package_data/templates/plotly_dark.json?raw=true
+      // prettier-ignore
+      const plotlyDarkLayout = {"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#f2f5fa"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"rgb(17,17,17)","plot_bgcolor":"rgb(17,17,17)","polar":{"bgcolor":"rgb(17,17,17)","angularaxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""},"radialaxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""}},"ternary":{"bgcolor":"rgb(17,17,17)","aaxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""},"baxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""},"caxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"#283442","linecolor":"#506784","ticks":"","title":{"standoff":15},"zerolinecolor":"#283442","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"#283442","linecolor":"#506784","ticks":"","title":{"standoff":15},"zerolinecolor":"#283442","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"rgb(17,17,17)","gridcolor":"#506784","linecolor":"#506784","showbackground":true,"ticks":"","zerolinecolor":"#C8D4E3","gridwidth":2},"yaxis":{"backgroundcolor":"rgb(17,17,17)","gridcolor":"#506784","linecolor":"#506784","showbackground":true,"ticks":"","zerolinecolor":"#C8D4E3","gridwidth":2},"zaxis":{"backgroundcolor":"rgb(17,17,17)","gridcolor":"#506784","linecolor":"#506784","showbackground":true,"ticks":"","zerolinecolor":"#C8D4E3","gridwidth":2}},"shapedefaults":{"line":{"color":"#f2f5fa"}},"annotationdefaults":{"arrowcolor":"#f2f5fa","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"rgb(17,17,17)","landcolor":"rgb(17,17,17)","subunitcolor":"#506784","showland":true,"showlakes":true,"lakecolor":"rgb(17,17,17)"},"title":{"x":0.05},"updatemenudefaults":{"bgcolor":"#506784","borderwidth":0},"sliderdefaults":{"bgcolor":"#C8D4E3","borderwidth":1,"bordercolor":"rgb(17,17,17)","tickwidth":0},"mapbox":{"style":"dark"}},"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"marker":{"line":{"color":"#283442"}},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#f2f5fa"},"error_y":{"color":"#f2f5fa"},"marker":{"line":{"color":"rgb(17,17,17)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"marker":{"line":{"color":"#283442"}},"type":"scattergl"}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#A2B1C6","gridcolor":"#506784","linecolor":"#506784","minorgridcolor":"#506784","startlinecolor":"#A2B1C6"},"baxis":{"endlinecolor":"#A2B1C6","gridcolor":"#506784","linecolor":"#506784","minorgridcolor":"#506784","startlinecolor":"#A2B1C6"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#506784"},"line":{"color":"rgb(17,17,17)"}},"header":{"fill":{"color":"#2a3f5f"},"line":{"color":"rgb(17,17,17)"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"rgb(17,17,17)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]}};
+
+      // if jsonData.layout exists, then update the theme
+      if (jsonData.layout) {
+        if (jsonData.layout.template) {
+          jsonData.layout.template = { ...plotlyDarkLayout, ...jsonData.layout.template };
+        } else {
+          jsonData.layout.template = plotlyDarkLayout;
+        }
+      } else {
+        jsonData.layout = { template: plotlyDarkLayout };
+      }
+    } else {
+      // light theme extracted from https://github.com/plotly/plotly.py/blob/main/plotly/package_data/templates/plotly_white.json?raw=true
+      // prettier-ignore
+      const plotlyLightLayout = {"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"bgcolor":"white","angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"ternary":{"bgcolor":"white","aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8","gridwidth":2},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8","gridwidth":2},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"white","subunitcolor":"#C8D4E3","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}},"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]}};
+
+      // if jsonData.layout exists, then update the theme
+      if (jsonData.layout) {
+        if (jsonData.layout.template) {
+          jsonData.layout.template = { ...plotlyLightLayout, ...jsonData.layout.template };
+        } else {
+          jsonData.layout.template = plotlyLightLayout;
+        }
+      } else {
+        jsonData.layout = { template: plotlyLightLayout };
+      }
+    }
+
+    Plotly.relayout(elem, jsonData.layout);
+  });
+};
+
+let setVegaLiteTheme = (theme) => {
+  document.querySelectorAll(".vega-lite").forEach((elem) => {
+    // Get the code block content from previous element, since it is the vega lite code itself as defined in Markdown, but it is hidden
+    let jsonData = elem.previousSibling.childNodes[0].innerHTML;
+    elem.innerHTML = "";
+    if (theme === "dark") {
+      vegaEmbed(elem, JSON.parse(jsonData), { theme: "dark" });
+    } else {
+      vegaEmbed(elem, JSON.parse(jsonData));
+    }
+  });
+};
+
+let setSearchTheme = (theme) => {
+  const ninjaKeys = document.querySelector("ninja-keys");
+  if (!ninjaKeys) return;
+
+  if (theme === "dark") {
+    ninjaKeys.classList.add("dark");
+  } else {
+    ninjaKeys.classList.remove("dark");
+  }
+};
+
+// Keep this comfortably longer than the 240ms transition-duration in
+// _utilities.scss. Removing the class mid-transition snaps every element still
+// interpolating straight to its final colour, which reads as a flicker; at the
+// previous 260ms there were only 20ms of slack, so one slow frame during the
+// repaint was enough to truncate it.
+const THEME_TRANSITION_MS = 240;
+const THEME_TRANSITION_CLEANUP_MS = THEME_TRANSITION_MS + 120;
+
+let transTheme = () => {
+  document.documentElement.classList.add("transition");
+  window.setTimeout(() => {
+    document.documentElement.classList.remove("transition");
+  }, THEME_TRANSITION_CLEANUP_MS);
+};
+
+// Determine the expected state of the theme toggle, which can be "dark", "light", or
+// "system". Default is "system".
+let determineThemeSetting = () => {
+  let themeSetting = localStorage.getItem("theme");
+  if (themeSetting != "dark" && themeSetting != "light" && themeSetting != "system") {
+    themeSetting = "system";
+  }
+  return themeSetting;
+};
+
+// Determine the computed theme, which can be "dark" or "light". If the theme setting is
+// "system", the computed theme is determined based on the user's system preference.
+let determineComputedTheme = () => {
+  let themeSetting = determineThemeSetting();
+  if (themeSetting == "system") {
+    const userPref = window.matchMedia;
+    if (userPref && userPref("(prefers-color-scheme: dark)").matches) {
+      return "dark";
+    } else {
+      return "light";
+    }
+  } else {
+    return themeSetting;
+  }
+};
+
+let initTheme = () => {
+  let themeSetting = determineThemeSetting();
+
+  setThemeSetting(themeSetting);
+
+  // Add event listener to the theme toggle button.
+  document.addEventListener("DOMContentLoaded", function () {
+    const mode_toggle = document.getElementById("light-toggle");
+
+    mode_toggle.addEventListener("click", function () {
+      toggleThemeSetting();
+    });
+  });
+
+  // Add event listener to the system theme preference change.
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", ({ matches }) => {
+    applyTheme();
+  });
+};
+
+// Get the appropriate background color for Google Calendar based on current theme
+let getCalendarBgColor = () => {
+  let theme = determineComputedTheme();
+  return theme === "dark" ? "333333" : "f9f9f9";
+};
+
+// Get the Google Calendar embed URL with the correct background color
+let getCalendarUrl = (calendarId, timezone = "UTC") => {
+  const baseUrl = "https://calendar.google.com/calendar/embed";
+  const params = new URLSearchParams({
+    src: calendarId,
+    ctz: timezone,
+    mode: "WEEK",
+    showTitle: "0",
+    showPrint: "0",
+    showCalendars: "0",
+    showTabs: "0",
+    bgcolor: getCalendarBgColor(),
+  });
+  return `${baseUrl}?${params.toString()}`;
+};
+
+// Update the calendar iframe src to apply theme changes
+let updateCalendarUrl = () => {
+  const iframe = document.getElementById("calendar-iframe");
+  if (iframe && iframe.dataset.calendarId) {
+    iframe.src = getCalendarUrl(iframe.dataset.calendarId, iframe.dataset.timezone || "UTC");
+  }
+};
+
+  </script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> 张振尧 </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">关于 </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">项目 </a> </li> <li class="nav-item "> <a class="nav-link" href="/talks/">演讲 </a> </li> <li class="nav-item "> <a class="nav-link" href="/awards/">荣誉 </a> </li> <li class="nav-item "> <a class="nav-link" href="/press/">媒体 </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">简历 </a> </li> <li class="nav-item "> <a class="nav-link" href="/blog/">日志 </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">隐私政策</h1> <p class="post-description">zhangzhenyao.com 的隐私政策：本站为静态个人网站，不启用统计与评论服务，不主动收集个人信息。</p> </header> <article> <p>最后更新：2026 年 11 月 17 日</p> <p>本站（zhangzhenyao.com）是张振尧的个人静态网站。我们尊重访问者的隐私，本政策说明本站实际的数据处理情况。</p> <h2 id="我们不主动收集个人信息">我们不主动收集个人信息</h2> <ul> <li>本站为纯静态页面，<strong>不设置注册、登录、表单提交等功能</strong>，不主动收集姓名、邮箱、电话等任何个人信息。</li> <li>本站<strong>未启用任何访问统计服务</strong>（如 Google Analytics 等）。</li> <li>本站<strong>未启用评论系统</strong>，不会加载第三方评论脚本。</li> <li>本站自身<strong>不写入 Cookie</strong>；仅使用浏览器 localStorage 记住您选择的明暗主题，该数据只保存在您的设备本地，不会上传。</li> </ul> <h2 id="托管与第三方资源">托管与第三方资源</h2> <ul> <li>本站托管于 <strong>GitHub Pages</strong>。GitHub 作为托管方可能记录访问日志（如 IP 地址、请求时间），其处理方式见 <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" rel="external nofollow noopener" target="_blank">GitHub 隐私声明</a>。</li> <li>页面加载时会从第三方 CDN（如 jsDelivr、Google Fonts）请求字体、图标与脚本库，这些服务可能接收到您的 IP 地址等请求信息，其处理方式见各自的隐私政策。</li> <li>本站点包含通往外部网站（媒体报道、开源项目等）的链接，外部网站的数据处理行为由其各自的隐私政策约束，与本站无关。</li> </ul> <h2 id="主动联络">主动联络</h2> <p>如您通过<a href="/press/#press-kit">媒体资料包</a>中公布的联络通道主动与本站联系，您提供的信息仅用于回应合作、演讲邀请或媒体采访事宜，不会用于其他用途，也不会对外披露。</p> <h2 id="政策更新">政策更新</h2> <p>本政策如有更新，将直接发布在本页面，恕不另行单独通知。</p> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 张振尧 . © 2026 张振尧 · 零零后科技 CEO<br>合作与媒体采访见 <a href="/press/#press-kit">媒体资料包</a> · <a href="/privacy/">隐私政策</a> · <a href="/">关于</a> · 站点基于 <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> 构建 </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-关于",
+    title: "关于",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-项目",
+          title: "项目",
+          description: "聚焦具身智能（VLA/机械臂/四足运控）、AI 智能体应用、边缘硬件与开源生态。",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
+        },{id: "nav-演讲",
+          title: "演讲",
+          description: "公开技术演讲、开发者大会、高校学术报告与实战工作坊。记录从校园极客到具身智能前沿的实战思考与工程总结，提供完整课件 PDF、演讲大纲与现场记录。",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/talks/";
+          },
+        },{id: "nav-荣誉",
+          title: "荣誉",
+          description: "记录从大学极客创客时期到具身智能前沿探索的全量大赛荣誉、科技竞赛奖项、高新企业资质、知识产权与官方认证。",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/awards/";
+          },
+        },{id: "nav-媒体",
+          title: "媒体",
+          description: "记录主流官媒、头部科技媒体、深度产业智库、科技播客对张振尧及其项目的专访与报道，并提供官方媒体资料包 (Press Kit)。",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/press/";
+          },
+        },{id: "nav-简历",
+          title: "简历",
+          description: "个人简历与履历档案。包含教育背景、工作经历、核心荣誉与技术栈。",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
+        },{id: "nav-日志",
+          title: "日志",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
+          },
+        },{id: "post-戴着护士帽的陪诊机器狗聆灵",
+        
+          title: "戴着护士帽的陪诊机器狗聆灵",
+        
+        description: "刚刚落幕的 SheNicest 千人黑客松现场，有一台装扮格外特殊的机器狗，吸引了很多目光",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-15022760299331982008/";
+          
+        },
+      },{id: "post-西湖游船上的开发者访谈-恭喜找零零队",
+        
+          title: "西湖游船上的开发者访谈，恭喜找零零队",
+        
+        description: "在杭州的开发者访谈结束了",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-15021402007889384111/";
+          
+        },
+      },{id: "post-南京影石影像挑战赛-2-人-2-天-2-等奖",
+        
+          title: "南京影石影像挑战赛，2 人 2 天 2 等奖",
+        
+        description: "南京影石影像挑战赛：2 个人，2 天，2 等奖，2 份黄金证书",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-15017763320079127217/";
+          
+        },
+      },{id: "post-上海-s-创科技展-谢谢大家对零零后的喜爱",
+        
+          title: "上海 S 创科技展，谢谢大家对零零后的喜爱",
+        
+        description: "上海 S 创科技展，感谢大家对零零后的喜爱",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-15016985203822891705/";
+          
+        },
+      },{id: "post-嘉立创开源硬件星火会-明天出展加演讲",
+        
+          title: "嘉立创开源硬件星火会，明天出展加演讲",
+        
+        description: "嘉立创第四届开源硬件星火会暨全球 AI 硬件创新生态大会 Hubday 2026，明天 9 月 19 日在深圳市福田区会展中心 6 号馆举行",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-15013463445882999415/";
+          
+        },
+      },{id: "post-s-创上海-2026-的初创展商与路演舞台",
+        
+          title: "S 创上海 2026 的初创展商与路演舞台",
+        
+        description: "S 创上海 2026 我们也在其中，9 月 22–23 日在上海徐汇西岸艺术中心 A 馆，展位是 D85",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-15012113933586993662/";
+          
+        },
+      },{id: "post-北京理工大学开学典礼上的机器人表演",
+        
+          title: "北京理工大学开学典礼上的机器人表演",
+        
+        description: "九月开学季，北京理工大学的开学典礼上有机器人表演，宇树机器人和众擎机器人都在场",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-15009722546138190325/";
+          
+        },
+      },{id: "post-养老机器人还在从点状试点走向规模化",
+        
+          title: "养老机器人还在从点状试点走向规模化",
+        
+        description: "关于养老机器人的一段话，当时存了下来",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-15008984913852830205/";
+          
+        },
+      },{id: "post-送出去的-20-张-s-创门票",
+        
+          title: "送出去的 20 张 S 创门票",
+        
+        description: "那天把手上的 20 张 S 创门票都送了出去",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-15008924996088041981/";
+          
+        },
+      },{id: "post-deepseek-决定停用-v4pro-请求全部改走-v4-1-flash",
+        
+          title: "Deepseek 决定停用 v4Pro，请求全部改走 v4.1-Flash",
+        
+        description: "凌晨刷到的一条模型变更消息，记在这里",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-15007065881319117568/";
+          
+        },
+      },{id: "post-零零后受邀参加嘉立创开源大会",
+        
+          title: "零零后受邀参加嘉立创开源大会",
+        
+        description: "嘉立创开源大会，零零后受邀参展了",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-15006922704463205115/";
+          
+        },
+      },{id: "post-上海蘑菇云创客空间的-esp32-分享",
+        
+          title: "上海蘑菇云创客空间的 ESP32 分享",
+        
+        description: "支持一下子圣。9 月 10 日下午七点，上海蘑菇云创客空间，主题是一句话生成 ESP32 上 MicroPython 小应用",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-15006741321159676665/";
+          
+        },
+      },{id: "post-ota-1-5-上线户外伴随-beta-等新功能",
+        
+          title: "OTA 1.5 上线户外伴随 Beta 等新功能",
+        
+        description: "本次 OTA 1.5 上线了户外伴随 Beta、×5 速度档位、近距离防护、Agent 对话入口、成长陪伴奖励系统等多项新功能",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-15006674331958055681/";
+          
+        },
+      },{id: "post-rebuild-z-黑客松开场-从创客角度聊商业化",
+        
+          title: "Rebuild-Z 黑客松开场，从创客角度聊商业化",
+        
+        description: "Rebuild-Z x GEIA 具身智能 AI 黑客松大赛开始了",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-15006671237008003841/";
+          
+        },
+      },{id: "post-浏览器里的六只机器鸭足球赛",
+        
+          title: "浏览器里的六只机器鸭足球赛",
+        
+        description: "那天做了个有点离谱的东西：六只 AI 机器鸭在浏览器里踢足球",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-15005349886793487103/";
+          
+        },
+      },{id: "post-录完一期线下开发者访谈之后的纠结",
+        
+          title: "录完一期线下开发者访谈之后的纠结",
+        
+        description: "最近录了一期线下开发者访谈，成品会有文字稿、播客和视频三种形式",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-15004383480943743739/";
+          
+        },
+      },{id: "post-网吧通宵做评测集-2000-元换回-2000-元",
+        
+          title: "网吧通宵做评测集，2000 元换回 2000 元",
+        
+        description: "大模型评测挑战赛的那两天，刚好是机器人运动会开幕式，我在网吧通宵做了一套评测集",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-15001674446412321529/";
+          
+        },
+      },{id: "post-本地-agent-正在成为开发者的默认选择",
+        
+          title: "本地 Agent 正在成为开发者的默认选择",
+        
+        description: "这种“本地 Agent”的模式正在快速普及",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-15001630874112889601/";
+          
+        },
+      },{id: "post-胡熙坤赠的-人形机器人简史-签名本",
+        
+          title: "胡熙坤赠的《人形机器人简史》签名本",
+        
+        description: "感谢《人形机器人简史》作者胡熙坤的赠书和亲笔签名",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-15001065292387783435/";
+          
+        },
+      },{id: "post-深圳那场-rebuild-z-geia-黑客松预告",
+        
+          title: "深圳那场 Rebuild-Z × GEIA 黑客松预告",
+        
+        description: "9 月 9—10 日在深圳有一场具身智能 AI 黑客松，当时把这条预告存了下来",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14999570944126751484/";
+          
+        },
+      },{id: "post-shenicest-路演日当评委-256-个项目",
+        
+          title: "SheNicest 路演日当评委，256 个项目",
+        
+        description: "今天在 SheNicest 路演日当评委，256 个项目真的太精彩了",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14999413115155256069/";
+          
+        },
+      },{id: "post-hicool-峰会上的-16-个探月计划具身项目",
+        
+          title: "HICOOL 峰会上的 16 个探月计划具身项目",
+        
+        description: "HICOOL 峰会收官了",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14998782154022785786/";
+          
+        },
+      },{id: "post-xcon-上聊-agent-与渗透测试",
+        
+          title: "XCON 上聊 Agent 与渗透测试",
+        
+        description: "感谢 HackingClub 在 XCON 的邀请",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14998124478785393417/";
+          
+        },
+      },{id: "post-机器人运动会-1500-米第一名的-2-分-21-秒",
+        
+          title: "机器人运动会 1500 米第一名的 2 分 21 秒",
+        
+        description: "北京奥林匹克公园的机器人运动会，1500 米项目第一名的成绩是 2 分 21 秒",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14995163549466628728/";
+          
+        },
+      },{id: "post-给机器人买的牛-快递又被偷了",
+        
+          title: "给机器人买的牛，快递又被偷了",
+        
+        description: "买了牛来，准备给机器人套上，结果快递又被偷了",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14993752860506329714/";
+          
+        },
+      },{id: "post-世界人形机器人运动会的最后一场彩排",
+        
+          title: "世界人形机器人运动会的最后一场彩排",
+        
+        description: "世界人形机器人运动会的最后一场彩排，今天真是累坏了",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14993083736645243513/";
+          
+        },
+      },{id: "post-亦庄机器人主题酒馆的-wrc-北京站聚会",
+        
+          title: "亦庄机器人主题酒馆的 WRC 北京站聚会",
+        
+        description: "WRC 北京站期间的地瓜精酿馆，机器人团队和产业链上下游的伙伴欢聚在一起",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14992955533069587062/";
+          
+        },
+      },{id: "post-vbot-全家族发布会-我聊了开发者社区",
+        
+          title: "Vbot 全家族发布会，我聊了开发者社区",
+        
+        description: "2026 WRC 世界机器人大会，维他动力的 Vbot 全家族产品发布会圆满结束，人形、轮足、模型集体亮相",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14992307474714727030/";
+          
+        },
+      },{id: "post-wrc-2026-维他动力发布会现场",
+        
+          title: "WRC 2026 维他动力发布会现场",
+        
+        description: "WRC 世界机器人大会 2026，来维他动力的发布会，捕捉零零后科技",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14990904223922655865/";
+          
+        },
+      },{id: "post-hicool-上的探月专属展区",
+        
+          title: "HICOOL 上的探月专属展区",
+        
+        description: "感谢 HICOOL 的邀请",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14988601806280397431/";
+          
+        },
+      },{id: "post-实测-deepseek-harness-的四种模式",
+        
+          title: "实测 DeepSeek Harness 的四种模式",
+        
+        description: "实测下来，我们最深刻的感受是：DeepSeek Harness 不只是又一个 AI 编程助手",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14987461428451873393/";
+          
+        },
+      },{id: "post-用代码控制维他机器狗-调通了",
+        
+          title: "用代码控制维他机器狗，调通了",
+        
+        description: "Vbot EDU 机器狗，全国首个跑通代码控制维他机器狗，达成",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14978459111768986226/";
+          
+        },
+      },{id: "post-今年在-adventurex-做讲师也做评委",
+        
+          title: "今年在 AdventureX，做讲师也做评委",
+        
+        description: "今年在 AdventureX，我以松灵机器人讲师和地瓜机器人评委的身份参与其中",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14974297409185387133/";
+          
+        },
+      },{id: "post-谢谢人民网-小红书和-waic",
+        
+          title: "谢谢人民网、小红书和 WAIC",
+        
+        description: "感谢人民网，感谢小红书，感谢 WAIC",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14974183436354589301/";
+          
+        },
+      },{id: "post-受松灵机器人邀请-在-adventurex-2026-分享开发故事",
+        
+          title: "受松灵机器人邀请，在 AdventureX 2026 分享开发故事",
+        
+        description: "感谢松灵机器人的邀请，今天在 AdventureX 2026 的 Workshop 上分享了开发故事",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14973625000043680374/";
+          
+        },
+      },{id: "post-2026-世界机器人大会的展位推荐",
+        
+          title: "2026 世界机器人大会的展位推荐",
+        
+        description: "2026 世界机器人大会，如果有想参展的公司或初创团队，我这边可以做展位推荐，无展位费直通",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14972559768537207410/";
+          
+        },
+      },{id: "post-申智杯具身智能与机器人赛道奖杯加一",
+        
+          title: "申智杯具身智能与机器人赛道奖杯加一",
+        
+        description: "申智杯具身智能与机器人赛道，奖杯加一",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14972065622957298299/";
+          
+        },
+      },{id: "post-两天的机器人比赛-拿了第三名",
+        
+          title: "两天的机器人比赛，拿了第三名",
+        
+        description: "两天的机器人比赛结束了，第三名",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14968367729511305854/";
+          
+        },
+      },{id: "post-凌晨两点北京-中午上海布展",
+        
+          title: "凌晨两点北京，中午上海布展",
+        
+        description: "那天从北京落地上海，一整天都在场馆外",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14967040675891712627/";
+          
+        },
+      },{id: "post-影石-cameraman-的未来形态猜想",
+        
+          title: "影石 Cameraman 的未来形态猜想",
+        
+        description: "我的判断是，影石 Cameraman 未来的形态更可能是一套模块化系统，能够适配无人机、手持设备和穿戴式设备，大概率不会是人形机器人",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14965774076883243645/";
+          
+        },
+      },{id: "post-谢谢媒体老师为探月计划做的专题报道",
+        
+          title: "谢谢媒体老师为探月计划做的专题报道",
+        
+        description: "感恩各位媒体老师为探月计划、探月计划黑客松做的专题报道",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14965686814254895734/";
+          
+        },
+      },{id: "post-下午在维他动力拍大头机器狗",
+        
+          title: "下午在维他动力拍大头机器狗",
+        
+        description: "下午在维他动力拍摄大头机器狗，和同济子豪兄、脑放电波一起",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14964742551180939897/";
+          
+        },
+      },{id: "post-中国首届-physical-ai-黑客松落幕",
+        
+          title: "中国首届 Physical AI 黑客松落幕",
+        
+        description: "中国首届 Physical AI 黑客松圆满落幕，感谢官媒的报道",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14964711503919649392/";
+          
+        },
+      },{id: "post-中关村那场探月计划黑客松",
+        
+          title: "中关村那场探月计划黑客松",
+        
+        description: "那天晚上写下的总结是：这场探月计划黑客松，我们办成了",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14964199016457966202/";
+          
+        },
+      },{id: "post-探月计划黑客松的赞助伙伴们",
+        
+          title: "探月计划黑客松的赞助伙伴们",
+        
+        description: "探月计划黑客松，探月具身智能社区",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14959110330584207981/";
+          
+        },
+      },{id: "post-开源鸿蒙芯片大赛一等奖-newradiotech",
+        
+          title: "开源鸿蒙芯片大赛一等奖 NewRadiotech",
+        
+        description: "开源鸿蒙芯片大赛，我们是一等奖",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14952367586173981293/";
+          
+        },
+      },{id: "post-接下探月的邀请-筹办北京的具身黑客松",
+        
+          title: "接下探月的邀请，筹办北京的具身黑客松",
+        
+        description: "感谢探月的邀请。今年 7 月要在北京办一场具身黑客松，我负责选手邀请和赛制管理",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14947459498263581295/";
+          
+        },
+      },{id: "post-华为开发者大会上的全自动吹头体验",
+        
+          title: "华为开发者大会上的全自动吹头体验",
+        
+        description: "华为开发者大会现场，谢谢央视新闻的认可",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14947434132949373553/";
+          
+        },
+      },{id: "post-探月计划黑客松嘉宾第一弹",
+        
+          title: "探月计划黑客松嘉宾第一弹",
+        
+        description: "探月计划黑客松的嘉宾名单，第一弹放出来了",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14938021668393718387/";
+          
+        },
+      },{id: "post-探月-physical-ai-黑客松七月开赛",
+        
+          title: "探月 Physical AI 黑客松七月开赛",
+        
+        description: "当时把探月・Physical AI 黑客松的这条开赛通知存了下来，内容如下",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14937858133336134256/";
+          
+        },
+      },{id: "post-京东-aidol-制造营彩排直播",
+        
+          title: "京东 Aidol 制造营彩排直播",
+        
+        description: "感谢京东Aidol制造营和小红书黑客松",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14929153526942339703/";
+          
+        },
+      },{id: "post-25岁生日那天我默认拒接所有来电",
+        
+          title: "25岁生日那天我默认拒接所有来电",
+        
+        description: "25岁生日那天，我做了一个看来有些任性的决定：默认拒接所有来电",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14924932931417412207/";
+          
+        },
+      },{id: "post-为华为-hdc-2026-找一位结构工程师",
+        
+          title: "为华为 HDC 2026 找一位结构工程师",
+        
+        description: "很荣幸受邀参加华为 HDC 2026 开发者大会，并且会作为华为和小红书官方邀请的项目进行现场展示",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14922720785096512118/";
+          
+        },
+      },{id: "post-黑客松报道与一次当场邀约",
+        
+          title: "黑客松报道与一次当场邀约",
+        
+        description: "第一张图，是在小红书黑客松上演示完项目之后的报道",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14922715831860335224/";
+          
+        },
+      },{id: "post-自带工厂与自研电机的灵猫-cyberling",
+        
+          title: "自带工厂与自研电机的灵猫 Cyberling",
+        
+        description: "昨天和宇泛智能的创始人聊完，发现他们真有自己的工厂：产线、测试、组装全都自己来，连电机都是自研的",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14904735298137952895/";
+          
+        },
+      },{id: "post-灵心巧手数采场与机器人6s店",
+        
+          title: "灵心巧手数采场与机器人6S店",
+        
+        description: "那天去看了灵心巧手的数采场，还有机器人 6S 店和人工智能 6S 店",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14904683827811455611/";
+          
+        },
+      },{id: "post-复盘亦庄机器人马拉松",
+        
+          title: "复盘亦庄机器人马拉松",
+        
+        description: "感谢“镜相工作室”的邀请，很高兴能参与这次关于亦庄机器人马拉松的深度探讨与复盘",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14903053778996302462/";
+          
+        },
+      },{id: "post-智源虾客行第二场的现场回顾",
+        
+          title: "智源虾客行第二场的现场回顾",
+        
+        description: "4.11日受北京智源人工智能研究院（BAAI）邀请，参加了第二场智源虾客行活动",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14899728646858412664/";
+          
+        },
+      },{id: "post-小红书巅峰赛收到的媒体支持",
+        
+          title: "小红书巅峰赛收到的媒体支持",
+        
+        description: "小红书巅峰赛这一程，感谢人民网、少数派、张江发布、极客公园，以及鸿蒙开发者的大力支持",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14899726994547151486/";
+          
+        },
+      },{id: "post-讲-openclaw-硬件端的一键部署与闭坑实战",
+        
+          title: "讲 openclaw 硬件端的一键部署与闭坑实战",
+        
+        description: "感谢北京智源研究院的邀请",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14897454426278466156/";
+          
+        },
+      },{id: "post-睡帐篷的48小时与一台浴室新家电",
+        
+          title: "睡帐篷的48小时与一台浴室新家电",
+        
+        description: "小红书巅峰赛决赛拿了三等奖",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14897135086843335290/";
+          
+        },
+      },{id: "post-去上海和自己打卡的三个地方",
+        
+          title: "去上海和自己打卡的三个地方",
+        
+        description: "谢谢小红书。那天去上海，和自己打了一次卡：陆家嘴、合生汇、西岸",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14893761965211980397/";
+          
+        },
+      },{id: "post-具身智能开发者大会的三等奖",
+        
+          title: "具身智能开发者大会的三等奖",
+        
+        description: "感谢自变量机器人，也感谢全球首届具身智能开发者大会",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14888494138219106937/";
+          
+        },
+      },{id: "post-pcbtool-ai-被-nvidia-官网收录推荐",
+        
+          title: "PCBTool.AI 被 NVIDIA 官网收录推荐",
+        
+        description: "我们的智能电路工程生成系统 PCBTool.AI，正式被 NVIDIA 官网收录推荐了",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14881558359897346680/";
+          
+        },
+      },{id: "post-用技术填平饥饿与匮乏",
+        
+          title: "用技术填平饥饿与匮乏",
+        
+        description: "我一直觉得，我们这一代人要用技术填平世间所有的饥饿与匮乏",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14879973032566133372/";
+          
+        },
+      },{id: "post-在模力营拆解-openclaw-硬件端",
+        
+          title: "在模力营拆解 OpenClaw 硬件端",
+        
+        description: "那天作为特邀嘉宾去了模力营·地瓜机器人，给现场上百人拆解 OpenClaw 硬件端一路踩坑的过程",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14877951463515558508/";
+          
+        },
+      },{id: "post-一篇在字节-adg-首发的文章",
+        
+          title: "一篇在字节 ADG 首发的文章",
+        
+        description: "感谢字节 ADG（Agent Developer Group）社区的大力支持与推介，把我们这群热爱折腾的人聚在一起，让硬核技术也能有温度地表达",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14877948923704513146/";
+          
+        },
+      },{id: "post-在深圳模力营当了一回虾主",
+        
+          title: "在深圳模力营当了一回虾主",
+        
+        description: "感谢主办方深圳模力营的信任和邀请，让我有机会作为8位“虾主”之一，在大湾区这个大模型社区里和大家当面交流",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14876344128701665906/";
+          
+        },
+      },{id: "post-把踩坑笔记讲成一场技术分享",
+        
+          title: "把踩坑笔记讲成一场技术分享",
+        
+        description: "感谢地瓜机器人的邀请，让我有机会把这段时间的实战经验和踩坑笔记，整理成一次技术分享",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14876342154538717812/";
+          
+        },
+      },{id: "post-在深圳-adg-讲-vibe-coding-与机器人-agent",
+        
+          title: "在深圳 ADG 讲 Vibe Coding 与机器人 Agent",
+        
+        description: "那天下午在 ADG 深圳做了一场分享，题目是《用 Vibe Coding 打造机器人 Agent》，地点在 Intel 大湾区创新中心",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/log-14846461585053848190/";
+          
+        },
+      },{id: "post-在清华具身智能俱乐部做完一场分享",
+        
+          title: "在清华具身智能俱乐部做完一场分享",
+        
+        description: "那天在清华具身智能俱乐部的分享结束了",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14816862968686973567/";
+          
+        },
+      },{id: "post-带着实战经验去清华聊-robotbase",
+        
+          title: "带着实战经验去清华聊 RobotBase",
+        
+        description: "感谢清华具身智能俱乐部的邀请，也谢谢探月社区的支持",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14816825911568044658/";
+          
+        },
+      },{id: "post-在清华聊简化开发流程",
+        
+          title: "在清华聊简化开发流程",
+        
+        description: "那天在清华大学，谢谢清华具身智能俱乐部和探月社区的组织",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14811752709019669113/";
+          
+        },
+      },{id: "post-地瓜机器人精酿馆北京站现场",
+        
+          title: "地瓜机器人精酿馆北京站现场",
+        
+        description: "那天去了地瓜机器人精酿馆的1213北京站，感谢地瓜的邀请",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14811356309716341365/";
+          
+        },
+      },{id: "post-在壹方中心和智身科技聊机器狗开发",
+        
+          title: "在壹方中心和智身科技聊机器狗开发",
+        
+        description: "感谢智身科技的邀请，一起交流了机器狗开发",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14807477280630051442/";
+          
+        },
+      },{id: "post-企业ai挑战赛二等奖与大湾区打卡",
+        
+          title: "企业AI挑战赛二等奖与大湾区打卡",
+        
+        description: "感谢字节跳动、扣子和火山引擎，企业 AI 挑战赛拿了二等奖",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14806026401904726652/";
+          
+        },
+      },{id: "post-只许ai写代码的比赛-拿了二等奖",
+        
+          title: "只许AI写代码的比赛，拿了二等奖",
+        
+        description: "感谢腾讯科技，拿了二等奖",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14801868711558845053/";
+          
+        },
+      },{id: "post-抢先体验sam-3d-一天五百条反馈",
+        
+          title: "抢先体验SAM 3D，一天五百条反馈",
+        
+        description: "抢先体验了新技术 SAM 3D，小红书上一天有五百个反馈",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14795282385231483516/";
+          
+        },
+      },{id: "post-前海的一天-新品发布会与年度星推官",
+        
+          title: "前海的一天：新品发布会与年度星推官",
+        
+        description: "感谢地瓜机器人，和大家又见面了",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14795241868873044593/";
+          
+        },
+      },{id: "post-收到小红书科技和地瓜大会的邀请",
+        
+          title: "收到小红书科技和地瓜大会的邀请",
+        
+        description: "感谢小红书科技和地瓜机器人开发者大会的邀请",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14794399423959994999/";
+          
+        },
+      },{id: "post-nvidia开发者日的技术分享视频",
+        
+          title: "NVIDIA开发者日的技术分享视频",
+        
+        description: "这条是当时转发的官方通知，我存了一份在这里",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14792241775761494638/";
+          
+        },
+      },{id: "post-苏州国际博览中心-又是冠军",
+        
+          title: "苏州国际博览中心，又是冠军",
+        
+        description: "又是冠军，感谢英伟达。NVIDIA 中国 160 万开发者一起，AI 的无限可能，从此刻加速",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14790216245668745846/";
+          
+        },
+      },{id: "post-接受新京报贝壳财经的采访",
+        
+          title: "接受新京报贝壳财经的采访",
+        
+        description: "感谢新京报、贝壳财经的采访",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14787998908199801470/";
+          
+        },
+      },{id: "post-深圳三天科技春晚的直播现场",
+        
+          title: "深圳三天科技春晚的直播现场",
+        
+        description: "感谢地瓜机器人的邀请。DDC2025 地瓜机器人开发者大会，三天「科技春晚」活动满满，我在直播现场等待大家",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14785083703021998707/";
+          
+        },
+      },{id: "post-铸网2025的机器人攻防演练方案",
+        
+          title: "铸网2025的机器人攻防演练方案",
+        
+        description: "铸网 2025，做的是机器人攻防演练解决方案",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14752530933466403407/";
+          
+        },
+      },{id: "post-打比赛的作品被部署到英伟达展台",
+        
+          title: "打比赛的作品被部署到英伟达展台",
+        
+        description: "出息了，我打比赛的作品被部署到英伟达展台了",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14752517528852501074/";
+          
+        },
+      },{id: "post-nvidia黑客松年度总冠军",
+        
+          title: "NVIDIA黑客松年度总冠军",
+        
+        description: "刚刚拿了个年度总冠军，很幸运能从 300 支报名队伍里脱颖而出",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14743105383758303826/";
+          
+        },
+      },{id: "post-北京化工大学的开学季-机器狗到场",
+        
+          title: "北京化工大学的开学季，机器狗到场",
+        
+        description: "感谢北京化工大学，欢迎新同学",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14742273831077941839/";
+          
+        },
+      },{id: "post-宇树机器人空降华贸天地的巡游",
+        
+          title: "宇树机器人空降华贸天地的巡游",
+        
+        description: "那天在北京华贸商圈，华贸天地和北京 SKP 一起做了这场巡游，感谢它们",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14742270929509290573/";
+          
+        },
+      },{id: "post-漕河泾-soma双臂遥操作机器人",
+        
+          title: "漕河泾：SOMA双臂遥操作机器人",
+        
+        description: "SOMA Robotics 的双臂遥操作机器人",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14730031918411747913/";
+          
+        },
+      },{id: "post-七月的主要硬件工作进展",
+        
+          title: "七月的主要硬件工作进展",
+        
+        description: "七月主要的硬件工作进展： 人形双臂第一代实机和第二代优化（参考 openarm 项目） 宇树机器人的仿真与 VR 控制 智身机器狗 ZSL 拍摄与测试…",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14711249801224393290/";
+          
+        },
+      },{id: "post-开箱一台能空翻两圈的机器狗",
+        
+          title: "开箱一台能空翻两圈的机器狗",
+        
+        description: "感谢智身科技，开箱了一台能空翻两圈的机器狗",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14700235385097032274/";
+          
+        },
+      },{id: "post-具微科技的机器人4s店开业",
+        
+          title: "具微科技的机器人4S店开业",
+        
+        description: "那天去了具微科技的开业现场：全球首家具身智能机器人 4S 店",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14694251983263830610/";
+          
+        },
+      },{id: "post-想说的太多-和团队一起站上舞台",
+        
+          title: "想说的太多：和团队一起站上舞台",
+        
+        description: "想说的太多。和团队一起站上舞台的感觉，真的很爽",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14690918247225102935/";
+          
+        },
+      },{id: "post-第一次去宇树科技-前后两栋楼",
+        
+          title: "第一次去宇树科技，前后两栋楼",
+        
+        description: "说实话，这是我第一次来宇树科技",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14687017389087265365/";
+          
+        },
+      },{id: "post-成都之行-聊机器狗的强化学习",
+        
+          title: "成都之行，聊机器狗的强化学习",
+        
+        description: "成都之行，和机器人同行交流了一下机器狗的强化学习，收获很多",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14686479501874434644/";
+          
+        },
+      },{id: "post-第一次当主持人-具身之路之桌面机器人",
+        
+          title: "第一次当主持人：具身之路之桌面机器人",
+        
+        description: "「具身之路之桌面机器人」，感谢腾讯科技，也辛苦金鼎资本和玄源科技",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14668348754830955085/";
+          
+        },
+      },{id: "post-华贸中心造梦能量场的机器狗巡演",
+        
+          title: "华贸中心造梦能量场的机器狗巡演",
+        
+        description: "感谢华贸中心。「造梦能量场」AI 科技艺术节，29-31号在华贸商圈做机器狗巡演",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14668340920552788564/";
+          
+        },
+      },{id: "post-提前过的六一-小朋友挤着看机器狗",
+        
+          title: "提前过的六一：小朋友挤着看机器狗",
+        
+        description: "六一儿童节提前过了。为了看机器狗，小朋友们挤成一团，可开心了",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14668205461280526926/";
+          
+        },
+      },{id: "post-在张江拿下一项记录两项冠军四项亚军",
+        
+          title: "在张江拿下一项记录两项冠军四项亚军",
+        
+        description: "这次我们拿了冠军。感谢张江，成绩是 1 项记录、2 项冠军、4 项亚军",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14667668173801460294/";
+          
+        },
+      },{id: "post-江苏经济报的专题报道",
+        
+          title: "江苏经济报的专题报道",
+        
+        description: "江苏经济报做了专题报道",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14652860149741982290/";
+          
+        },
+      },{id: "post-人形机器人租赁市场调查",
+        
+          title: "人形机器人租赁市场调查",
+        
+        description: "围绕人形机器人租赁做了市场调查",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14646758666926166600/";
+          
+        },
+      },{id: "post-在北京林业大学部署-tita-控制器",
+        
+          title: "在北京林业大学部署 TITA 控制器",
+        
+        description: "还算顺利的一天：在北京林业大学，把 TITA 机器人的 controller 部署好了",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14643851428681617995/";
+          
+        },
+      },{id: "post-郑州西亚斯学院的机器人火炬手",
+        
+          title: "郑州西亚斯学院的机器人火炬手",
+        
+        description: "这次做的是机器人火炬手",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14637059349367034437/";
+          
+        },
+      },{id: "post-一天跑了天树探界-研华和联想",
+        
+          title: "一天跑了天树探界、研华和联想",
+        
+        description: "下午在天树探界交流学习，遇到了三观出奇一致的创始人",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14635871477125747278/";
+          
+        },
+      },{id: "post-机器人走进北京的校园",
+        
+          title: "机器人走进北京的校园",
+        
+        description: "机器人走进了北京的校园，涉及机器人教育、科技节，还有接送放学",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14634976004052816471/";
+          
+        },
+      },{id: "post-巴黎居里工程师学院校友会成立大会",
+        
+          title: "巴黎居里工程师学院校友会成立大会",
+        
+        description: "回学校的感觉总是亲切温暖",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14623245161545863684/";
+          
+        },
+      },{id: "post-机器人在京东现场站了全场-c-位",
+        
+          title: "机器人在京东现场站了全场 C 位",
+        
+        description: "这次在京东的现场，机器人站到了全场 C 位",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14616914863527563774/";
+          
+        },
+      },{id: "post-上海-awe-展会上的机器狗",
+        
+          title: "上海 AWE 展会上的机器狗",
+        
+        description: "这趟来上海，关键词是机器人、AWE 展会、机器狗",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14616909502730867200/";
+          
+        },
+      },{id: "post-清华科技园的具身智能分享会",
+        
+          title: "清华科技园的具身智能分享会",
+        
+        description: "一次成功的具身智能分享会",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14613282929681175074/";
+          
+        },
+      },{id: "post-机器狗体验与英伟达-ai-黑客比赛的一天",
+        
+          title: "机器狗体验与英伟达 AI 黑客比赛的一天",
+        
+        description: "忙碌的一天。感谢字节跳动筹办的活动，抖音李炮儿也来体验了机器狗，现场还有英伟达的 AI 黑客比赛",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/log-14598893054835167776/";
+          
+        },
+      },{id: "post-第一次黑客马拉松的百分比经验",
+        
+          title: "第一次黑客马拉松的百分比经验",
+        
+        description: "所谓第一次参加黑客马拉松的经验，拆开看就是：30% 运气，加 30% 演讲，加 30% PPT，剩下 10% 才是作品",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/log-14359734704853553670/";
+          
+        },
+      },{id: "post-地质博物馆的陨石与北化的淄博烧烤",
+        
+          title: "地质博物馆的陨石与北化的淄博烧烤",
+        
+        description: "来看陨石：火星、月球、东方之星、南方之星、摄政王、珍珠玛瑙、火山蛋、褶皱断层，以及山顶洞人、巢湖龙、元谋人",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/log-14127087177370833544/";
+          
+        },
+      },{id: "post-moss-挂件打样与-robotx-团队的筹划",
+        
+          title: "MOSS 挂件打样与 robotx 团队的筹划",
+        
+        description: "从一开始 MOSS 挂件打样，到新干线 robotx 团队迅速筹划起来，这东西很受欢迎",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/log-14091355947322774147/";
+          
+        },
+      },{id: "post-试用新出的-cursor-编辑器",
+        
+          title: "试用新出的 Cursor 编辑器",
+        
+        description: "推荐大家用一下新出的 Cursor",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/log-14089699451167642279/";
+          
+        },
+      },{id: "post-在沈阳自动化所学复合移动机器人",
+        
+          title: "在沈阳自动化所学复合移动机器人",
+        
+        description: "沈阳自动化所的复合移动机器人",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/log-14085405761702072994/";
+          
+        },
+      },{id: "post-北区新建筑与意外收获的大创证书",
+        
+          title: "北区新建筑与意外收获的大创证书",
+        
+        description: "拍得不好，是北区的新建筑：大学生活动中心、第二食堂、校史馆、阳光广场、第二教学楼，还有学生农场（估计拆了）",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/log-14071282598592647847/";
+          
+        },
+      },{id: "post-新干线维修店搬进了新场地",
+        
+          title: "新干线维修店搬进了新场地",
+        
+        description: "开箱一家新店铺。新干线维修店是我大学的主要记忆，我在这里帮校内师生修了 3000 多台手机电脑，故事一段段地展开",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/log-14071270762132804256/";
+          
+        },
+      },{id: "post-北京图书订货会的直播带货区",
+        
+          title: "北京图书订货会的直播带货区",
+        
+        description: "北京图书订货会上，每个出版社都有自己的直播带货区",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/log-14070562998805336713/";
+          
+        },
+      },{id: "post-在高铁上玩-vr-与快门帧同步",
+        
+          title: "在高铁上玩 VR 与快门帧同步",
+        
+        description: "在高铁上玩 VR：看视频是正常的，但 6dof 追踪会漂移",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/log-14059542235917652638/";
+          
+        },
+      },{id: "post-在新公司实习开发的一批产品",
+        
+          title: "在新公司实习开发的一批产品",
+        
+        description: "来新公司实习，开发了一堆产品，过程还是挺有趣的",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/log-14032750259035443872/";
+          
+        },
+      },{id: "post-展位视频和设备都准备就绪",
+        
+          title: "展位视频和设备都准备就绪",
+        
+        description: "忙碌的一天。展位、视频和设备都准备就绪了，祝会议顺利",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2022/log-13993654816492228744/";
+          
+        },
+      },{id: "post-加入创业公司做医疗硬件的第一天",
+        
+          title: "加入创业公司做医疗硬件的第一天",
+        
+        description: "最近加入了一家创业公司，做医疗硬件",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2022/log-13992974253413109882/";
+          
+        },
+      },{id: "post-东校区一个月住宿体验的告别",
+        
+          title: "东校区一个月住宿体验的告别",
+        
+        description: "东校区一个月的住宿体验，到这里结束了",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2022/log-13968912165876797545/";
+          
+        },
+      },{id: "post-sylva抒发森林的功能升级公告",
+        
+          title: "Sylva抒发森林的功能升级公告",
+        
+        description: "这是当时发布的 Sylva抒发森林 功能升级公告，内容如下： 亲爱的各位用户们： 为了向各位提供更加优质的产品体验…",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2022/log-13854427578406998221/";
+          
+        },
+      },{id: "post-十位选手24小时拼出的智能小车赛",
+        
+          title: "十位选手24小时拼出的智能小车赛",
+        
+        description: "从八号到今天，忙碌了一整个星期",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2022/log-13842213249122046168/";
+          
+        },
+      },{id: "post-看不懂的法语无机化学期末",
+        
+          title: "看不懂的法语无机化学期末",
+        
+        description: "有生之年。上大学后，对我来说，每天上课真的好困难，全方面的困难",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2022/log-13841292142764101842/";
+          
+        },
+      },{id: "post-新干线维修公开课第一期结课",
+        
+          title: "新干线维修公开课第一期结课",
+        
+        description: "新干线维修公开课第一期圆满结课",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2022/log-13837156596976980175/";
+          
+        },
+      },{id: "post-厂家又寄来十套套件-求玩法",
+        
+          title: "厂家又寄来十套套件，求玩法",
+        
+        description: "上次给这个厂家做了期开箱视频，厂家又给我寄来了十套",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2022/log-13836205301640401117/";
+          
+        },
+      },{id: "post-昨天下午在学校拍的一组片子",
+        
+          title: "昨天下午在学校拍的一组片子",
+        
+        description: "昨天下午在学校拍的。设备是 ZCAM E2 M4（手持），镜头用了太苦玛 SMC 35/3.5、七工匠 17/1.4 和八羽怪 58/2",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2022/log-13827722825291665645/";
+          
+        },
+      },{id: "post-厂家借我一台z-cam-找人一起拍",
+        
+          title: "厂家借我一台Z CAM，找人一起拍",
+        
+        description: "感谢电影机 Z CAM 厂家雷特世创提供给我一台机器和时间码配件",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2022/log-13808580815208648935/";
+          
+        },
+      },{id: "post-拔草了影视飓风推荐的vr麦克风",
+        
+          title: "拔草了影视飓风推荐的VR麦克风",
+        
+        description: "去年 10 月尝试做开箱视频时，相机内置麦克风的收音全是空调嗡嗡嗡，很头疼",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2022/log-13804561033217249492/";
+          
+        },
+      },{id: "post-buctbase-com大更新与中文搜索的问题",
+        
+          title: "buctbase.com大更新与中文搜索的问题",
+        
+        description: "我们的 buctbase.com 进行了一波大的更新",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2022/log-13784582023965577435/";
+          
+        },
+      },{id: "post-t大树洞上线545天后停止运营",
+        
+          title: "T大树洞上线545天后停止运营",
+        
+        description: "2020年6月17日，T大树洞正式上线运行；",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2022/log-13768017457909272800/";
+          
+        },
+      },{id: "post-近日观影的个人评分排序",
+        
+          title: "近日观影的个人评分排序",
+        
+        description: "近日观影一览，按个人评分排序： 《教父》——意味深长 《重庆森林》——BGM 赞 《基地》——视觉效果 《西虹市首富》——爽片…",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13764041203457593586/";
+          
+        },
+      },{id: "post-厂家寄来机器人让我拍广告",
+        
+          title: "厂家寄来机器人让我拍广告",
+        
+        description: "这个机器人厂家寄来了他们的产品，让我拍广告",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13763701135837237450/";
+          
+        },
+      },{id: "post-把校园卡写进nfc芯片做成了首饰",
+        
+          title: "把校园卡写进NFC芯片做成了首饰",
+        
+        description: "从网上买了原料，做了个首饰，巧妙地把校园卡写进了 NFC 芯片里，既有装饰作用，又能当门禁卡",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13763076233897447651/";
+          
+        },
+      },{id: "post-存下来的igem宣讲会通知",
+        
+          title: "存下来的iGEM宣讲会通知",
+        
+        description: "当时把这条 iGEM 竞赛宣讲会的通知存了下来…",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13759299127973122289/";
+          
+        },
+      },{id: "post-冲动花一千多买的天线-感觉买亏了",
+        
+          title: "冲动花一千多买的天线，感觉买亏了",
+        
+        description: "接 11 月 24 日打算买基站的事：某天晚上一冲动，花一千多买来了这根天线",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13755860332761387233/";
+          
+        },
+      },{id: "post-服务器用着20年3月的cookie帮我打卡",
+        
+          title: "服务器用着20年3月的cookie帮我打卡",
+        
+        description: "已经 2021 年 8 月了，我的服务器还在用 20 年 3 月的 cookie 帮我按时打卡",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13658180452947529957/";
+          
+        },
+      },{id: "post-新光固化机打的龙和兔子",
+        
+          title: "新光固化机打的龙和兔子",
+        
+        description: "新买了一台光固化机子，精度高，操作流程繁琐但很实惠",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13658170113529024744/";
+          
+        },
+      },{id: "post-与法国研究所光刻方向的一次交流",
+        
+          title: "与法国研究所光刻方向的一次交流",
+        
+        description: "Thanks to a friend at the French institute for helping us contact the…",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13605912741860675799/";
+          
+        },
+      },{id: "post-光刻机近况与一次抢修",
+        
+          title: "光刻机近况与一次抢修",
+        
+        description: "记录一下机器的近况： 这是机器目前的版本",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13601510499983036638/";
+          
+        },
+      },{id: "post-金工老师帮忙加工螺纹-显影仍不理想",
+        
+          title: "金工老师帮忙加工螺纹，显影仍不理想",
+        
+        description: "感谢工程训练中心金工实习的老师，帮我们加工了钢管外螺纹",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13596514846315254002/";
+          
+        },
+      },{id: "post-迈克尔逊干涉测步长-镜面甩出去了",
+        
+          title: "迈克尔逊干涉测步长，镜面甩出去了",
+        
+        description: "手里这批北京化工厂的光刻胶，不知道是否有毒",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13595848877240488161/";
+          
+        },
+      },{id: "post-帮朋友申请的软件著作权下证了",
+        
+          title: "帮朋友申请的软件著作权下证了",
+        
+        description: "三月初帮朋友们申请的软件著作权，都下证了，在各种参赛中取得了优异成绩",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13595537300120998109/";
+          
+        },
+      },{id: "post-白菜价的esp32-cam显微摄像头",
+        
+          title: "白菜价的ESP32 CAM显微摄像头",
+        
+        description: "ESP32 CAM 是个好东西：能做远程显微摄像头，还能跑图像识别，价格还是白菜价",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13577251864038609123/";
+          
+        },
+      },{id: "post-无掩膜光刻机-day23-的刻度标定",
+        
+          title: "无掩膜光刻机 Day23 的刻度标定",
+        
+        description: "无掩膜光刻机制作进行到 Day23，今天做了 15um 的标定：拿一把游标卡尺当参照，两尺间距 1mm，目镜单刻度约 5um",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13574650697128808668/";
+          
+        },
+      },{id: "post-第一次用显影法制作pcb",
+        
+          title: "第一次用显影法制作PCB",
+        
+        description: "第一次上手用显影法制作 PCB，难度有点大",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13565383237683056865/";
+          
+        },
+      },{id: "post-自己训练的网络在140轮就闪退了",
+        
+          title: "自己训练的网络在140轮就闪退了",
+        
+        description: "一边是别人训练的网络，一边是我训练的网络",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13563933156954804446/";
+          
+        },
+      },{id: "post-返校当天-激光-dmd-光通量和新-3d-打印机",
+        
+          title: "返校当天：激光、dmd 光通量和新 3D 打印机",
+        
+        description: "今日已返校。手上是挑战杯比赛：用激光测试 dmd 光通量，还有色轮、dmd、光通",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13557459530227192034/";
+          
+        },
+      },{id: "post-和新媒体工作室一起测了两个星期",
+        
+          title: "和新媒体工作室一起测了两个星期",
+        
+        description: "buct.online 其实早就做出来了，之后又和新媒体工作室的同学们一起测试了两个星期",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13534753463578595573/";
+          
+        },
+      },{id: "post-医用外科口罩在自然中最多需要400年分解",
+        
+          title: "医用外科口罩在自然中最多需要400年分解",
+        
+        description: "顺手记下一条和口罩有关的事：医用外科口罩的随意丢弃，本身会造成相当大的环境风险",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13525113297403973861/";
+          
+        },
+      },{id: "post-rosetta-中文仓库构建成功零报错",
+        
+          title: "Rosetta 中文仓库构建成功零报错",
+        
+        description: "构建成功，0 ERROR",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13518451063415836879/";
+          
+        },
+      },{id: "post-和北化4位同学拿到5份软件著作权",
+        
+          title: "和北化4位同学拿到5份软件著作权",
+        
+        description: "今日喜事：和北化4位同学开发的软件申请到了5份软件著作权",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13515739718892851436/";
+          
+        },
+      },{id: "post-返校打卡程序退役-155天119万次上报",
+        
+          title: "返校打卡程序退役：155天119万次上报",
+        
+        description: "返校打卡自动化程序在155天内帮同学们完成了119万次上报，现在它已经退役了",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13515389755026837744/";
+          
+        },
+      },{id: "post-为工训数字赛道找一个会做游戏的同学",
+        
+          title: "为工训数字赛道找一个会做游戏的同学",
+        
+        description: "发一条求助贴，想求一位会做游戏的大佬",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/log-13508862934269300951/";
+          
+        },
+      },{id: "post-选了一门课-画板比想象中大很多",
+        
+          title: "选了一门课，画板比想象中大很多",
+        
+        description: "选了一个课，感觉我要起飞了",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/log-13498611517682159825/";
+          
+        },
+      },{id: "post-一学期选了18门课是什么体验",
+        
+          title: "一学期选了18门课是什么体验",
+        
+        description: "学不下去了。一学期选了18门课，大概是这样一种体验",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/log-13496440969373880532/";
+          
+        },
+      },{id: "post-我的一小步-零零后的一大步",
+        
+          title: "我的一小步，零零后的一大步",
+        
+        description: "这是我的一小步，也是零零后的一大步",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/log-13485348664310960372/";
+          
+        },
+      },{id: "post-路由器刷机救砖和超频的经验",
+        
+          title: "路由器刷机救砖和超频的经验",
+        
+        description: "折腾了一天的路由器刷机、超频、救砖，终于弄好了，谈一下经验",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/log-13479928470910669005/";
+          
+        },
+      },{id: "post-igem-颁奖现场-北化一金一银",
+        
+          title: "IGEM 颁奖现场，北化一金一银",
+        
+        description: "感谢 IGEM 国际遗传工程机器竞赛带给我这段宝贵的竞赛经历",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/log-13472622996316885219/";
+          
+        },
+      },{id: "post-11月谷歌开发者devfest大会的邀请",
+        
+          title: "11月谷歌开发者DevFest大会的邀请",
+        
+        description: "感谢 GDG 上海主办方的邀请",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/log-13454370912635654385/";
+          
+        },
+      },{id: "post-每天睡前拍张照-提醒自己早睡",
+        
+          title: "每天睡前拍张照，提醒自己早睡",
+        
+        description: "以后每天睡觉之前拍张照，提醒自己要早睡",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/log-13453192729499406555/";
+          
+        },
+      },{id: "post-互联网-给分比报大创宽松一些",
+        
+          title: "互联网+给分比报大创宽松一些",
+        
+        description: "对比一下，还是“互联网+”给分比较宽松",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/log-13449761463684108491/";
+          
+        },
+      },{id: "post-夜空中最亮的星-火星最接近地球",
+        
+          title: "夜空中最亮的星：火星最接近地球",
+        
+        description: "夜空中最亮的星。“今天22时18分，火星将运行至未来15年内最接近地球处，距离约为6207万公里",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/log-13438527028620169421/";
+          
+        },
+      },{id: "post-感谢队友-指导老师和学院的支持",
+        
+          title: "感谢队友、指导老师和学院的支持",
+        
+        description: "感谢队员、队友的努力，特别感谢指导老师和学院的大力支持",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/log-13437541296988623090/";
+          
+        },
+      },{id: "post-那么大一个站点竟然被存到北极了",
+        
+          title: "那么大一个站点竟然被存到北极了",
+        
+        description: "惊了，BUCTBASE.com 那么大，竟然被存到北极了",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/log-13380257622360920117/";
+          
+        },
+      },{id: "post-微信与企业微信互通后的两个问题",
+        
+          title: "微信与企业微信互通后的两个问题",
+        
+        description: "记下微信和企业微信聊天记录互通之后碰到的两个问题： 企业微信撤回信息，微信端无法及时撤回",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/log-13355289342190030911/";
+          
+        },
+      },{id: "post-北京化工大学课程资料共享计划",
+        
+          title: "北京化工大学课程资料共享计划",
+        
+        description: "北京化工大学课程资料共享计划，旨在打破信息不对称，把课件、教材、攻略做永久性共享",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/log-13352954605913837665/";
+          
+        },
+      },{id: "post-零零后的一小步-也是零零后的一大步",
+        
+          title: "零零后的一小步，也是零零后的一大步",
+        
+        description: "这是零零后的一小步，也是零零后的一大步",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/log-13345705598919970870/";
+          
+        },
+      },{id: "post-第一次参加这种比赛-拿了一等奖",
+        
+          title: "第一次参加这种比赛，拿了一等奖",
+        
+        description: "第一次参加这种比赛，最后拿了一等奖，整个比赛体验很好",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/log-13344115544153591875/";
+          
+        },
+      },{id: "post-老师们转发了我那篇实验记录",
+        
+          title: "老师们转发了我那篇实验记录",
+        
+        description: "感谢老师们把我的文章分享了出去",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/log-13336115685294542943/";
+          
+        },
+      },{id: "post-b-站送来这个奖-说实话有点意外",
+        
+          title: "b 站送来这个奖，说实话有点意外",
+        
+        description: "说实话，b 站能送我这个奖，我是意外的",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/log-13329376016879063108/";
+          
+        },
+      },{id: "post-第一次以网络授课的形式上课",
+        
+          title: "第一次以网络授课的形式上课",
+        
+        description: "第一次以网络授课的形式给同学们上课",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/log-13293441415531663430/";
+          
+        },
+      },{id: "post-室友科普了弹珠汽水里弹珠的用处",
+        
+          title: "室友科普了弹珠汽水里弹珠的用处",
+        
+        description: "我一直以为弹珠汽水的弹珠就是好玩，没想到室友科普：日本小孩子喝汽水时太急，容易把自己呛岔气，弹珠倒过来就可以限制流量",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2019/log-13230516794619400271/";
+          
+        },
+      },{id: "post-对-quot-你懂我吗-quot-答题数据的统计分析",
+        
+          title: "对&quot;你懂我吗&quot;答题数据的统计分析",
+        
+        description: "用新学的知识对昨天朋友圈&quot;你懂我吗&quot;答题得分做了简单的数据处理，看看自己题是不是出难了",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2019/log-13223304756650053693/";
+          
+        },
+      },{id: "post-六级作文里写程序员的社区责任",
+        
+          title: "六级作文里写程序员的社区责任",
+        
+        description: "六级作文论社区责任的重要性，实在不知道咋写 150 字",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2019/log-13223114320506261587/";
+          
+        },
+      },{id: "post-被卡车碾过的华为手机还能通话",
+        
+          title: "被卡车碾过的华为手机还能通话",
+        
+        description: "今天华强北老板送来一台被卡车和轿车碾压过的华为手机，看图就知道多么惨烈",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2019/log-13222557963738026041/";
+          
+        },
+      },{id: "post-给人民邮电出版社活动拍视频的一天",
+        
+          title: "给人民邮电出版社活动拍视频的一天",
+        
+        description: "今日给人民邮电出版社的活动拍视频",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2019/log-13208072181586202719/";
+          
+        },
+      },{id: "post-北化-up-主和戴博士们一起做的视频",
+        
+          title: "北化 up 主和戴博士们一起做的视频",
+        
+        description: "这是北化 up 主和戴博士们一起做的视频",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2019/log-13208070467045036102/";
+          
+        },
+      },{id: "post-数独今日战况与决赛预告",
+        
+          title: "数独今日战况与决赛预告",
+        
+        description: "今日的数独战况，附上题目",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2019/log-13181917599635148874/";
+          
+        },
+      },{id: "post-360-bugcloud-漏洞平台上线那天",
+        
+          title: "360 bugcloud 漏洞平台上线那天",
+        
+        description: "360 的 bugcloud 开源漏洞响应平台上线那天，把这条公告存了下来",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2019/log-13181892932603940925/";
+          
+        },
+      },{id: "post-00-06-交的-90-包月-00-09-就扣费了",
+        
+          title: "00:06 交的 90 包月，00:09 就扣费了",
+        
+        description: "9 月 1 号 00:06 在校园网交的 90 包月，结果 00:09 就给我扣费了",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2019/log-13148280656716238944/";
+          
+        },
+      },{id: "post-m-记-mcfizz-情侣饮料杯的两种用法",
+        
+          title: "M 记 McFizz 情侣饮料杯的两种用法",
+        
+        description: "看到 M 记在日本设计的 McFizz 情侣饮料杯",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2019/log-13126995251687788599/";
+          
+        },
+      },{id: "post-用边长研究面积-关于雪花形状的一点推导",
+        
+          title: "用边长研究面积：关于雪花形状的一点推导",
+        
+        description: "今天看了一天的雪花。看书过程中，在计算上花了一些时间",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2019/log-13119699795613782095/";
+          
+        },
+      },{id: "post-r5-2600-加-b450m-迫击炮装机记录",
+        
+          title: "R5-2600 加 B450M 迫击炮装机记录",
+        
+        description: "装完了，稍后评测。配置如下： CPU：R5-2600 主板：MSI B450M 迫击炮 内存：十铨 RGB 3000-8G\2 固态：SN750-500G…",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2019/log-13099892576093605968/";
+          
+        },
+      },{id: "post-墨盒到了-顺手做了个加墨换硒鼓教程",
+        
+          title: "墨盒到了，顺手做了个加墨换硒鼓教程",
+        
+        description: "打印机墨盒到了，大家又可以不出门免费打印啦",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2019/log-13069469757584904273/";
+          
+        },
+      },{id: "post-感谢北化创协两星期的追踪报道",
+        
+          title: "感谢北化创协两星期的追踪报道",
+        
+        description: "感谢北化创协两星期的追踪报道",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2019/log-13047819103451091017/";
+          
+        },
+      },{id: "post-北化新干线开始装修-同步-b-站直播",
+        
+          title: "北化新干线开始装修，同步 B 站直播",
+        
+        description: "北化新干线于 3 月 12 日下午 4.开始装修",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2019/log-13022309395839062082/";
+          
+        },
+      },{id: "post-拆装-3d-打印机六小时与-b-站首播",
+        
+          title: "拆装 3D 打印机六小时与 B 站首播",
+        
+        description: "今天和大家一起拼 3D 打印机——准确地说是拆了 6 个小时",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2019/log-13020880463228244055/";
+          
+        },
+      },{id: "post-开始拼装-3d-打印机",
+        
+          title: "开始拼装 3D 打印机",
+        
+        description: "正在拼 3D 打印机，大家来看看吧",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2019/log-13020785704337018944/";
+          
+        },
+      },{id: "post-三天三夜搭好新干线在线网站",
+        
+          title: "三天三夜搭好新干线在线网站",
+        
+        description: "经过三天三夜，「新干线在线」的网站总算搭起来了",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2019/log-12993407429746757691/";
+          
+        },
+      },{id: "post-戊戌年在北化的最后一个夜晚",
+        
+          title: "戊戌年在北化的最后一个夜晚",
+        
+        description: "戊戌年在北化的最后一个夜晚，宿舍楼的灯星星点点，食堂也不再那么热闹，朦朦胧胧，如潮水散去",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2019/log-12985322775830204480/";
+          
+        },
+      },{id: "post-萌芽杯分享会-第一次对几百人演讲",
+        
+          title: "萌芽杯分享会：第一次对几百人演讲",
+        
+        description: "昨天晚上接到通知，要在萌芽杯分享会上主持一下演讲",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2018/log-12963694297617076316/";
+          
+        },
+      },{id: "post-液态金属机器人项目的大创招募",
+        
+          title: "液态金属机器人项目的大创招募",
+        
+        description: "大学生创新创业的报名开始了，我们这边做的是液态金属机器人，指导老师已经到位",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2018/log-12940512545241239615/";
+          
+        },
+      },{id: "post-万圣节做-jd-hitb-安全峰会志愿者",
+        
+          title: "万圣节做 JD-HITB 安全峰会志愿者",
+        
+        description: "今年的万圣节，有幸参加了 JD-HITB 安全峰会，和清北人一起做志愿者，遇见 CCTV、GOOGLE、NASA 等等以前只能在新闻上见到的人",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2018/log-12926835943636799557/";
+          
+        },
+      },{id: "post-修机摘录-从-4k-的-dell-到-2w-的-mac-pro",
+        
+          title: "修机摘录：从 4K 的 DELL 到 2W 的 MAC PRO",
+        
+        description: "今天修机的摘录。机器从 4K 的 DELL 到 2W 的 MAC PRO，联想拯救者较多，还有一位学长来做 10m 网线、要一堆 LED 电阻",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2018/log-12913822904212918367/";
+          
+        },
+      },{id: "post-在-macbook-上安装并激活-windows-的步骤",
+        
+          title: "在 MacBook 上安装并激活 Windows 的步骤",
+        
+        description: "那天把在 MacBook 上安装及激活 Windows 的流程完整走了一遍，记录下来",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2018/log-12912168561769320529/";
+          
+        },
+      },{id: "news-第一次面对数百人开讲-受邀在校园-萌芽杯-分享会担任主持-并分享大一独立完成的写字机器人软硬件控制系统",
+          title: '🎤 第一次面对数百人开讲：受邀在校园「萌芽杯」分享会担任主持，并分享大一独立完成的写字机器人软硬件控制系统。',
+          description: "",
+          section: "News",},{id: "news-零零后-迈出公司化的第一步-此前由本人创办-义务服务师生超-3-000-单的校园软硬件服务团队-新干线-是这家公司全部工程能力的起点",
+          title: '🚀 「零零后」迈出公司化的第一步。此前由本人创办、义务服务师生超 3,000 单的校园软硬件服务团队「新干线」，是这家公司全部工程能力的起点。',
+          description: "",
+          section: "News",},{id: "news-️-萌芽杯-写字机器人-完成答辩-步进电机插补算法-g-code-控制器-从机构-电路到固件全链路自研",
+          title: '✍️ 萌芽杯「写字机器人」完成答辩：步进电机插补算法 + G-code 控制器，从机构、电路到固件全链路自研。',
+          description: "",
+          section: "News",},{id: "news-屋必安-农村房屋安全管理动态监测系统立项启动-把软硬件能力用于安徽贫困户危房改造一线-本人为该项目所属公司创始人",
+          title: '🏠 「屋必安」农村房屋安全管理动态监测系统立项启动，把软硬件能力用于安徽贫困户危房改造一线——本人为该项目所属公司创始人。',
+          description: "",
+          section: "News",},{id: "news-数字扶贫暑期实践答辩-团队在安徽省池州市青阳县精准录入-4-784-户-建档立卡贫困户住房档案-落实-985-户-低保户危房改造-实现一户一档数字化监测-助力石台县退出贫困县序列",
+          title: '🧭 数字扶贫暑期实践答辩：团队在安徽省池州市青阳县精准录入 4,784 户 建档立卡贫困户住房档案，落实 985 户 低保户危房改造，实现一户一档数字化监测，助力石台县退出贫困县序列。',
+          description: "",
+          section: "News",},{id: "news-️-公司获评中关村高新技术企业-认定编号-20202010386401-本人同期获评中关村-u30-雏鹰人才-这是全国首家零零后高新技术企业",
+          title: '🏛️ 公司获评中关村高新技术企业（认定编号 20202010386401），本人同期获评中关村 U30 雏鹰人才——这是全国首家零零后高新技术企业。',
+          description: "",
+          section: "News",},{id: "news-️-用一整周带十位参赛选手从零件拼装-结构调试到上路参赛-赛前不足-24-小时完成智能小车整机联调",
+          title: '🏎️ 用一整周带十位参赛选手从零件拼装、结构调试到上路参赛，赛前不足 24 小时完成智能小车整机联调。',
+          description: "",
+          section: "News",},{id: "news-出任北航虚拟现实国家重点研究院-医疗仿真硬件负责人-2023-06-2025-02-主导-5-款医疗仿真硬件产品从需求到量产导入",
+          title: '🩺 出任北航虚拟现实国家重点研究院 医疗仿真硬件负责人（2023-06 ~ 2025-02），主导 5 款医疗仿真硬件产品从需求到量产导入。',
+          description: "",
+          section: "News",},{id: "news-代表-清华大学紫荆战队-出征在上海张江科学会堂举行的-2025-国际人形机器人技能大赛-张江启动赛-夺得-人形机器人应用场景挑战赛-张江纪录-第一名-全赛事累计-1-项世界纪录-3-项冠军-4-项亚军",
+          title: '🤖 代表 清华大学紫荆战队 出征在上海张江科学会堂举行的 2025 国际人形机器人技能大赛（张江启动赛），夺得 人形机器人应用场景挑战赛「张江纪录」第一名，全赛事累计 1 项世界纪录 · 3 项冠军 ·...',
+          description: "",
+          section: "News",},{id: "news-七月硬件盘点-人形双臂第一代实机与第二代优化并行推进-多本体机器狗二开进入常态-底层控制库-dmcan-与-robodog-已开源并被开发者社区使用-pip-install-robodog-把接入成本从一天压缩到五分钟",
+          title: '🦾 七月硬件盘点：人形双臂第一代实机与第二代优化并行推进，多本体机器狗二开进入常态。底层控制库 dmcan 与 robodog 已开源并被开发者社区使用——pip install robodog 把接入成本从一天压缩到五分钟。',
+          description: "",
+          section: "News",},{id: "news-在-字节跳动-ai-主题分享会-开展-用-vibe-coding-与-skill-打造具身智能-agent-开发者工作坊分享",
+          title: '💻 在 字节跳动 AI+ 主题分享会 开展《用 Vibe Coding 与 Skill 打造具身智能 Agent》开发者工作坊分享。',
+          description: "",
+          section: "News",},{id: "news-斩获-2025-nvidia-hackathon-年度总决赛-冠军-在英伟达年度最高级别技术黑客松中拔得头筹-查看获奖详情与证书",
+          title: '🏆 斩获 2025 NVIDIA Hackathon 年度总决赛 冠军！在英伟达年度最高级别技术黑客松中拔得头筹，查看获奖详情与证书。',
+          description: "",
+          section: "News",},{id: "news-受邀在-清华大学具身智能俱乐部-发表主题演讲-代码的重量-如何用一行-python-撬动物理世界-点击查看演讲详情与课件下载",
+          title: '🎤 受邀在 清华大学具身智能俱乐部 发表主题演讲《代码的重量——如何用一行 Python 撬动物理世界》，点击查看演讲详情与课件下载。',
+          description: "",
+          section: "News",},{id: "news-在单张-32gb-rtx-5090-显卡上成功跑通-80-层-decoder-架构-vla-模型-wall-oss-微调与-lerobot-so-101-机械臂真机闭环-端到端延迟低至-33-100ms-相关轨迹数据集已开源至-huggingface",
+          title: '🚀 在单张 32GB RTX 5090 显卡上成功跑通 80 层 Decoder 架构 VLA 模型（WALL-OSS）微调与 LeRobot...',
+          description: "",
+          section: "News",},{id: "news-智能电路工程生成系统-pcbtool-ai-被-nvidia-官网收录推荐-感谢-nvidia-开发者社区的认可与生态支撑-该项目的现场挑战赛战绩见-荣誉与奖项",
+          title: '⚡ 智能电路工程生成系统 PCBTool.AI 被 NVIDIA 官网收录推荐，感谢 NVIDIA 开发者社区的认可与生态支撑。该项目的现场挑战赛战绩见 荣誉与奖项。',
+          description: "",
+          section: "News",},{id: "news-在上海张江举办的小红书首届-黑客松巅峰赛-中-48-小时极限开发完成模块化具身理容机械臂-吹了么-斩获硬件赛道三等奖-获人民网报道原文-china-daily-报道",
+          title: '🥉 在上海张江举办的小红书首届 “黑客松巅峰赛” 中，48 小时极限开发完成模块化具身理容机械臂“吹了么”，斩获硬件赛道三等奖，获人民网报道原文、China Daily 报道！',
+          description: "",
+          section: "News",},{id: "news-tri-me-吹了么-亮相-七轴机械臂-边缘-ai-推理-单卡-vla-真机闭环-一键完成洗-吹-刷-本人为具身智能浴室理容机械臂领域创始人",
+          title: '🛁 TRI.ME「吹了么」亮相：七轴机械臂 + 边缘 AI 推理 + 单卡 VLA 真机闭环，一键完成洗、吹、刷。本人为具身智能浴室理容机械臂领域创始人。',
+          description: "",
+          section: "News",},{id: "news-开源鸿蒙芯片大赛一等奖-newradiotech-空间全场景交互终端",
+          title: '🥇 开源鸿蒙芯片大赛一等奖：NewRadiotech 空间全场景交互终端。',
+          description: "",
+          section: "News",},{id: "news-项目受邀亮相-2026-世界人工智能大会-waic-小红书展台现场展出-并作为青年-ai-原生创客与超级个体代表接受解放日报-上观新闻专题报道",
+          title: '🎪 项目受邀亮相 2026 世界人工智能大会 (WAIC) 小红书展台现场展出，并作为青年 AI 原生创客与超级个体代表接受解放日报·上观新闻专题报道！',
+          description: "",
+          section: "News",},{id: "news-中国首届-physical-ai-黑客松-探月计划-在北京中关村落幕-48-小时-200-位开发者-50-支战队-本人作为赛事主理人负责选手邀请与赛制管理-并把-48-小时的极限赛事延伸为长期社群-硬件补给与商业对接机制",
+          title: '🌙 中国首届 Physical AI 黑客松「探月计划」在北京中关村落幕：48 小时、200 位开发者、50 支战队。本人作为赛事主理人负责选手邀请与赛制管理，并把 48 小时的极限赛事延伸为长期社群、硬件补给与商业对接机制。',
+          description: "",
+          section: "News",},{id: "news-受邀在-第四届嘉立创开源硬件星火会暨全球-ai-硬件创新生态大会-hubday-2026-深圳福田-2000-工程师到场-主会场发表特邀演讲-从原型到真实应用-硬核创客的工程化之路-分享硬件量产与软硬件架构避坑经验",
+          title: '💡 受邀在 第四届嘉立创开源硬件星火会暨全球 AI 硬件创新生态大会 Hubday 2026（深圳福田，2000+ 工程师到场）主会场发表特邀演讲《从原型到真实应用——硬核创客的工程化之路》，分享硬件量产与软硬件架构避坑经验。',
+          description: "",
+          section: "News",},{id: "projects-github-arctic-code-vault-北极代码宝藏计划",
+          title: 'GitHub Arctic Code Vault (北极代码宝藏计划)',
+          description: "主持建设的校园开源知识库与技术项目被 GitHub 官方转录为特制长存胶卷，永久封存至挪威斯瓦尔巴群岛冻土深处 1000 年。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/10_arctic_code_vault/";
+            },},{id: "projects-servo-robot-开源双足舵机机器人运动控制框架",
+          title: 'Servo Robot — 开源双足舵机机器人运动控制框架',
+          description: "用 Python 驱动 10 个串行总线舵机的开源双足机器人框架：自动扫描发现、手掰示教零代码编排动作、变速回放，并提供 WebSerial 在线调试工具。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/11_servo_robot_biped/";
+            },},{id: "projects-robogen-一张图片复刻机器人",
+          title: 'RoboGen — 一张图片复刻机器人',
+          description: "从单张机器人图片生成可组装、可进入 Isaac Sim 仿真的机器人模型，2025 NVIDIA Sky Hackathon 年度总决赛冠军方案。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/12_robogen_image_to_robot/";
+            },},{id: "projects-机器狗群控-遥操作与商业化演出系统",
+          title: '机器狗群控、遥操作与商业化演出系统',
+          description: "把四足机器人从实验室演示变成可编排、可复制、可结算的商业演出资产：VR / AVP / WebXR / WebRTC 多路线遥操作、UWB 智能跟随、群控编排与现场执行。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/13_quadruped_swarm_shows/";
+            },},{id: "projects-hasel-静电柔性驱动器-国家级大学生创新创业训练计划",
+          title: 'HASEL 静电柔性驱动器（国家级大学生创新创业训练计划）',
+          description: "3D 打印刻画介电薄膜 + 液压放大 + 液体电介质自愈 + 静电致动的柔性驱动器研究，5–15V 输入升压至约 1kV 观测静电吸附，项目负责人。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/14_hasel_soft_robot/";
+            },},{id: "projects-高速多尺度无掩膜芯片直写光刻机与扫描隧道显微镜",
+          title: '高速多尺度无掩膜芯片直写光刻机与扫描隧道显微镜',
+          description: "以 Grbl_Esp32 运动控制 + 无刷电调 + 树莓派（nanodlp）搭建的「手搓光刻机」开源硬件项目，并深化为基于楞次定律减震体系的扫描隧道显微镜系统。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/15_maskless_lithography_stm/";
+            },},{id: "projects-纽瑞芯-uwb-定位与追踪-sdk-方案",
+          title: '纽瑞芯 UWB 定位与追踪 SDK 方案',
+          description: "围绕纽瑞芯（NewRadiotech）UWB 芯片开发的机器狗追踪 SDK、低成本定位方案与遥控器结构件，并把该模组推进到开发者社区的物料体系。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/16_uwb_positioning_sdk/";
+            },},{id: "projects-ue4duino-与-unreal-engine-串口通信插件",
+          title: 'UE4Duino 与 Unreal Engine 串口通信插件',
+          description: "让 Arduino/嵌入式板卡与 Unreal Engine 之间通过串口互通的桥接库与插件，用于医疗仿真设备的力反馈与运动学数据接入。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/17_ue4duino_serial_bridge/";
+            },},{id: "projects-联想委托开发项目-esp32-硬件与机器狗遥操作",
+          title: '联想委托开发项目 — ESP32 硬件与机器狗遥操作',
+          description: "作为乙方技术负责人承接的工业委托开发：ESP32 硬件方案与机器狗遥操作链路，交付开发计划与项目介绍文档。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/18_lenovo_agent_hardware/";
+            },},{id: "projects-xiaozhi-server-语音-ai-与语音智能体外包交付",
+          title: 'xiaozhi-server 语音 AI 与语音智能体外包交付',
+          description: "开源语音 AI 项目 xiaozhi 生态的早期参与者，以及以语音交互为核心的智能体硬件外包交付。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/19_xiaozhi_voice_agent/";
+            },},{id: "projects-单卡极限部署-80层-vla-模型真机闭环",
+          title: '单卡极限部署：80层 VLA 模型真机闭环',
+          description: "在单张 32GB RTX 5090 消费级显卡上跑通 80 层 Decoder 架构 VLA 模型（WALL-OSS）全链路微调 + LeRobot SO-101 机械臂真机闭环，端到端延迟低至 33–100ms。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/1_single_gpu_vla/";
+            },},{id: "projects-维他动力-vbot-devrel-共创与开发者生态",
+          title: '维他动力 Vbot DevRel 共创与开发者生态',
+          description: "以维他动力（Vbot）DevRel 共创顾问身份参与开发者关系建设，在千人规模女性开发者黑客松现场四天产出 6 个二次开发项目。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/20_vbot_devrel/";
+            },},{id: "projects-buctbase-北化课程资料共享开源仓库",
+          title: 'BUCTBASE — 北化课程资料共享开源仓库',
+          description: "本科期间发起并维护的课程资料共享开源仓库，配合公众号发布共享计划，是校园开放知识实践的早期尝试。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/21_buctbase_open_source/";
+            },},{id: "projects-青阳县农村房屋鉴定管理系统-屋必安前身",
+          title: '青阳县农村房屋鉴定管理系统（屋必安前身）',
+          description: "面向县级住建部门的农村房屋鉴定管理系统，作为落地开发项目完成验收，并成为后续「屋必安」参赛与部署系统的技术基础。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/22_qingyang_housing_appraisal/";
+            },},{id: "projects-robodog-与-agentos-机器人实时操作系统",
+          title: 'robodog 与 AgentOS 机器人实时操作系统',
+          description: "机器狗高自由度运动控制库，结合 6 轴机械臂与 WebXR 空间交互，支持姿态估计、UWB 定位、自主避障与手势抓取。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2_robodog_agentos/";
+            },},{id: "projects-吹了么-tri-me-模块化具身理容机械臂",
+          title: '“吹了么” (TRI.ME) — 模块化具身理容机械臂',
+          description: "基于七轴机械臂与视觉大模型，48 小时极限开发斩获小红书首届黑客松硬件赛道三等奖，受邀亮相 2026 世界人工智能大会 (WAIC) 公开展出，获人民网、解放日报·上观新闻、China Daily 专题报道。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/3_trime_hairdryer_robot/";
+            },},{id: "projects-pcbtool-ai-基于-nvidia-nim-的电路设计智能体",
+          title: 'PCBTool AI — 基于 NVIDIA NIM 的电路设计智能体',
+          description: "运行于 NVIDIA NIM 微服务架构的 RAG 驱动电路设计智能体。入选英伟达展台优秀案例展示，并签署正式官方展示授权。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/4_pcbtool_ai/";
+            },},{id: "projects-土豆子-边缘-ai-伴侣与量产硬件",
+          title: '“土豆子”边缘 AI 伴侣与量产硬件',
+          description: "基于 xiaozhi-esp32-server 的低延迟端侧语音与 LLM 边缘交互硬件方案，实现 500+ 台整机硬件量产与结构/固件全流程交付。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/5_tudouzi_edge_ai/";
+            },},{id: "projects-dmcan-电机控制库与-ros-动力学集成",
+          title: 'dmcan 电机控制库与 ROS 动力学集成',
+          description: "封装达妙（DM）无刷电机 CAN 总线力矩与阻抗控制算法，构建基于 ROS/ROS2 的分布式实时驱动框架。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/6_dmcan_motor_control/";
+            },},{id: "projects-treehollow-校园匿名社交平台与开源社区",
+          title: 'treehollow 校园匿名社交平台与开源社区',
+          description: "发起并主开发的校园匿名社区 bucthole.com，多子域名架构 + WebSocket 实时推送 + reCAPTCHA 风控，2021 年 Web 与 iOS 双端上线，成为校内热议社区，仓库已开源并被开发者社区使用。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/7_treehollow/";
+            },},{id: "projects-农村住房安全管理系统-屋必安",
+          title: '农村住房安全管理系统 (屋必安)',
+          description: "作为公司创始人带领零零后科技独立自研并在安徽青阳县政府落地，录入 4,784 户建档立卡贫困户、落实 985 户低保户危房改造，助力石台县退出贫困县序列；获挑战杯省部级奖、国家级大创立项结题与国家计算机软件著作权登记。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/8_rural_housing_safety/";
+            },},{id: "projects-医疗仿真硬件研发-北航虚拟现实国家重点研究院",
+          title: '医疗仿真硬件研发（北航虚拟现实国家重点研究院）',
+          description: "任医疗仿真硬件负责人（2023-06 ~ 2025-02），主导牙科椅、消化内镜、气管插管假人、高级综合急救模拟人等医疗仿真硬件研发，攻关 Unreal Engine 串口通信仿真联动。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/9_medical_vr_simulation/";
+            },},{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/00make", "_blank");
+        },
+      },{
+        id: 'social-cv',
+        title: 'CV',
+        section: 'Socials',
+        handler: () => {
+          window.open("/assets/pdf/resume/resume.pdf", "_blank");
+        },
+      },{
+        id: 'social-wechat',
+        title: 'Wechat',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://zhangzhenyao.com/press/#press-kit", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>

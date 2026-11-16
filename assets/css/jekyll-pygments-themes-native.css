@@ -60,7 +60,10 @@
 .highlight .kt {
   color: #6ab825;
   font-weight: bold;
-} /* Keyword.Type */ /* Literal.Date */
+} /* Keyword.Type */
+.highlight .ld {
+  color: #d0d0d0;
+} /* Literal.Date */
 .highlight .m {
   color: #3677a9;
 } /* Literal.Number */
