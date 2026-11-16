@@ -1,233 +1,185 @@
 cv:
   name: 张振尧
-  label: 机器人开发者生态 & 全栈具身智能工程师
   location: 中国·北京
-  image: assets/img/prof_pic.jpg
-  summary: NVIDIA 生态走出来的机器人技术布道者：年度黑客松冠军 × 200 万受众开发者内容创作者 × 全栈具身智能工程师。既能亲手把大模型在单张消费级显卡上跑通真机闭环，也能把前沿技术生动讲给百万开发者听。曾获人民网、北京日报、解放日报、China Daily、腾讯科技等全网权威主流媒体深度专访与报道。
-
   social_networks:
-    - network: GitHub
-      username: 00make
-    - network: WeChat
-      username: towardsdawn
-
+  - network: GitHub
+    username: 00make
   sections:
+    Summary:
+    - bullet: NVIDIA 生态走出来的机器人技术布道者：年度黑客松冠军 × 200 万受众开发者内容创作者 × 全栈具身智能工程师。既能亲手把大模型在单张消费级显卡上跑通真机闭环，也能把前沿技术生动讲给百万开发者听。曾获人民网、北京日报、解放日报、China Daily、腾讯科技等全网权威主流媒体深度专访与报道。
     Experience:
-      - company: 零零后（北京）科技有限公司
-        position: 创始人 & CEO
-        location: 中国·北京
-        start_date: 2019-04
-        end_date: 至今
-        summary: 创立并领导软硬件技术企业，获评国家级中关村高新技术企业，为全国首家零零后高新技术企业；本人入选中关村 U30 雏鹰人才。
-        highlights:
-          - 打造具备软硬件全栈研发能力的创新技术团队，自主研发多款智能硬件与大型软件系统。
-          - 带领公司入选“中关村高新技术企业”与“中关村雏鹰人才企业”。
-          - 主导研发《农村房屋安全管理系统》并于安徽池州青阳县住建局落地部署，助力乡村振兴与精准脱贫。
-          - 发起并主开发校园匿名社区 bucthole.com（treehollow），Web 与 iOS 双端上线，仓库已开源并被开发者社区使用。
-
-      - company: “探月计划·Physical AI黑客松”
-        position: 赛事主理人 & 决赛评委
-        location: 中国·北京（中关村东升科技园）
-        start_date: 2026-07
-        end_date: 2026-07
-        summary: 中国首届聚焦 Physical AI（物理人工智能）主题的前沿硬核开发者极限赛事。
-        highlights:
-          - 由清华大学工业训练中心、中关村科学城管委会、海淀区东升镇政府共同发起，小米集团前总裁王翔等担任创始合伙人；本人任探月具身智能社区 CTO、赛事主理人与决赛评委。
-          - 汇聚来自清华、北大、斯坦福、MIT、UC伯克利等全球顶尖高校与科技企业的 200+ 开发者、50 支战队，提供人形机器人与机械臂真机实操闭环。
-          - 接受北京日报专访，倡导构建“永不落幕的具身智能生态”，赋能硬核科技跨越“实验室到市场”鸿沟。
-
-      - company: 北航虚拟现实国家重点研究院
-        position: 医疗仿真硬件负责人
-        location: 中国·北京
-        start_date: 2023-06
-        end_date: 2025-02
-        summary: 该方向唯一硬件负责人，主导医疗仿真硬件从架构设计、组装调试到归档交付的全生命周期。
-        highlights:
-          - 主导牙科椅、消化内镜、气管插管假人、高级综合急救模拟人等医疗仿真硬件研发，牙科椅完成开发并归档交付。
-          - 研究并落地 Unreal Engine 串口通信插件（UE4Duino、Unreal_Engine_SerialCOM_Plugin），实现真实硬件操作与 UE 虚拟场景的实时仿真联动。
-          - 负责 PCI 控制盒硬件设计与修改调试、机构动力学建模与跨平台嵌入式驱动集成。
-
-      - company: Genesis 开源具身 AI 社区
-        position: 中国区产品创新与推广负责人
-        location: 中国·北京 / 线上
-        start_date: 2025-12
-        end_date: 至今
-        summary: 推动全球开源通用物理仿真与具身智能学习生态发展。
-        highlights:
-          - 深度链接清华、北化、哈工大等顶尖高校实验室开发者，推动跨本体机器人策略在 Genesis 环境下的训练与评估。
-          - 策划组织开发者 Workshop、技术社群运营与开源模型资产共建。
-
-      - company: 地瓜机器人 (D-Robotics)
-        position: 官方开发者代表
-        location: 中国·北京
-        start_date: 2024-05
-        end_date: 至今
-        summary: 参与国产端侧高算力机器人芯片生态建设与开发者生态推广。
-        highlights:
-          - 针对 RDK X3 / X5 嵌入式机器人计算平台进行算法适配、性能调优与开源样例开发。
-          - 受邀担任全国开发者大会主讲嘉宾，推动国产边缘算力在机器人领域的普及。
-
+    - company: 零零后（北京）科技有限公司
+      position: 创始人 & CEO
+      location: 中国·北京
+      start_date: 2019-04
+      end_date: present
+      summary: 创立并领导软硬件技术企业，获评国家级中关村高新技术企业，为全国首家零零后高新技术企业；本人入选中关村 U30 雏鹰人才。
+      highlights:
+      - 打造具备软硬件全栈研发能力的创新技术团队，自主研发多款智能硬件与大型软件系统。
+      - 带领公司入选“中关村高新技术企业”与“中关村雏鹰人才企业”。
+      - 主导研发《农村房屋安全管理系统》并于安徽池州青阳县住建局落地部署，助力乡村振兴与精准脱贫。
+      - 发起并主开发校园匿名社区 bucthole.com（treehollow），Web 与 iOS 双端上线，仓库已开源并被开发者社区使用。
+    - company: “探月计划·Physical AI黑客松”
+      position: 赛事主理人 & 决赛评委
+      location: 中国·北京（中关村东升科技园）
+      start_date: 2026-07
+      end_date: 2026-07
+      summary: 中国首届聚焦 Physical AI（物理人工智能）主题的前沿硬核开发者极限赛事。
+      highlights:
+      - 由清华大学工业训练中心、中关村科学城管委会、海淀区东升镇政府共同发起，小米集团前总裁王翔等担任创始合伙人；本人任探月具身智能社区 CTO、赛事主理人与决赛评委。
+      - 汇聚来自清华、北大、斯坦福、MIT、UC伯克利等全球顶尖高校与科技企业的 200+ 开发者、50 支战队，提供人形机器人与机械臂真机实操闭环。
+      - 接受北京日报专访，倡导构建“永不落幕的具身智能生态”，赋能硬核科技跨越“实验室到市场”鸿沟。
+    - company: 北航虚拟现实国家重点研究院
+      position: 医疗仿真硬件负责人
+      location: 中国·北京
+      start_date: 2023-06
+      end_date: 2025-02
+      summary: 该方向唯一硬件负责人，主导医疗仿真硬件从架构设计、组装调试到归档交付的全生命周期。
+      highlights:
+      - 主导牙科椅、消化内镜、气管插管假人、高级综合急救模拟人等医疗仿真硬件研发，牙科椅完成开发并归档交付。
+      - 研究并落地 Unreal Engine 串口通信插件（UE4Duino、Unreal_Engine_SerialCOM_Plugin），实现真实硬件操作与 UE 虚拟场景的实时仿真联动。
+      - 负责 PCI 控制盒硬件设计与修改调试、机构动力学建模与跨平台嵌入式驱动集成。
+    - company: Genesis 开源具身 AI 社区
+      position: 中国区产品创新与推广负责人
+      location: 中国·北京 / 线上
+      start_date: 2025-12
+      end_date: present
+      summary: 推动全球开源通用物理仿真与具身智能学习生态发展。
+      highlights:
+      - 深度链接清华、北化、哈工大等顶尖高校实验室开发者，推动跨本体机器人策略在 Genesis 环境下的训练与评估。
+      - 策划组织开发者 Workshop、技术社群运营与开源模型资产共建。
+    - company: 地瓜机器人 (D-Robotics)
+      position: 官方开发者代表
+      location: 中国·北京
+      start_date: 2024-05
+      end_date: present
+      summary: 参与国产端侧高算力机器人芯片生态建设与开发者生态推广。
+      highlights:
+      - 针对 RDK X3 / X5 嵌入式机器人计算平台进行算法适配、性能调优与开源样例开发。
+      - 受邀担任全国开发者大会主讲嘉宾，推动国产边缘算力在机器人领域的普及。
     Education:
-      - institution: 北京化工大学 (BUCT)
-        location: 中国·北京
-        area: 机械设计制造及其自动化（巴黎居里工程师背景 / 自动化系）
-        studyType: 工学学士
-        start_date: 2018-09
-        end_date: 2023-06
-        highlights:
-          - 荣获北京化工大学最高荣誉之一“化大之星 · 校园青春榜样”
-          - 获评首都大学生“青年服务国家”先进个人及社会实践优秀团队
-          - 获得 ACM 大学生程序设计竞赛、中国高校计算机大赛等省级及以上科技竞赛奖项
-
+    - institution: 北京化工大学 (BUCT)
+      location: 中国·北京
+      area: 机械设计制造及其自动化（巴黎居里工程师背景 / 自动化系）
+      studyType: 工学学士
+      start_date: 2018-09
+      end_date: 2023-06
+      highlights:
+      - 荣获北京化工大学最高荣誉之一“化大之星 · 校园青春榜样”
+      - 获评首都大学生“青年服务国家”先进个人及社会实践优秀团队
+      - 获得 ACM 大学生程序设计竞赛、中国高校计算机大赛等省级及以上科技竞赛奖项
     Awards:
-      - title: 2025 NVIDIA Hackathon 年度总决赛冠军
-        awarder: NVIDIA (英伟达)
-        date: 2025-12
-        summary: 全年黑客松总决赛最高荣誉，PCBTool AI (基于 NVIDIA NIM 智能体) 入选英伟达官方展台展示案例。
-
-      - title: NVIDIA 11th Sky Hackathon 第一名
-        awarder: NVIDIA (英伟达)
-        date: 2025-10
-        summary: 聚焦端侧大模型与边缘 AI 智能体开发，斩获第一名。
-
-      - title: 2025 国际人形机器人技能大赛 1 项世界纪录 · 3 项冠军 · 4 项亚军
-        awarder: 国际人形机器人技能大赛组委会
-        date: 2025-05
-        summary: 代表清华大学紫荆战队出战，以上海张江应用场景挑战赛纪录第一名等成绩获得该赛事总战绩。
-
-      - title: 首届小红书黑客松巅峰赛 硬件赛道三等奖
-        awarder: 小红书技术团队 / 张江高科
-        date: 2026-04
-        summary: 项目“TRI.ME 吹了么”七轴模块化具身理容机械臂，48 小时极限手搓真机并获奖。
-
-      - title: 2026 世界人工智能大会 (WAIC) 受邀展出
-        awarder: WAIC 组委会 / 小红书
-        date: 2026-07
-        summary: 携“吹了么”具身理容机械臂作为 AI 原生创客与超级个体代表于 WAIC 官方展台公开展出。
-
-      - title: 中关村高新技术企业认证 & 中关村 U30 雏鹰人才
-        awarder: 北京市中关村科技园区管委会
-        date: 2020-11
-        summary: 创办企业获评中关村高新技术企业，个人入选中关村科技创新雏鹰人才。
-
-      - title: 北京化工大学“化大之星·校园青春榜样”
-        awarder: 北京化工大学
-        date: 2020-10
-        summary: 获评全校年度青年榜样学生代表，被学校官方专稿深度报道。
-
-      - title: Bilibili 官方“校园星 UP” (累计播放 200 万+)
-        awarder: 哔哩哔哩 (Bilibili)
-        date: 2021-06
-        summary: 频道「超级无敌麻辣串」，单期机器人软硬件与 AI 视频最高播放破百万，累计超 200 万次。
-
-      - title: 腾讯新闻 & 紫牛新闻 具身智能与大模型特邀受邀专家
-        awarder: 腾讯新闻 / 扬子晚报
-        date: 2026-09
-        summary: 受邀深度实测大模型物理引擎抗幻觉能力，深度解析养老护理机器人场景商业化落地。
-
-      - title: GitHub Arctic Code Vault (北极代码宝藏计划) 入选
-        awarder: GitHub (微软)
-        date: 2020-07
-        summary: 主持的开源项目被转录为长存胶卷，永久封存至北极斯瓦尔巴群岛冻土深处 1000 年。
-
-      - title: 全国大学生工程训练综合能力竞赛 北京市一等奖
-        awarder: 教育部高等学校工程训练教学指导委员会
-        date: 2021-05
-        summary: 机械与智能化工程综合能力竞赛北京市一等奖。
-
-      - title: 2020 中国移动“星辰计划”创客马拉松 全国十强
-        awarder: 中国移动集团
-        date: 2020-11
-        summary: 智能硬件与物联网应用极限开发全国总决赛十强。
-
-      - title: 中国计算机学会 (CCF) 宣传大使
-        awarder: 中国计算机学会 (CCF)
-        date: 2020-05
-        summary: 积极推广计算机科学与工程开源文化。
-
+    - name: 2025 NVIDIA Hackathon 年度总决赛冠军
+      date: 2025-12
+      summary: NVIDIA (英伟达)：全年黑客松总决赛最高荣誉，PCBTool AI (基于 NVIDIA NIM 智能体) 入选英伟达官方展台展示案例。
+    - name: NVIDIA 11th Sky Hackathon 第一名
+      date: 2025-10
+      summary: NVIDIA (英伟达)：聚焦端侧大模型与边缘 AI 智能体开发，斩获第一名。
+    - name: 2025 国际人形机器人技能大赛 1 项世界纪录 · 3 项冠军 · 4 项亚军
+      date: 2025-05
+      summary: 国际人形机器人技能大赛组委会：代表清华大学紫荆战队出战，以上海张江应用场景挑战赛纪录第一名等成绩获得该赛事总战绩。
+    - name: 首届小红书黑客松巅峰赛 硬件赛道三等奖
+      date: 2026-04
+      summary: 小红书技术团队 / 张江高科：项目“TRI.ME 吹了么”七轴模块化具身理容机械臂，48 小时极限手搓真机并获奖。
+    - name: 2026 世界人工智能大会 (WAIC) 受邀展出
+      date: 2026-07
+      summary: WAIC 组委会 / 小红书：携“吹了么”具身理容机械臂作为 AI 原生创客与超级个体代表于 WAIC 官方展台公开展出。
+    - name: 中关村高新技术企业认证 & 中关村 U30 雏鹰人才
+      date: 2020-11
+      summary: 北京市中关村科技园区管委会：创办企业获评中关村高新技术企业，个人入选中关村科技创新雏鹰人才。
+    - name: 北京化工大学“化大之星·校园青春榜样”
+      date: 2020-10
+      summary: 北京化工大学：获评全校年度青年榜样学生代表，被学校官方专稿深度报道。
+    - name: Bilibili 官方“校园星 UP” (累计播放 200 万+)
+      date: 2021-06
+      summary: 哔哩哔哩 (Bilibili)：频道「超级无敌麻辣串」，单期机器人软硬件与 AI 视频最高播放破百万，累计超 200 万次。
+    - name: 腾讯新闻 & 紫牛新闻 具身智能与大模型特邀受邀专家
+      date: 2026-09
+      summary: 腾讯新闻 / 扬子晚报：受邀深度实测大模型物理引擎抗幻觉能力，深度解析养老护理机器人场景商业化落地。
+    - name: GitHub Arctic Code Vault (北极代码宝藏计划) 入选
+      date: 2020-07
+      summary: GitHub (微软)：主持的开源项目被转录为长存胶卷，永久封存至北极斯瓦尔巴群岛冻土深处 1000 年。
+    - name: 全国大学生工程训练综合能力竞赛 北京市一等奖
+      date: 2021-05
+      summary: 教育部高等学校工程训练教学指导委员会：机械与智能化工程综合能力竞赛北京市一等奖。
+    - name: 2020 中国移动“星辰计划”创客马拉松 全国十强
+      date: 2020-11
+      summary: 中国移动集团：智能硬件与物联网应用极限开发全国总决赛十强。
+    - name: 中国计算机学会 (CCF) 宣传大使
+      date: 2020-05
+      summary: 中国计算机学会 (CCF)：积极推广计算机科学与工程开源文化。
     Projects:
-      - name: 单卡消费级 GPU 跑通 80 层 VLA 模型（WALL-OSS）全链路微调与真机闭环
-        date: 2026-01
-        url: https://github.com/00make
-        summary: 突破消费级硬件算力边界的具身智能端到端方案。
-        highlights:
-          - 在单张 32GB RTX 5090 显卡上跑通 80 层 Decoder 架构 VLA 模型微调与 LeRobot SO-101 机械臂真机闭环。
-          - 运用 8-bit AdamW、Activation Checkpointing、256 步梯度累积等工程优化，将端到端动作延迟压缩至 33–100ms。
-          - 采集 30 条 / 8199 帧高质量机械臂遥操作轨迹数据集，完整开源至 HuggingFace。
-
-      - name: “吹了么” (TRI.ME) 模块化具身理容机械臂
-        date: 2026-04
-        summary: 48 小时极速交付的七轴机械臂与多模态大模型生活服务具身智能项目。
-        highlights:
-          - 斩获小红书首届“黑客松巅峰赛”硬件赛道三等奖。
-          - 受邀亮相 2026 世界人工智能大会 (WAIC) 现场公开展出。
-          - 获人民网、解放日报·上观新闻、China Daily、雷科技专题报道。
-
-      - name: robodog & AgentOS 机器人智能体操作系统
-        date: 2024-08
-        summary: 面向多本体机器人的统一跨平台 Agent 控制中间件。
-        highlights:
-          - 封装底层四足步态、机械臂正逆运动学与传感器数据，提供统一易用的 Python SDK。
-          - 支持大模型与自然语言意图规划，驱动物理硬件执行空间动作。
-
-      - name: PCBTool AI (NVIDIA NIM 智能体)
-        date: 2025-10
-        summary: 基于英伟达 NIM 容器化微服务搭建的自动化电路与硬件设计 AI 助手。
-        highlights:
-          - 荣获 2025 NVIDIA Hackathon 年度总决赛冠军，并在英伟达展台作为优秀案例官方展示。
-
-      - name: 土豆子 (xiaozhi-esp32 边缘 AI 终端)
-        date: 2024-06
-        summary: 端侧离线大模型与语音交互硬件。
-        highlights:
-          - 打造离线语音 + 大模型边缘计算终端，实现 500+ 台硬件量产与交付。
-
-      - name: 农村住房安全网格化监测系统 (屋必安)
-        date: 2020-07
-        summary: 以公司创始人身份独立研发并在安徽池州青阳县住建局落地，服务脱贫攻坚与危房动态清零。
-        highlights:
-          - 精准录入 4,784 户建档立卡贫困户住房档案，落实 985 户低保户危房改造，助力石台县退出贫困县序列。
-          - 以户主 / 乡镇 / 县级三方协议保障录入 100% 精准，实现一户一档二维码化数字化监测。
-          - 国家级大学生创新创业训练计划立项并通过结题验收；获“挑战杯”省部级奖；获国家计算机软件著作权登记。
-
-      - name: BUCTBASE 校园开源知识库 & GitHub Arctic Code Vault
-        date: 2020-07
-        url: https://github.com/00make
-        summary: 主持建设的校园开源知识库与全栈项目，获 GitHub 官方永久封存 1000 年。
-        highlights:
-          - 覆盖多学科开源代码与工程笔记，服务数万名学子。
-          - 2020 年 7 月入选 GitHub 北极代码宝藏计划，代码刻录至耐酸碱胶卷，封存于北极斯瓦尔巴群岛冻土深处。
-
-      - name: treehollow 开源校园社交平台
-        date: 2019-09
-        summary: 发起并主开发的校园匿名社区 bucthole.com，多子域名服务化架构。
-        highlights:
-          - 拆分主页 / tapi(API) / ws(WebSocket 推送) / re(reCAPTCHA) / i(图片) / web / terms 七个子域，网页版基于 P 大树洞开源 web 版二次构建。
-          - 2021-08-09 上线 Web 端，2021-08-13 iOS 客户端接入 App Store；以“开发人员”身份公开声明后台看不到真实身份，把匿名性做成产品契约。
-
+    - name: 单卡消费级 GPU 跑通 80 层 VLA 模型（WALL-OSS）全链路微调与真机闭环
+      date: 2026-01
+      url: https://github.com/00make
+      summary: 突破消费级硬件算力边界的具身智能端到端方案。
+      highlights:
+      - 在单张 32GB RTX 5090 显卡上跑通 80 层 Decoder 架构 VLA 模型微调与 LeRobot SO-101 机械臂真机闭环。
+      - 运用 8-bit AdamW、Activation Checkpointing、256 步梯度累积等工程优化，将端到端动作延迟压缩至 33–100ms。
+      - 采集 30 条 / 8199 帧高质量机械臂遥操作轨迹数据集，完整开源至 HuggingFace。
+    - name: “吹了么” (TRI.ME) 模块化具身理容机械臂
+      date: 2026-04
+      summary: 48 小时极速交付的七轴机械臂与多模态大模型生活服务具身智能项目。
+      highlights:
+      - 斩获小红书首届“黑客松巅峰赛”硬件赛道三等奖。
+      - 受邀亮相 2026 世界人工智能大会 (WAIC) 现场公开展出。
+      - 获人民网、解放日报·上观新闻、China Daily、雷科技专题报道。
+    - name: robodog & AgentOS 机器人智能体操作系统
+      date: 2024-08
+      summary: 面向多本体机器人的统一跨平台 Agent 控制中间件。
+      highlights:
+      - 封装底层四足步态、机械臂正逆运动学与传感器数据，提供统一易用的 Python SDK。
+      - 支持大模型与自然语言意图规划，驱动物理硬件执行空间动作。
+    - name: PCBTool AI (NVIDIA NIM 智能体)
+      date: 2025-10
+      summary: 基于英伟达 NIM 容器化微服务搭建的自动化电路与硬件设计 AI 助手。
+      highlights:
+      - 荣获 2025 NVIDIA Hackathon 年度总决赛冠军，并在英伟达展台作为优秀案例官方展示。
+    - name: 土豆子 (xiaozhi-esp32 边缘 AI 终端)
+      date: 2024-06
+      summary: 端侧离线大模型与语音交互硬件。
+      highlights:
+      - 打造离线语音 + 大模型边缘计算终端，实现 500+ 台硬件量产与交付。
+    - name: 农村住房安全网格化监测系统 (屋必安)
+      date: 2020-07
+      summary: 以公司创始人身份独立研发并在安徽池州青阳县住建局落地，服务脱贫攻坚与危房动态清零。
+      highlights:
+      - 精准录入 4,784 户建档立卡贫困户住房档案，落实 985 户低保户危房改造，助力石台县退出贫困县序列。
+      - 以户主 / 乡镇 / 县级三方协议保障录入 100% 精准，实现一户一档二维码化数字化监测。
+      - 国家级大学生创新创业训练计划立项并通过结题验收；获“挑战杯”省部级奖；获国家计算机软件著作权登记。
+    - name: BUCTBASE 校园开源知识库 & GitHub Arctic Code Vault
+      date: 2020-07
+      url: https://github.com/00make
+      summary: 主持建设的校园开源知识库与全栈项目，获 GitHub 官方永久封存 1000 年。
+      highlights:
+      - 覆盖多学科开源代码与工程笔记，服务数万名学子。
+      - 2020 年 7 月入选 GitHub 北极代码宝藏计划，代码刻录至耐酸碱胶卷，封存于北极斯瓦尔巴群岛冻土深处。
+    - name: treehollow 开源校园社交平台
+      date: 2019-09
+      summary: 发起并主开发的校园匿名社区 bucthole.com，多子域名服务化架构。
+      highlights:
+      - 拆分主页 / tapi(API) / ws(WebSocket 推送) / re(reCAPTCHA) / i(图片) / web / terms 七个子域，网页版基于 P 大树洞开源 web 版二次构建。
+      - 2021-08-09 上线 Web 端，2021-08-13 iOS 客户端接入 App Store；以“开发人员”身份公开声明后台看不到真实身份，把匿名性做成产品契约。
     Skills:
-      - name: 具身智能与大模型
-        keywords: [VLA 模型微调, LeRobot, 物理仿真 (Genesis / Isaac Sim), ROS/ROS2, 手眼标定, Sim-to-Real]
-
-      - name: 机器人运控与嵌入式
-        keywords: [FOC 无刷电机控制, CAN 总线通信 (MIT模式), RTOS, STM32, ESP32, 传感器融合]
-
-      - name: 边缘计算与软硬件架构
-        keywords: [NVIDIA Jetson, 地瓜机器人 RDK, Docker 容器化, Linux (Ubuntu/RT-PREEMPT), PCB 原理图与布线]
-
-      - name: 编程语言与工程栈
-        keywords: [Python, C/C++, Go, PyTorch, LangChain, NVIDIA NIM, Git]
-
-      - name: 技术布道与生态运营
-        keywords: [200万+ B站科技 UP 主, 黑客松赛事主理与评审, 技术演讲与讲座, 开源社群构建]
-
+    - name: 具身智能与大模型
+      summary: VLA 模型微调, LeRobot, 物理仿真 (Genesis / Isaac Sim), ROS/ROS2, 手眼标定, Sim-to-Real
+    - name: 机器人运控与嵌入式
+      summary: FOC 无刷电机控制, CAN 总线通信 (MIT模式), RTOS, STM32, ESP32, 传感器融合
+    - name: 边缘计算与软硬件架构
+      summary: NVIDIA Jetson, 地瓜机器人 RDK, Docker 容器化, Linux (Ubuntu/RT-PREEMPT), PCB 原理图与布线
+    - name: 编程语言与工程栈
+      summary: Python, C/C++, Go, PyTorch, LangChain, NVIDIA NIM, Git
+    - name: 技术布道与生态运营
+      summary: 200万+ B站科技 UP 主, 黑客松赛事主理与评审, 技术演讲与讲座, 开源社群构建
     Certificates:
-      - name: NVIDIA DLI《大语言模型 — RAG 智能体入门》认证
-        issuer: NVIDIA Deep Learning Institute
-        date: 2025
-      - name: NVIDIA DLI《开发基于提示工程的 LLM 应用》认证
-        issuer: NVIDIA Deep Learning Institute
-        date: 2025
-      - name: 8 项国家计算机软件著作权与 1 项发明专利（申请中）
-        issuer: 中华人民共和国国家知识产权局 / 国家版权局
-        date: 2025
+    - name: NVIDIA DLI《大语言模型 — RAG 智能体入门》认证
+      issuer: NVIDIA Deep Learning Institute
+      date: 2025
+    - name: NVIDIA DLI《开发基于提示工程的 LLM 应用》认证
+      issuer: NVIDIA Deep Learning Institute
+      date: 2025
+    - name: 8 项国家计算机软件著作权与 1 项发明专利（申请中）
+      issuer: 中华人民共和国国家知识产权局 / 国家版权局
+      date: 2025
+  headline: 机器人开发者生态 & 全栈具身智能工程师
+  photo: ../assets/img/prof_pic.jpg
