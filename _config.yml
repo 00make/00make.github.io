@@ -7,12 +7,13 @@ first_name: 张振尧
 middle_name:
 last_name:
 contact_note: >
-  合作、演讲邀请与媒体采访，欢迎邮件联系。
+  合作、演讲邀请与媒体采访，欢迎通过微信或媒体资料包联络。
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   张振尧，具身智能全栈工程师、机器人开发者生态布道者。NVIDIA Hackathon 年度总决赛冠军。
 footer_text: >
   © 2026 张振尧 · 零零后科技 CEO<br>合作与媒体采访见
-  <a href="/press/#press-kit">媒体资料包</a> · 站点基于 <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> 构建
+  <a href="/press/#press-kit">媒体资料包</a> · <a href="/privacy/">隐私政策</a> · <a href="/">关于</a> · 站点基于
+  <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> 构建
 keywords: 张振尧, 具身智能, 机器人, VLA, NVIDIA, 开发者生态, 技术布道 # add your own keywords or leave empty
 lang: zh-CN # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🤖 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -109,9 +110,9 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
+og_image: /assets/img/prof_pic.jpg # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification

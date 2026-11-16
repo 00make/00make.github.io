@@ -1,0 +1,210 @@
+<!-- Metadata, OpenGraph and Schema.org -->
+{% include metadata.liquid %}
+
+<!-- Security: Content Security Policy -->
+<!-- Permissive CSP suitable for academic websites. Allows external images, videos, and common embed services. -->
+<!-- To customize for your needs, see: https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+<meta
+  http-equiv="Content-Security-Policy"
+  content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"
+>
+<style>
+  :root {
+    --max-content-width: {{ site.max_width | default: '930px' }};
+  }
+</style>
+
+<!-- Tailwind-first core styles -->
+<link rel="stylesheet" href="{{ '/assets/css/tailwind.css' | relative_url | bust_file_cache }}">
+
+{% if site.al_folio.compat.bootstrap.enabled %}
+  <!-- Optional Bootstrap compatibility layer -->
+  <link rel="stylesheet" href="{{ '/assets/css/bootstrap-compat.css' | relative_url | bust_file_cache }}">
+{% endif %}
+
+{% if page.pretty_table and site.al_folio.compat.bootstrap.enabled %}
+  <!-- Bootstrap Table -->
+  <link
+    defer
+    rel="stylesheet"
+    href="{{ site.third_party_libraries.bootstrap-table.url.css }}"
+    integrity="{{ site.third_party_libraries.bootstrap-table.integrity.css }}"
+    crossorigin="anonymous"
+  >
+{% endif %}
+
+{% if page.toc and page.toc.sidebar %}
+  <!-- Tocbot -->
+  <link
+    defer
+    rel="stylesheet"
+    href="{{ site.third_party_libraries.tocbot.url.css }}"
+    integrity="{{ site.third_party_libraries.tocbot.integrity.css }}"
+    crossorigin="anonymous"
+  >
+{% endif %}
+
+<!-- Icons -->
+{% if site.plugins contains 'al_icons' %}
+  {% include plugins/al_icons_styles.liquid %}
+{% endif %}
+<link
+  defer
+  rel="stylesheet"
+  type="text/css"
+  href="{{ site.third_party_libraries.google_fonts.url.fonts }}"
+>
+
+<!-- Code Syntax Highlighting -->
+<link
+  defer
+  rel="stylesheet"
+  href="{{ '/assets/css/jekyll-pygments-themes-github.css' | relative_url | bust_file_cache }}"
+  media=""
+  id="highlight_theme_light"
+>
+
+<!-- Styles -->
+
+{% if page.pseudocode %}
+  <!-- pseudocode -->
+  <link
+    defer
+    rel="stylesheet"
+    href="{{ site.third_party_libraries.pseudocode.url.css }}"
+    integrity="{{ site.third_party_libraries.pseudocode.integrity.css }}"
+    crossorigin="anonymous"
+  >
+{% endif %}
+
+{% comment %}
+  Note: `x != blank` is unreliable here — Liquid's `blank` literal compares by calling
+  `blank?` on the other operand, and plain Ruby's NilClass/String have no `blank?`, so
+  the comparison yields nil and `!=` is therefore always true. An unset `site.icon`
+  used to fall through to the `elsif` below and emit `href="/assets/img/"`. Truthiness
+  plus an explicit empty-string check behaves correctly with or without ActiveSupport.
+{% endcomment %}
+{% if site.icon.size <= 4 %}
+  <link
+    rel="shortcut icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>{{ site.icon }}</text></svg>"
+  >
+{% elsif site.icon and site.icon != '' %}
+  <link rel="shortcut icon" href="{{ site.icon | prepend: '/assets/img/' | relative_url | bust_file_cache}}">
+{% endif %}
+{% comment %}
+  iOS home-screen bookmarks need `rel="apple-touch-icon"` pointing at a real raster
+  image; Safari ignores the inline SVG data URI used for the emoji favicon above and
+  falls back to a screenshot of the page. So the tag is emitted only when a usable
+  asset actually exists — an explicit `apple_touch_icon` (a 180x180 PNG is what Apple
+  recommends), or an `icon` that is already a raster image file. When `icon` is an
+  emoji, nothing is emitted rather than a link that would 404.
+  See alshedivat/al-folio#2774.
+{% endcomment %}
+{% if site.apple_touch_icon and site.apple_touch_icon != '' %}
+  {% assign apple_touch_icon = site.apple_touch_icon %}
+{% elsif site.icon and site.icon.size > 4 %}
+  {% assign icon_extension = site.icon | split: '.' | last | split: '?' | first | downcase %}
+  {% if icon_extension == 'png' or icon_extension == 'jpg' or icon_extension == 'jpeg' %}
+    {% assign apple_touch_icon = site.icon %}
+  {% endif %}
+{% endif %}
+{% if apple_touch_icon %}
+  {% if apple_touch_icon contains '://' %}
+    {% assign apple_touch_icon_url = apple_touch_icon %}
+  {% elsif apple_touch_icon contains '/' %}
+    {% assign apple_touch_icon_url = apple_touch_icon | relative_url | bust_file_cache %}
+  {% else %}
+    {% assign apple_touch_icon_url = apple_touch_icon | prepend: '/assets/img/' | relative_url | bust_file_cache %}
+  {% endif %}
+  <link rel="apple-touch-icon" href="{{ apple_touch_icon_url }}">
+{% endif %}
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url | bust_css_cache }}">
+{% if page.layout == 'cv' and site.plugins contains 'al_folio_cv' and site.al_folio.features.cv.enabled != false %}
+  <link rel="stylesheet" href="{{ '/assets/css/al-folio-cv.css' | relative_url | bust_file_cache }}">
+{% endif %}
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+
+{% if site.enable_darkmode %}
+  <!-- Dark Mode: theme.js inlined so no render-blocking request sits in head (must stay pre-paint to avoid flicker) -->
+  <script>
+    {% include theme.js %}
+  </script>
+  <link
+    defer
+    rel="stylesheet"
+    href="{{ '/assets/css/jekyll-pygments-themes-native.css' | relative_url | bust_file_cache }}"
+    media="none"
+    id="highlight_theme_dark"
+  >
+  <script>
+    initTheme();
+  </script>
+{% endif %}
+
+{% if page.map %}
+  <!-- GeoJSON support via Leaflet -->
+  <link
+    defer
+    rel="stylesheet"
+    href="{{ site.third_party_libraries.leaflet.url.css }}"
+    integrity="{{ site.third_party_libraries.leaflet.integrity.css }}"
+    crossorigin="anonymous"
+  >
+{% endif %}
+
+{% if page.code_diff %}
+  <!-- diff2html -->
+  <link
+    defer
+    rel="stylesheet"
+    href="{{ site.third_party_libraries.highlightjs.url.css.light }}"
+    integrity="{{ site.third_party_libraries.highlightjs.integrity.css.light }}"
+    crossorigin="anonymous"
+    media="screen and (prefers-color-scheme: light)"
+  >
+  <link
+    defer
+    rel="stylesheet"
+    href="{{ site.third_party_libraries.highlightjs.url.css.dark }}"
+    integrity="{{ site.third_party_libraries.highlightjs.integrity.css.dark }}"
+    crossorigin="anonymous"
+    media="screen and (prefers-color-scheme: dark)"
+  >
+  <link
+    defer
+    rel="stylesheet"
+    href="{{ site.third_party_libraries.diff2html.url.css }}"
+    integrity="{{ site.third_party_libraries.diff2html.integrity.css }}"
+    crossorigin="anonymous"
+  >
+{% endif %}
+
+{% if site.plugins contains 'al_img_tools' %}
+  <!-- Image Features -->
+  {% include plugins/al_img_tools_styles.liquid %}
+{% endif %}
+
+{% if site.plugins contains 'al_math' %}
+  {% include plugins/al_math_styles.liquid %}
+{% endif %}
+
+{% if site.enable_cookie_consent and site.plugins contains 'al_cookie' %}
+  <!-- Cookie Consent -->
+  {% include plugins/al_cookie_styles.liquid %}
+{% endif %}
+
+{% if site.plugins contains 'al_rtl' %}
+  <!-- Right-to-left support -->
+  {% include plugins/al_rtl_styles.liquid %}
+{% endif %}
+
+{% if site.protect_email and site.plugins contains 'al_email_protect' %}
+  <!-- Email obfuscation -->
+  {% include plugins/al_email_protect_styles.liquid %}
+{% endif %}
+
+{% if page.marimo and site.plugins contains 'al_marimo' %}
+  <!-- Marimo notebooks -->
+  {% include plugins/al_marimo_styles.liquid %}
+{% endif %}
