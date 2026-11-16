@@ -43,5 +43,6 @@ jobs:
         uses: lycheeverse/lychee-action@v2.0.2
         with:
           fail: true
-          # only check local links
-          args: --offline --remap '_site(/?.*)/assets/(.*) _site/assets/$2' --verbose --no-progress '_site/**/*.html'
+          # only check local links; remap only a single-segment baseurl prefix
+          # so legacy/lib/owlcarousel/assets/ paths are not rewritten to _site/assets/
+          args: --offline --remap '_site(/[^/]+)?/assets/(.*) _site/assets/$2' --verbose --no-progress '_site/**/*.html'
